@@ -1,0 +1,124 @@
+.header {
+}
+
+.headerAuth {
+    position: sticky;
+    top: 0;
+    background: var(--black-25, #13161e);
+    z-index: 5;
+}
+
+.wrapper {
+    display: flex;
+    margin: auto;
+    gap: 514px;
+}
+
+.wrapperAuth {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navWrapper {
+    display: flex;
+}
+
+.logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-right: 24px;
+}
+
+.navigation li:last-child {
+    margin-right: 0px;
+}
+
+.navigation li a {
+    color: #4a4e62;
+    font-size: 14px;
+    font-family: 600;
+}
+
+.login {
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px solid var(--black-100, #202430);
+    background: var(--black-50, #191c26);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: var(--black-600, #4a4e62);
+}
+
+.loginPanel {
+    display: flex;
+    gap: 12px;
+}
+
+.signUp {
+    display: flex;
+    gap: 8px;
+
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    border: 1px solid var(--primary-400, #5271ff);
+    background: var(--primary-400, #5271ff);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: var(--White, #fff);
+}
+
+.userName {
+    display: flex;
+    gap: 10px;
+}
+.userName img.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.userName .userId {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 4px;
+}
+.userName .userId span {
+    color: #666b84;
+    background: #191c26;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
