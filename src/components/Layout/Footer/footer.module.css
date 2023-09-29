@@ -6,9 +6,11 @@
     margin-top: 140px;
     padding: 48px 16px;
 }
+
 .footer p {
     max-width: 232px;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -20,12 +22,14 @@
     color: #fff;
     margin-bottom: 12px;
 }
+
 .title {
     font-size: 14px;
     font-weight: 600;
     color: #797e95;
     margin-bottom: 16px;
 }
+
 .list li {
     margin-bottom: 12px;
     font-weight: 600;

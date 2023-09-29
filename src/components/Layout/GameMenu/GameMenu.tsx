@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import {useState} from "react";
-import {ReactComponent as Jackpot} from "./Jackpot.svg"
 
 import styles from './game.modules.css';
 
@@ -11,7 +10,7 @@ export const GameMenu = () => {
     let [isAuth, setIsAuth] = useState(true);
 
     return (isAuth ?
-            <aside className={`${styles.main}`}>
+            <aside className={styles.main}>
                 <ul className="game-list">
                     <li>
                         <Link href="/jackpot">

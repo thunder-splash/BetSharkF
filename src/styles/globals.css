@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-body: #191c26;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: var(--background-body);
+    /* display: flex; */
+    width: 100vw;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+p {
+    line-height: 20px;
+}
+
+aside {
+    position: sticky;
+    top: 0px;
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+aside ul.game-list li a {
+    color: #4a4e62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #202430;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+aside ul.game-list li a:hover {
+    background: #202843;
+}
+
+aside ul.game-list li svg {
+    width: 20px;
+    height: 20px;
+}
+
+aside ul.game-list li a span {
+    display: none;
+}
+
+main {
+    background: #13161e;
+    border-radius: 24px 0px 0px 24px;
+    width: 100%;
+}
+
+header {
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+header ul.navigation {
+    display: flex;
+}
+
+header ul.navigation li {
+    margin-right: 24px;
+}
+
+header ul.navigation li a {
+    color: #4a4e62;
+    font-size: 14px;
+}
+
+header .btn {
+    background: #202430;
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-left: 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .btn.blue {
+    background: #5271ff;
+    margin-right: 35px;
+}
+
+header .btn img.avatar {
+    margin-right: 10px;
+}
+
+header .btn.dropdown {
+    padding-left: 4px;
+    margin: 0 16px;
+}
+
+header .btn.dropdown::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("/bet-shark-app/public/chevron-down.svg");
+    margin-left: 8px;
+    transition: 0.2s;
+}
+
+header .btn.sum span {
+    color: #353949;
+}
+
+header .btn.sum::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("/bet-shark-app/public/cash.svg");
+    margin-right: 8px;
+}
+
+.dropdown-list {
+    background: #202430;
+    border-radius: 8px;
+    border: 1px solid #262a37;
+    max-height: 500px;
+    overflow-x: auto;
+}
+
+.dropdown-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background-color: #555a71;
+    border-radius: 10px;
+}
+
+.dropdown-list.account {
+    margin-right: 16px;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #555a71;
+    font-weight: 500;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.dropdown-list .divider {
+    border-color: #262a37;
+}
+
+.dropdown-item.logout {
+    color: #d04141;
+}
+
+.notification {
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+    font-size: 12px;
+    color: #666b84;
+    font-weight: 400;
+    border: 0;
+    padding: 12px 16px 12px 28px;
+    border-bottom: 1px solid #262a37 !important;
+    position: relative;
+}
+
+.notification.active::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5271ff;
+    position: absolute;
+    top: 19px;
+    left: 16px;
+}
+
+.notification:last-child {
+    border: 0 !important;
+}
+
+.notification .title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notification .date {
+    font-weight: 500;
+}
+
+.notification-header {
+    border-bottom: 1px solid #262a37 !important;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px;
+}
+
+.notification-header span {
+    color: #5271ff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.h1onpage {
+    color: white;
+}
+
+.colums {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 372px 504px;
+}

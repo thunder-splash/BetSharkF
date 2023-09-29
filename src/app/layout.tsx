@@ -1,9 +1,9 @@
 'use client'
 
-import '../css/global.module.css'
+import '@/styles/globals.css'
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
-import styles from '../css/global.module.css'
+import styles from '@/styles/global.module.css'
 import {Footer} from "@/components/Layout/Footer/Footer";
 import {GameMenu} from "@/components/Layout/GameMenu/GameMenu";
 import {Header} from "@/components/Layout/Header/Header";
@@ -21,9 +21,9 @@ export default function RootLayout({children}: {
     return (
         <html lang="en">
         <body className={inter.className}>
-        <div className={`${styles.wrapper}`}>
+        <div className={styles.wrapper}>
             <GameMenu/>
-            <div className={`${styles.main}`}>
+            <div className={styles.main}>
                 <Header/>
                 {/* <Chat/> */}
                 {children}
