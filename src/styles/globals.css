@@ -253,10 +253,98 @@ header .btn.sum::before {
     cursor: pointer;
 }
 
-.h1onpage {
-    color: white;
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url('/main_section_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-section_cards,.how-it-works,
+.recommended-game,
+.vip-system,
+.live-payouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 90px;
 }
 
+.how-it-works h2,
+.recommended-game h2,
+.vip-system h2,
+.live-payouts h2{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+.h1onpage {
+    color: var(--White, #FFF);
+    text-align: center;
+
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: -1.6px;
+}
+
+.subtext {
+    color: var(--black-700, #555A71);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+.join-button {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    box-shadow: 0px 4px 0px 0px #263475;
+    margin-top: 40px;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid var(--black-100, #202430);
+    background: var(--black-50, #191C26);
+    backdrop-filter: blur(10px);
+    display: flex;
+    width: 314px;
+    height: 196px;
+    padding: 24px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
 .colums {
     display: grid;
     gap: 24px;
