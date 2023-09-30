@@ -73,6 +73,11 @@ main {
     width: 100%;
 }
 
+.wrapper {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 header {
     padding: 18px 24px;
     display: flex;
@@ -132,7 +137,7 @@ header .btn.dropdown::after {
     content: "";
     width: 20px;
     height: 20px;
-    background: url("/bet-shark-app/public/chevron-down.svg");
+    background: url("/chevron-down.svg");
     margin-left: 8px;
     transition: 0.2s;
 }
@@ -145,7 +150,7 @@ header .btn.sum::before {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("/bet-shark-app/public/cash.svg");
+    background-image: url("/cash.svg");
     margin-right: 8px;
 }
 

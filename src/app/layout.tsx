@@ -20,10 +20,10 @@ export default function RootLayout({children}: {
 }) {
     return (
         <html lang="en">
-        <body className={inter.className}>
-        <div className={styles.wrapper}>
+        <body className={inter.className} style={{width: '100%'}}>
+        <div className={`${styles.wrapper}`}>
             <GameMenu/>
-            <div className={styles.main}>
+            <div className={`${styles.main}`}>
                 <Header/>
                 {/* <Chat/> */}
                 {children}

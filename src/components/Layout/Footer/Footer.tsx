@@ -7,7 +7,7 @@ export const Footer = () => {
         <footer className={`${styles.footer} container grid grid-cols-12`}>
             <div className="col-span-6">
                 <Link href="/" className={`${styles.logo}`}>
-                    <img src="/logo.svg" alt="BetShark Logo"/>
+                    <img src="/logo.svg" alt=""/>
                     BetShark
                 </Link>
                 <p>
@@ -35,26 +35,24 @@ export const Footer = () => {
             </div>
             <div className="col-span-2">
                 <div className={`${styles.title}`}>Games</div>
-                <nav>
-                    <ul className={`${styles.list}`}>
-                        <li>
-                            <Link href="/">Jackpot</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Roulette</Link>
-                        </li>
-                        <li>
-                            <Link href="/">CoinFlip</Link>
-                        </li>
-                        <li>
-                            <Link href="/">Dice</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <ul className={`${styles.list}`}>
+                    <li>
+                        <Link href="/">Jackpot</Link>
+                    </li>
+                    <li>
+                        <Link href="/">Roulette</Link>
+                    </li>
+                    <li>
+                        <Link href="/">CoinFlip</Link>
+                    </li>
+                    <li>
+                        <Link href="/">Dice</Link>
+                    </li>
+                </ul>
             </div>
             <div className="col-span-1">
                 <Link href="/">
-                    <img src="/Telegram.svg" alt="Telegram Logo"/>
+                    <img src="/Telegram.svg" alt=""/>
                 </Link>
             </div>
         </footer>

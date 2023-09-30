@@ -7,7 +7,7 @@ export default function Notification(){
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button className="btn">
-                    <img src="/bell.svg" alt="" />
+                    <img src="/bell.svg" alt="bell" />
                 </Menu.Button>
             </div>
             <Transition
