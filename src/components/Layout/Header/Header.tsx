@@ -1,76 +1,107 @@
-'use client'
-
 import Link from "next/link";
-import  Notification  from "./Notifications";
+import Notification from "./Notifications";
 import UserMenu from "./UserMenu";
-
-import styles from "./header.module.css"
+import styles from "./header.module.css";
+import { useState } from "react";
+import SignUpPopup from "./SignUpPopup"; 
 
 export const Header = () => {
+  const [isAuth, setIsAuth] = useState(false);
+  const [showSignUpForm, setShowSignUpForm] = useState(false);
 
-    let isAuth = true;
+  const toggleSignUpForm = () => {
+    setShowSignUpForm(!showSignUpForm);
+  };
 
-    return (
-        <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
-            <div className={isAuth ? `${styles.wrapperAuth}` : `${styles.wrapper}`}>
-                <div className={`${styles.navWrapper}`}>
-                    <Link href="/" className={`${styles.logo}`}>
-                        <img src="/logo.svg" alt="" />
-                        BetShark
-                    </Link>
+  const handleLogin = () => {
+    setIsAuth(true);
+  };
 
-                    <ul className={`${styles.navigation}`}>
-                        <li>
-                            <Link href="#">Terms of use</Link>
-                        </li>
-                        <li>
-                            <Link href="#">Provably fair</Link>
-                        </li>
-                        <li>
-                            <Link href="#">FAQ</Link>
-                        </li>
-                        <li>
-                            <Link href="#">Live Payouts</Link>
-                        </li>
-                    </ul>
-                </div>
+  const handleSignUp = () => {
+    setIsAuth(true);
+  };
 
-                {isAuth ?
+  const handleLogout = () => {
+    setIsAuth(false);
+  };
 
-                    <div className="flex">
-                        <Link href="#" className="btn sum">
-                            10 004 250.<span>19</span>
-                        </Link>
-                        <Link href="/transactions" className="btn blue">
-                            Deposit
-                        </Link>
-                        <Link href="#" className="btn">
-                            <img src="/present.svg" alt="" />
-                        </Link>
-                        <Link href="#" className="btn">
-                            <img src="/supporting.svg" alt="" />
-                        </Link>
+  return (
+    <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
+      <div className={isAuth ? `${styles.wrapperAuth}` : `${styles.wrapper}`}>
+        <div className={`${styles.navWrapper}`}>
+          <Link href="/" className={`${styles.logo}`}>
+            <img src="/logo.svg" alt="" />
+            BetShark
+          </Link>
 
+          <ul className={`${styles.navigation}`}>
+            <li>
+              <Link href="#">Terms of use</Link>
+            </li>
+            <li>
+              <Link href="#">Provably fair</Link>
+            </li>
+            <li>
+              <Link href="#">FAQ</Link>
+            </li>
+            <li>
+              <Link href="#">Live Payouts</Link>
+            </li>
+          </ul>
+        </div>
 
-                        <Notification />
-                        <UserMenu />
+        {isAuth ? (
+          <div className="flex">
+            <Link href="#" className="btn sum">
+              10 004 250.<span>19</span>
+            </Link>
+            <Link href="/transactions" className="btn blue">
+              Deposit
+            </Link>
+            <Link href="#" className="btn">
+              <img src="/present.svg" alt="" />
+            </Link>
+            <Link href="#" className="btn">
+              <img src="/supporting.svg" alt="" />
+            </Link>
 
-                        <button className="btn">
-                            <img src="/message-circle.svg" alt="" />
-                        </button>
-                    </div> :
-                    <div className={`${styles.loginPanel}`}>
-                        <button className={`${styles.login}`}>Login</button>
-                        <button className={`${styles.signUp}`}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99996 4.16667V15.8333M4.16663 10H15.8333" stroke="white" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Sign up
-                        </button>
-                    </div>
-                }
-
-            </div>
-        </header>
-    );
+            <Notification />
+            <UserMenu onLogout={handleLogout} />
+          </div>
+        ) : (
+          <div className={`${styles.loginPanel}`}>
+            <button onClick={handleLogin} className={`${styles.login}`}>
+              Login
+            </button>
+            <button onClick={toggleSignUpForm} className={`${styles.signUp}`}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M9.99996 4.16667V15.8333M4.16663 10H15.8333"
+                  stroke="white"
+                  strokeWidth="1.67"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Sign up
+            </button>
+            {showSignUpForm && (
+              <SignUpPopup
+                handleSignUp={handleSignUp}
+                onClose={toggleSignUpForm}
+              />
+            )}
+          </div>
+        )}
+      </div>
+    </header>
+  );
 };
+
+export default Header;

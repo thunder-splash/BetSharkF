@@ -3,8 +3,11 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
 import styles from "./header.module.css"
+type UserMenuProps = {
+    onLogout: () => void;
+};
 
-export default function UserMenu() {
+export default function UserMenu({ onLogout }: UserMenuProps) {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
@@ -68,7 +71,7 @@ export default function UserMenu() {
                     </div>
                     <div className="divider py-1">
                         <Menu.Item>
-                            <Link href="#" className="dropdown-item logout">
+                            <Link href="#" className="dropdown-item logout" onClick={onLogout}>
                                 <img src="/log-out.svg" alt="" />
                                 Logout
                             </Link>
