@@ -33,4 +33,10 @@
 .list li {
     margin-bottom: 12px;
     font-weight: 600;
+    transition: .3s;
+}
+
+.list li:hover {
+    color: #202843;
+    transition: all .4s ease-in;
 }

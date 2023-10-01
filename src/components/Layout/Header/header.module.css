@@ -4,7 +4,7 @@
 .headerAuth {
     position: sticky;
     top: 0;
-    background: var(--black-25, #13161e);
+    background: #13161e;
     z-index: 5;
 }
 
@@ -52,24 +52,27 @@
 .navigation li a {
     color: #4a4e62;
     font-size: 14px;
-    font-family: 600;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navigation li a:hover{
+    color: #202843;
+    transition: all .4s ease-in;
 }
 
 .login {
     padding: 10px 18px;
     justify-content: center;
     align-items: center;
-
     border-radius: 8px;
-    border: 1px solid var(--black-100, #202430);
-    background: var(--black-50, #191c26);
-
+    border: 1px solid #202430;
+    background: #191c26;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-
-    color: var(--black-600, #4a4e62);
+    color: #4a4e62;
 }
 
 .loginPanel {
@@ -80,21 +83,17 @@
 .signUp {
     display: flex;
     gap: 8px;
-
     padding: 10px 18px;
     justify-content: center;
     align-items: center;
-
     border-radius: 8px;
-    border: 1px solid var(--primary-400, #5271ff);
-    background: var(--primary-400, #5271ff);
-
+    border: 1px solid #5271ff;
+    background: #5271ff;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-
-    color: var(--White, #fff);
+    color: #fff;
 }
 
 .userName {

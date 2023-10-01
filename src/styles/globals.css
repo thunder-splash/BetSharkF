@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
@@ -52,10 +61,12 @@ aside ul.game-list li a {
     height: 44px;
     border-radius: 8px;
     margin-bottom: 8px;
+    transition: .3s;
 }
 
 aside ul.game-list li a:hover {
     background: #202843;
+    transition: all .5s ease-in;
 }
 
 aside ul.game-list li svg {
@@ -262,6 +273,7 @@ header .btn.sum::before {
     background-image: url('/main_section_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 90px;
 }
 .main-section_cards,.how-it-works,
 .recommended-game,
@@ -275,13 +287,30 @@ header .btn.sum::before {
     margin-top: 90px;
 }
 
+.secondtitlet{
+    color:#797E95;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.secondtitleb{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    padding-bottom: 40px;
+}
+
 .how-it-works h2,
 .recommended-game h2,
 .vip-system h2,
 .live-payouts h2{
-    color: var(--White, #FFF);
+    color: #FFF;
     text-align: center;
-    font-family: Inter;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -289,10 +318,8 @@ header .btn.sum::before {
     letter-spacing: -0.96px;
 }
 .h1onpage {
-    color: var(--White, #FFF);
+    color: #FFF;
     text-align: center;
-
-    font-family: Inter;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
@@ -300,9 +327,18 @@ header .btn.sum::before {
     letter-spacing: -1.6px;
 }
 
-.subtext {
-    color: var(--black-700, #555A71);
-    font-family: Inter;
+.abouttext{
+    color: #555A71;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 8px;
+    padding-bottom: 40px;
+}
+
+.subtextmain{
+    color: #555A71;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -311,19 +347,23 @@ header .btn.sum::before {
 }
 
 .join-button {
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
     border: none;
     cursor: pointer;
     display: flex;
+    box-shadow: 0px 4px 0px 0px #263475;
+    margin-top: 40px;
     padding: 16px 28px;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    border-radius: 8px;
     background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
-    box-shadow: 0px 4px 0px 0px #263475;
-    margin-top: 40px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
 }
 .card-grid {
     display: grid;
@@ -331,10 +371,10 @@ header .btn.sum::before {
     gap: 20px;
 }
 
-.card {
+.cardmain {
     border-radius: 12px;
-    border: 1px solid var(--black-100, #202430);
-    background: var(--black-50, #191C26);
+    border: 1px solid #202430;
+    background: #191C26;
     backdrop-filter: blur(10px);
     display: flex;
     width: 314px;
@@ -344,9 +384,143 @@ header .btn.sum::before {
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
+    user-select: none;
 }
+
+.cardtt{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: -4px;
+}
+
+.cardut{
+    color: #555A71;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -18px;
+}
+
 .colums {
     display: grid;
     gap: 24px;
     grid-template-columns: 372px 504px;
+}
+
+.hiw-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cardhiw{
+    display: flex;
+    width: 314px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    user-select: none;
+    border-radius: 12px;
+    background: linear-gradient(99deg, #191C26 0%, rgba(25, 28, 38, 0.35) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.hiwtt{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+}
+
+.hiwut{
+    color: #555A71;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: -8px;
+}
+
+.join-button-hiw{
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #17A07F;
+    background: #17A07F;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    margin-top: 56px;
+}
+
+.rec-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cardrec{
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #191C26;
+}
+
+.playnow{
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #5271FF;
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.rec-pay{
+    display: flex;
+    width: 990px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 20%), linear-gradient(90deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    margin-top: 60px;
+}
+
+.recbut{
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-left: 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: #5271ff;
 }
