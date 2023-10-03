@@ -1,0 +1,23 @@
+.coins {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.coinItem {
+    border-radius: 8px;
+    border: 1px solid #262a37;
+    background: #202430;
+    padding: 12px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.coinItem .icon {
+    width: 52px;
+    height: 52px;
+    max-width: none;
+}

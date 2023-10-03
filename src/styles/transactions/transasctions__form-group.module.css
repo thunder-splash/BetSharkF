@@ -1,0 +1,88 @@
+.formGroup {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+.formGroup:last-child {
+    margin-bottom: 0;
+}
+.formGroup label {
+    color: #555a71;
+    font-size: 14px;
+    font-weight: 500;
+}
+.formGroup input {
+    background: #202430;
+    border: 1px solid #262a37;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    padding: 10px 14px;
+}
+.formGroup input:disabled {
+    background: #191c26;
+}
+.formGroup input::placeholder {
+    color: #555a71;
+}
+.formGroup.iconLeft input {
+    padding: 10px 14px 10px 42px;
+}
+.formGroup.iconRight input {
+    padding: 10px 42px 10px 14px;
+}
+.formGroup.link input {
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0;
+}
+.formGroup.link .text {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 14px;
+    background: #202430;
+    border: 1px solid #262a37;
+    border-right: 0;
+    border-radius: 8px 0 0 8px;
+}
+.formGroup button {
+    background: #5271ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+.formGroup .cursor {
+    cursor: pointer;
+}
+.dragForm {
+    background: #13161e;
+    border: 1px solid #262a37;
+    border-radius: 8px;
+    padding: 16px;
+    color: #4a4e62;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    margin: 32px 0 16px 0;
+}
+.dragForm img.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+.dragForm span {
+    color: #5271ff;
+}
+.dragForm input {
+    display: none;
+}

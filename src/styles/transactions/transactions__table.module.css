@@ -1,0 +1,34 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.table .row {
+    background: #262A37;
+    border-radius: 8px;
+    color: #797E95;
+    font-size: 12px;
+    font-weight: 500;
+}
+.row.header {
+    background: #13161E;
+    color: #4A4E62;
+    font-weight: 600;
+}
+.table .row:nth-child(2n) {
+    background: #202430;
+}
+.table .row .col {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+}
+.row.header .col {
+    padding: 8px 10px;
+}
+.row .col img {
+    width: 16px;
+    height: 16px;
+    display: inline;
+    margin-right: 6px;
+}

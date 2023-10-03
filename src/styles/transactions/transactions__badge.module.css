@@ -1,0 +1,47 @@
+.badge {
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.middle {
+    padding: 3px 10px;
+}
+
+.large {
+    padding: 4px 12px;
+}
+
+.round {
+    border-radius: 16px;
+}
+
+.red {
+    background: #3a2329;
+    color: #fe4f4f;
+}
+
+.green {
+    background: #062D24;
+    color: #17A07F;
+}
+
+.orange {
+    background: #442B15;
+    color: #F2994A;
+}
+
+.silver {
+    background: rgba(121, 126, 149, 0.15);
+    color: #797E95;
+}
+
+.gold {
+    background: rgba(255, 195, 14, 0.15);
+    color: #FFC30E;
+}

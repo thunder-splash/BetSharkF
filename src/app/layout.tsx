@@ -4,9 +4,9 @@ import '@/styles/globals.css'
 import type {Metadata} from 'next'
 import {Inter} from 'next/font/google'
 import styles from '@/styles/global.module.css'
-import {Footer} from "@/components/Layout/Footer/Footer";
-import {GameMenu} from "@/components/Layout/GameMenu/GameMenu";
-import {Header} from "@/components/Layout/Header/Header";
+import {Footer} from "@/components/Primary/Layout/Footer/Footer";
+import {GameMenu} from "@/components/Primary/Layout/GameMenu/GameMenu";
+import {Header} from "@/components/Primary/Layout/Header/Header";
 
 const inter = Inter({subsets: ['latin']})
 

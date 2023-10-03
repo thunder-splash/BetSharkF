@@ -55,7 +55,7 @@
     transition: .3s;
 }
 
-.navigation li a:hover{
+.navigation li a:hover {
     color: #202843;
     transition: all .4s ease-in;
 }
@@ -99,11 +99,13 @@
     display: flex;
     gap: 10px;
 }
+
 .userName img.avatar {
     width: 40px;
     height: 40px;
     border-radius: 8px;
 }
+
 .userName .userId {
     display: flex;
     flex-direction: column;
@@ -112,6 +114,7 @@
     font-weight: 600;
     gap: 4px;
 }
+
 .userName .userId span {
     color: #666b84;
     background: #191c26;

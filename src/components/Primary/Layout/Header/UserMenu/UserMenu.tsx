@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
+import {Fragment} from "react";
+import {Menu, Transition} from "@headlessui/react";
 
-import styles from "./header.module.css"
+import styles from "../header.module.css"
+
 type UserMenuProps = {
     onLogout: () => void;
 };
 
-export default function UserMenu({ onLogout }: UserMenuProps) {
+export default function UserMenu({onLogout}: UserMenuProps) {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button className="btn dropdown">
-                    <img className="avatar" src="/Avatar.png" alt="" />
+                    <img className="avatar" src="/Avatar.png" alt=""/>
                     janstay
                 </Menu.Button>
             </div>
@@ -25,11 +26,12 @@ export default function UserMenu({ onLogout }: UserMenuProps) {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
             >
-                <Menu.Items className="dropdown-list account absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y focus:outline-none">
+                <Menu.Items
+                    className="dropdown-list account absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y focus:outline-none">
                     <Menu.Item>
                         <Link href="#" className="dropdown-item">
                             <div className={`${styles.userName} py-1`}>
-                                <img className={`${styles.avatar}`} src="/Avatar.png" alt="" />
+                                <img className={`${styles.avatar}`} src="/Avatar.png" alt=""/>
                                 <div className={`${styles.userId}`}>
                                     janstay
                                     <span>ID: 420848</span>
@@ -40,31 +42,31 @@ export default function UserMenu({ onLogout }: UserMenuProps) {
                     <div className="divider py-1">
                         <Menu.Item>
                             <Link href="#" className="dropdown-item">
-                                <img src="/document.svg" alt="" />
+                                <img src="/document.svg" alt=""/>
                                 Edit
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
                             <Link href="/settings" className="dropdown-item">
-                                <img src="/settings.svg" alt="" />
+                                <img src="/settings.svg" alt=""/>
                                 Settings
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
                             <Link href="/transactions/bets" className="dropdown-item">
-                                <img src="/clock.svg" alt="" />
+                                <img src="/clock.svg" alt=""/>
                                 Bets
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
                             <Link href="#" className="dropdown-item">
-                                <img src="/shield.svg" alt="" />
+                                <img src="/shield.svg" alt=""/>
                                 Provably Fair
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
                             <Link href="/support" className="dropdown-item">
-                                <img src="/supporting.svg" alt="" />
+                                <img src="/supporting.svg" alt=""/>
                                 Support
                             </Link>
                         </Menu.Item>
@@ -72,7 +74,7 @@ export default function UserMenu({ onLogout }: UserMenuProps) {
                     <div className="divider py-1">
                         <Menu.Item>
                             <Link href="#" className="dropdown-item logout" onClick={onLogout}>
-                                <img src="/log-out.svg" alt="" />
+                                <img src="/log-out.svg" alt=""/>
                                 Logout
                             </Link>
                         </Menu.Item>
