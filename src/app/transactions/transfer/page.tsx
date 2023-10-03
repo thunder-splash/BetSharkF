@@ -1,7 +1,7 @@
-import Deposit from "@/components/Transactions/Pages/Deposit/Deposit";
+import Transfer from "@/components/Transactions/Pages/Transfer/Transfer";
 
 export default function Transactions() {
     return (
-        <Deposit/>
+        <Transfer/>
     )
 }
