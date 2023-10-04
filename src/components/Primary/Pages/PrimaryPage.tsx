@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import LivePayouts from "@/components/Primary/Layout/LivePayouts/LivePayouts";
+
 export default function PrimaryPage() {
 
     const cardsMain = [
