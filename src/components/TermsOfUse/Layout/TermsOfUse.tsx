@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@/styles/termsofuse/termsofuse.module.css';
+import LivePayouts from "@/components/Primary/Layout/LivePayouts/LivePayouts";
 
 export default function TermsOfUse() {
     return (

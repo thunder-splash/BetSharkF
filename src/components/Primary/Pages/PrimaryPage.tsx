@@ -1,5 +1,7 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
+import LivePayouts from "@/components/Primary/Layout/LivePayouts/LivePayouts";
 export default function PrimaryPage() {
 
     const cardsMain = [
@@ -101,6 +103,7 @@ export default function PrimaryPage() {
             <section className='live-payouts'>
                 <h2>Live payouts & latest bet</h2>
                 <p className='abouttext'>The latest payouts and bets are collected here.</p>
+                <LivePayouts />
             </section>
         </>
     );
