@@ -524,3 +524,54 @@ header .btn.sum::before {
     font-weight: 500;
     background: #5271ff;
 }
+  
+  .vip-system-container {
+    display: block;
+    width: 990px;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--black-50, #191C26);
+  }
+  
+  .vip-row-images {
+    display: flex;
+    height: 132px;
+    padding: 16px;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--black-25, #13161E);
+  }
+
+  .vip-row-images img:nth-child(1) {
+    margin-left:240px
+  }
+  .vip-row{
+    padding: 15px 16px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--black-200, #262A37);
+  }
+  .vip-row:nth-child(odd) {
+    color: var(--black-800, #666B84);
+    background: var(--black-100, #202430);
+  }
+  .vip-column:nth-child(1) {
+    color: var(--black-900, #797E95);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left:0px;
+  }
+  .vip-column:nth-child(2) {
+    margin-left:65px;
+  }
+  .vip-column:nth-child(3) {
+    margin-left:30px;
+  }
+  .vip-column{
+    margin-left:0px;
+  }

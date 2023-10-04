@@ -98,9 +98,59 @@ export default function PrimaryPage() {
                 </div>
             </section>
             <section className='vip-system'>
-                <h2>The #1 VIP system</h2>
-                <p className='abouttext'>We tell you more about the possible bonuses of each status.</p>
-            </section>
+                <h2 className="text-center">The #1 VIP system</h2>
+                <p className='abouttext text-center'>We tell you more about the possible bonuses of each status.</p>
+                <div className="vip-system-container p-4 rounded-lg w-full max-w-screen-lg mx-auto grid grid-cols-4 gap-4">
+                    <div className="vip-row-images col-span-4 flex justify-center">
+                        <img src="/vip_crd_regular.svg" className="mx-4" />
+                        <img src="/vip_crd_silver.svg" className="mx-4" />
+                        <img src="/vip_crd_gold.svg" className="mx-4" />
+                    </div>
+                    <div className="vip-row col-span-4 p-4 rounded-lg grid grid-cols-4 gap-4">
+                        <div className="vip-column col-span-1">
+                            <p>Your turnover</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>$0-10,000</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>$10,000 - 20,000</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>$20,000+</p>
+                        </div>
+                    </div>
+                    <div className="vip-row col-span-4 p-4 rounded-lg grid grid-cols-4 gap-4">
+                        <div className="vip-column col-span-1">
+                            <p>Withdrawal fee</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>1%</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>0.5%</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div className="vip-row col-span-4 p-4 rounded-lg grid grid-cols-4 gap-4">
+                        <div className="vip-column col-span-1">
+                            <p>Weekly bonus</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>#402</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>#402</p>
+                        </div>
+                        <div className="vip-column col-span-1">
+                            <p>#402</p>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
             <section className='live-payouts'>
                 <h2>Live payouts & latest bet</h2>
                 <p className='abouttext'>The latest payouts and bets are collected here.</p>
