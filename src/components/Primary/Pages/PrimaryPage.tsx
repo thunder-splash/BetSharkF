@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./PrimaryPage.module.css"
 
 export default function PrimaryPage() {
 
@@ -39,68 +40,77 @@ export default function PrimaryPage() {
 
     return (
         <>
-            <section className='main-section'>
-                <h1 className='h1onpage'>New era of online<br></br> gaming crypto casino</h1>
-                <p className='subtextmain'>We provide a $3,000 welcome bonus for all new players.</p>
-                <button className='join-button'>Join Now & Play</button>
+            <section className={styles.main_section}>
+                <div className={styles.mainlsec}>
+                    <img src="/mainl1.svg" className={styles.mainl1}></img>
+                    <img src="/mainl2.svg" className={styles.mainl2}></img>
+                </div>
+                <h1 className={styles.h1onpage}>New era of online<br></br> gaming crypto casino</h1>
+                <p className={styles.subtextmain}>We provide a $3,000 welcome bonus for all new players.</p>
+                <button className={styles.join_button}>Join Now & Play</button>
             </section>
-            <section className='main-section_cards'>
-                <p className='secondtitlet'>There's a reason 200 000 worldwide players rate us so good</p>
-                <p className='secondtitleb'>ACTUALLY THERE ARE A LOT OF REASONS.</p>
-                <div className='card-grid'>
+            <section className={styles.main_section_cards}>
+                <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
+                <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
+                <div className={styles.card_grid}>
                     {cardsMain.map((card) => (
-                        <div key={card.id} className='cardmain'>
+                        <div key={card.id} className={styles.cardmain}>
                             <img src={card.image}/>
-                            <p className="cardtt">{card.title}</p>
-                            <p className="cardut">{card.subtitle}</p>
+                            <p className={styles.cardtt}>{card.title}</p>
+                            <p className={styles.cardut}>{card.subtitle}</p>
                         </div>
                     ))}
                 </div>
             </section>
-            <section className='how-it-works'>
-                <h2 className='pmtitle'>How it all works</h2>
-                <p className='abouttext'>Step-by-step instructions on how it all works.</p>
-                <div className='hiw-grid'>
+            <section className={styles.how_it_works}>
+                <div className={styles.hiwgrad}></div>
+                <h2 className={styles.pmtitle}>How it all works</h2>
+                <p className={styles.abouttext}>Step-by-step instructions on how it all works.</p>
+                <div className={styles.hiw_grid}>
                     {cardsHiw.map((card) => (
-                        <div key={card.id} className='cardhiw'>
+                        <div key={card.id} className={styles.cardhiw}>
                             <img src={card.image}/>
-                            <p className="hiwtt">{card.title}</p>
-                            <p className="hiwut">{card.subtitle}</p>
+                            <p className={styles.hiwtt}>{card.title}</p>
+                            <p className={styles.hiwut}>{card.subtitle}</p>
                         </div>
                     ))}
                 </div>
-                <button className='join-button-hiw'>JOIN NOW & PLAY</button>
+                <button className={styles.join_button_hiw}>JOIN NOW & PLAY</button>
             </section>
-            <section className='recommended-game'>
+            <section className={styles.recommended_game}>
                 <h2>Recommended game</h2>
-                <p className='abouttext'>This is a selection of our games, you can play any of them.</p>
-                <div className='rec-grid'>
+                <p className={styles.abouttext}>This is a selection of our games, you can play any of them.</p>
+                <div className={styles.rec_grid}>
                     {cardsRec.map((card) => (
-                        <div key={card.id} className='cardrec'>
+                        <div key={card.id} className={styles.cardrec}>
                             <img src={card.image}/>
-                            <button className='playnow'>Play now</button>
+                            <button className={styles.playnow}>Play now</button>
                         </div>
                     ))}
                 </div>
-                <div className="rec-pay">
+                <div className={styles.rec_pay}>
                     <p>Want to play? Deposit now</p>
                     {recCoins.map((coin) => (
                         <div key={coin.id}>
                             <img src={coin.image}/>
                         </div>
                     ))}
-                    <Link href="/transactions/deposit" className="recbut">
+                    {/* Предполагается, что вы импортируете Link из 'next/link' */}
+                    {/* Если это не так, замените Link на соответствующий компонент или элемент */}
+                    {/* Если вы используете 'react-router-dom', замените Link на NavLink или RouterLink */}
+                    {/* Если вы не используете маршрутизацию, замените Link на button или a, в зависимости от вашего случая */}
+                    <Link href="/transactions/deposit" className={styles.recbut}>
                         Deposit
                     </Link>
                 </div>
             </section>
-            <section className='vip-system'>
+            <section className={styles.vip_system}>
                 <h2>The #1 VIP system</h2>
-                <p className='abouttext'>We tell you more about the possible bonuses of each status.</p>
+                <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
             </section>
-            <section className='live-payouts'>
+            <section className={styles.live_payouts}>
                 <h2>Live payouts & latest bet</h2>
-                <p className='abouttext'>The latest payouts and bets are collected here.</p>
+                <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
             </section>
         </>
     );

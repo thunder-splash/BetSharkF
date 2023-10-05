@@ -1,0 +1,285 @@
+.main_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/main_section_bg.svg');
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    background-position-x: center;
+    position: relative;
+}
+.mainlsec{
+    display: flex;
+    justify-content: center;
+}
+.mainl1{
+    margin-right: 500px;
+}
+.mainl1 , .mainl2{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.main_section_cards,.how_it_works,
+.recommended_game,
+.vip_system,
+.live_payouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 90px;
+    z-index: 1000;
+}
+
+.secondtitlet{
+    color:#797E95;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.secondtitleb{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    padding-bottom: 40px;
+}
+
+.how_it_works h2,
+.recommended_game h2,
+.vip_system h2,
+.live_payouts h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.96px;
+}
+.h1onpage {
+    color: #FFF;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: -1.6px;
+}
+.how_it_works {
+    position: relative;
+}
+.hiwgrad {
+    position: absolute;
+    top: 0;
+    width: 990px; /* Установите ширину границы */
+    border-top: 4px solid #17A07F; /* Установите стиль границы */
+}
+.hiwl1{
+    z-index: 0;
+    top: 0;
+}
+.abouttext{
+    color: #555A71;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 8px;
+    padding-bottom: 40px;
+}
+
+.subtextmain{
+    color: #555A71;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+.join_button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0px 4px 0px 0px #263475;
+    margin-top: 40px;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cardmain {
+    border-radius: 12px;
+    border: 1px solid #202430;
+    background: #191C26;
+    backdrop-filter: blur(10px);
+    display: flex;
+    width: 314px;
+    height: 196px;
+    padding: 24px 16px 16px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.cardtt{
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: -4px;
+}
+
+.cardut{
+    color: #555A71;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -18px;
+}
+
+.colums {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 372px 504px;
+}
+
+.hiw_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cardhiw{
+    display: flex;
+    width: 314px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    user-select: none;
+    border-radius: 12px;
+    background: linear-gradient(99deg, #191C26 0%, rgba(25, 28, 38, 0.35) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.hiwtt{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+}
+
+.hiwut{
+    color: #555A71;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: -8px;
+}
+
+.join_button_hiw{
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #17A07F;
+    background: #17A07F;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    margin-top: 56px;
+}
+
+.rec_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cardrec{
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #191C26;
+}
+
+.playnow{
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #5271FF;
+    width: 100%;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
+.rec_pay{
+    display: flex;
+    width: 990px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 20%), linear-gradient(90deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    margin-top: 60px;
+}
+
+.recbut{
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-left: 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: #5271ff;
+}
