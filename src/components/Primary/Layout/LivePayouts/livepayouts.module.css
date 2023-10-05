@@ -1,0 +1,90 @@
+.livePayoutsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: var(--black-50, #191C26);
+    border-radius: 12px;
+    width: 100%; 
+    max-width: 990px; 
+    overflow: auto; 
+    padding: 16px;
+  }
+  
+  .tableHeader {
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--black-25, #13161E);
+    color: var(--black-600, #4A4E62);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 8px 16px;
+  }
+
+  .tableHeader p:nth-child(1),
+  .tableItem p:nth-child(1) {
+    width: 160px; 
+  }
+  
+  .tableHeader p:nth-child(2),
+  .tableItem p:nth-child(2) {
+    width: 160px;
+  }
+  
+  .tableHeader p:nth-child(3),
+  .tableItem p:nth-child(3) {
+    width: 458px; 
+  }
+  
+  .tableHeader p:nth-child(4),
+  .tableItem p:nth-child(4) {
+    width: 180px; 
+  }
+  .tableItem:first-child {
+    margin-top: 0;
+  }
+  .tableItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 15px 16px;
+    border-radius: 8px;
+    background: var(--black-200, #262A37);
+    color: white;
+    margin-top: 8px;
+  }
+  
+  .tableItem:nth-child(even) {
+    background: var(--black-100, #202430);
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttonGroup button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: var(--black-50, #191C26);
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .buttonGroup button.active {
+    background: var(--primary-50, #202843);
+    color: var(--primary-400, #5271FF);
+  }
+  
+  .buttonGroup button:hover {
+    background: var(--primary-50, #202843);
+    color: var(--primary-400, #5271FF);
+  }
+  

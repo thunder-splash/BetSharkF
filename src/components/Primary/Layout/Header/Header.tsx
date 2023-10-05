@@ -37,7 +37,7 @@ export const Header = () => {
 
                     <ul className={`${styles.navigation}`}>
                         <li>
-                            <Link href="#">Terms of use</Link>
+                            <Link href="/termsofuse">Terms of use</Link>
                         </li>
                         <li>
                             <Link href="#">Provably fair</Link>
