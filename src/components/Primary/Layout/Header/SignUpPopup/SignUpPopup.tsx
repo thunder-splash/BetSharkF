@@ -1,5 +1,5 @@
 import React, {useState, ChangeEvent, FormEvent} from "react";
-import styles from "./SignUpPopup.module.css";
+import styles from "./signuppopup.css";
 
 interface SignUpProps {
     handleSignUp: (formData: any) => void;

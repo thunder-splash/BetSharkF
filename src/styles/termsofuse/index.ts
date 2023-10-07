@@ -1,1 +1,0 @@
-export { default as style } from './termsofuse.module.css';
