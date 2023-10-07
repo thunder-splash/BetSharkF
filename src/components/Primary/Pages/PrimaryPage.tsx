@@ -105,9 +105,58 @@ export default function PrimaryPage() {
                 </div>
             </section>
             <section className={styles.vip_system}>
-                <h2>The #1 VIP system</h2>
+                <h2 className={styles.pmtitle}>The #1 VIP system</h2>
                 <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
-            </section>
+            <div className={styles.vip_system_container}>
+                <div className={styles.vip_row_images}>
+                    <img src="/vip_crd_regular.svg" className={styles.cardimg}/>
+                    <img src="/vip_crd_silver.svg" className={styles.cardimg} />
+                    <img src="/vip_crd_gold.svg" className={styles.cardimg} />
+                </div>
+                <div className={styles.vip_row}>
+                    <div className={styles.vip_column}>
+                        <p>Your turnover</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>$0-10,000</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>$10,000 - 20,000</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>$20,000+</p>
+                    </div>
+                </div>
+                <div className={styles.vip_row}>
+                    <div className={styles.vip_column}>
+                        <p>Withdrawal fee</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>1%</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>0.5%</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div className={styles.vip_row}>
+                    <div className={styles.vip_column}>
+                        <p>Weekly bonus</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>#402</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>#402</p>
+                    </div>
+                    <div className={styles.vip_column}>
+                        <p>#402</p>
+                    </div>
+                </div>
+            </div>
+        </section>
             <section className={styles.live_payouts}>
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>

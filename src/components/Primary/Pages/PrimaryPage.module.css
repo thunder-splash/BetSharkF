@@ -283,3 +283,62 @@
     font-weight: 500;
     background: #5271ff;
 }
+.vip_system_container{
+    display: block;
+    width: 990px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #191C26;
+}
+.vip_row_images{
+    display: flex;
+    height: 132px;
+    padding: 16px;
+    align-items: center;
+    border-radius: 8px;
+    background: #13161E;
+    grid-column: span 4 / span 4;
+    justify-content: center;
+}
+.cardimg{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.vip_row_images img:nth-child(1) {
+    margin-left:240px
+}
+.vip_row{
+    padding: 15px 16px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    border-radius: 8px 0px 0px 8px;
+    background: #262A37;
+
+    grid-column: span 4 / span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.vip_row:nth-child(odd) {
+    color: #666B84;
+    background: #202430;
+}
+.vip_column:nth-child(1) {
+    color: #797E95;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left:0px;
+}
+.vip_column:nth-child(2) {
+    margin-left:65px;
+}
+.vip_column:nth-child(3) {
+    margin-left:30px;
+}
+.vip_column{
+    margin-left:0px;
+    grid-column: span 1 / span 1;
+}
