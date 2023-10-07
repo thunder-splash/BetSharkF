@@ -49,6 +49,8 @@ aside {
     display: flex;
     justify-content: center;
     padding-top: 24px;
+
+    display: none;
 }
 
 aside ul.game-list li a {
