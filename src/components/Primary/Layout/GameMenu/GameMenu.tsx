@@ -13,7 +13,7 @@ export const GameMenu = () => {
             <aside className={styles.main}>
                 <ul className="game-list">
                     <li>
-                        <Link href="/transactions/jackpot">
+                        <Link href="/games/jackpot">
                             <svg
                                 width="20"
                                 height="20"
@@ -29,7 +29,7 @@ export const GameMenu = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/transactions/roulette">
+                        <Link href="/games/roulette">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath={"url(#clip0_335_3453)"}>
@@ -48,7 +48,7 @@ export const GameMenu = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/transactions/coinflip">
+                        <Link href="/games/coinflip">
                             <svg
                                 width="20"
                                 height="20"
@@ -64,7 +64,7 @@ export const GameMenu = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/transactions/dice">
+                        <Link href="/games/dice">
                             <svg
                                 width="20"
                                 height="20"

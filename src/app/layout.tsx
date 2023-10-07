@@ -27,7 +27,9 @@ export default function RootLayout({children}: {
                 <Header/>
                 {/* <Chat/> */}
                 {children}
-                <Footer/>
+                <div style={{backgroundColor: '#191C26', width: '100%'}}>
+                    <Footer/>
+                </div>
             </div>
         </div>
         </body>
