@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/termsofuse/termsofuse.module.css';
+import styles from './termsofuse.module.css';
 
 export default function TermsOfUse() {
     return (

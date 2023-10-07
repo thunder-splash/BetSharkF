@@ -37,5 +37,5 @@
     align-items: flex-start;
     gap: 32px;
     border-radius: 16px;
-    background: var(--black-100, #202430);
+    background: #202430;
 }
