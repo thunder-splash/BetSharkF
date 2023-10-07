@@ -21,6 +21,16 @@
     top: 0;
     z-index: 0;
 }
+.cardsl1 , .cardsl2{
+    position: absolute;
+    z-index: 0;
+}
+.cardsl1{
+    left:0;
+}
+.cardsl2{
+    right:0;
+}
 .main_section_cards,.how_it_works,
 .recommended_game,
 .vip_system,
@@ -73,10 +83,10 @@
     line-height: 98px;
     letter-spacing: -1.6px;
 }
-.how_it_works {
+.how_it_works , .vip_system {
     position: relative;
 }
-.hiwgrad {
+.greengrad {
     position: absolute;
     top: 0;
     width: 990px; /* Установите ширину границы */

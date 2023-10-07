@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import styles from "./livepayouts.module.css";
 
@@ -18,7 +20,7 @@ interface Bet {
 }
 
 function LivePayouts() {
-  const [view, setView] = useState<"livePayouts" | "bets">("livePayouts");
+  const [view, setView] = useState("livePayouts");
 
   const payouts: Payout[] = [
     {
@@ -59,14 +61,14 @@ function LivePayouts() {
     <>
       <div className={styles.buttonGroup}>
         <button
-          onClick={() => setView("livePayouts")}
-          className={`view-button ${view === "livePayouts" ? "active" : ""}`}
+            onClick={() => setView("livePayouts")}
+            className={`${styles.viewButton} ${view === "livePayouts" ? styles.active : ""}`}
         >
           Live Payouts
         </button>
         <button
-          onClick={() => setView("bets")}
-          className={`view-button ${view === "bets" ? "active" : ""}`}
+            onClick={() => setView("bets")}
+            className={`${styles.viewButton} ${view === "bets" ? styles.active : ""}`}
         >
           Latest Bets
         </button>

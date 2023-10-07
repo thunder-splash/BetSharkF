@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./PrimaryPage.module.css"
+import LivePayouts from "@/components/Primary/Layout/LivePayouts/LivePayouts";
 
 export default function PrimaryPage() {
 
@@ -50,20 +51,22 @@ export default function PrimaryPage() {
                 <button className={styles.join_button}>Join Now & Play</button>
             </section>
             <section className={styles.main_section_cards}>
-                <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
-                <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
-                <div className={styles.card_grid}>
-                    {cardsMain.map((card) => (
-                        <div key={card.id} className={styles.cardmain}>
-                            <img src={card.image}/>
-                            <p className={styles.cardtt}>{card.title}</p>
-                            <p className={styles.cardut}>{card.subtitle}</p>
-                        </div>
-                    ))}
-                </div>
+                    <img src="/lefttoplight.svg" className={styles.cardsl1}></img>
+                    <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
+                    <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
+                    <div className={styles.card_grid}>
+                        {cardsMain.map((card) => (
+                            <div key={card.id} className={styles.cardmain}>
+                                <img src={card.image}/>
+                                <p className={styles.cardtt}>{card.title}</p>
+                                <p className={styles.cardut}>{card.subtitle}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <img src="/rightbottomlight.svg" className={styles.cardsl2}></img>
             </section>
             <section className={styles.how_it_works}>
-                <div className={styles.hiwgrad}></div>
+                <div className={styles.greengrad}></div>
                 <h2 className={styles.pmtitle}>How it all works</h2>
                 <p className={styles.abouttext}>Step-by-step instructions on how it all works.</p>
                 <div className={styles.hiw_grid}>
@@ -105,6 +108,7 @@ export default function PrimaryPage() {
                 </div>
             </section>
             <section className={styles.vip_system}>
+                <div className={styles.greengrad}></div>
                 <h2 className={styles.pmtitle}>The #1 VIP system</h2>
                 <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
             <div className={styles.vip_system_container}>
@@ -160,6 +164,7 @@ export default function PrimaryPage() {
             <section className={styles.live_payouts}>
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
+                <LivePayouts/>
             </section>
         </>
     );
