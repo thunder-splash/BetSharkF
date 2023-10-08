@@ -43,7 +43,7 @@ export const Header = () => {
                             <Link href="#">Provably fair</Link>
                         </li>
                         <li>
-                            <Link href="#">FAQ</Link>
+                            <Link href="/faq">FAQ</Link>
                         </li>
                         <li>
                             <Link href="#">Live Payouts</Link>
