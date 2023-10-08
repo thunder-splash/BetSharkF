@@ -46,7 +46,7 @@ export const Header = () => {
                             <Link href="/faq">FAQ</Link>
                         </li>
                         <li>
-                            <Link href="#">Live Payouts</Link>
+                            <Link href="/livepayouts">Live Payouts</Link>
                         </li>
                     </ul>
                 </div>

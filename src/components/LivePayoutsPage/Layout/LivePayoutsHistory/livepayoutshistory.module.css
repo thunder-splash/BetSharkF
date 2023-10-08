@@ -1,0 +1,102 @@
+.livePayoutsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #191C26;
+  border-radius: 0px 0px 12px 12px;
+  width: 100%; 
+  overflow: auto; 
+  padding: 16px;
+}
+
+.tableHeader {
+  gap: 10px;
+  border-radius: 8px;
+  background: #13161E;
+  color: #4A4E62;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 8px 16px;
+  
+}
+
+.tableHeader,
+.tableItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tableHeader p,
+.tableItem p {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableItem:first-child {
+  margin-top: 0;
+}
+
+.tableItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 16px;
+  border-radius: 8px;
+  background: #262A37;
+  color: white;
+  margin-top: 8px;
+}
+
+
+.tableItem:nth-child(even) {
+  background: #202430;
+}
+
+.header {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--black-100, #202430);
+  background: var(--black-50, #191C26);
+  color: var(--White, #FFF);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; 
+  border-radius: 12px 12px 0px 0px;
+}
+
+.amount_txt {
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 16px;
+  background: var(--black-300, #2C303F);
+  color: var(--black-800, #666B84);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+}
+.amount{
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+}
+.time{
+  color: #797E95;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+}

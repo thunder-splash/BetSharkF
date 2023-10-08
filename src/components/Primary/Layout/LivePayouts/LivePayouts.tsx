@@ -97,17 +97,17 @@ function LivePayouts() {
             <div key={item.id} className={styles.tableItem}>
               {view === "livePayouts" && (
                 <>
-                  <p>{item.time}</p>
+                  <p className={styles.time}>{item.time}</p>
                   <p>{item.username}</p>
-                  <p>{(item as Payout).amount}</p>
+                  <p className={styles.amount}><span className={styles.amount_txt}>{(item as Payout).amount}</span></p>
                   <p>{(item as Payout).tx}</p>
                 </>
               )}
               {view === "bets" && (
                 <>
-                  <p>{item.time}</p>
+                  <p className={styles.time}>{item.time}</p>
                   <p>{(item as Bet).username}</p>
-                  <p>{(item as Bet).betAmount}</p>
+                  <p className={styles.amount}><span className={styles.amount_txt}>{(item as Bet).betAmount}</span></p>
                   <p>{(item as Bet).game}</p>
                 </>
               )}
