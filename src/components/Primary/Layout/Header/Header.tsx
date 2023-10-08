@@ -40,7 +40,7 @@ export const Header = () => {
                             <Link href="/termsofuse">Terms of use</Link>
                         </li>
                         <li>
-                            <Link href="#">Provably fair</Link>
+                            <Link href="/provablyfair">Provably fair</Link>
                         </li>
                         <li>
                             <Link href="/faq">FAQ</Link>
