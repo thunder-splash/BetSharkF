@@ -8,7 +8,7 @@ export default function ProvablyFair() {
             <div className={styles.container}>
                 <div className={styles.headerContainer}>
                     <div className={styles.headerName}>
-                        <Image width={20} height={20} src="/shield.svg" alt="shield Icon" className={styles.icon} />
+                        <Image width={20} height={20} src="/shield-white.svg" alt="shield Icon" className={styles.icon} />
                         <h1>Game round check</h1>
                     </div>
                     <p>Enter a hashed server seed of game to check for fair.</p>
