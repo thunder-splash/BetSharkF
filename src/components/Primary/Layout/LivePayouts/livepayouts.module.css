@@ -50,6 +50,11 @@
     background: #262A37;
     color: white;
     margin-top: 8px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
   }
   
   

@@ -26,7 +26,7 @@ export const Footer = () => {
                         <Link href="/termsofuse">Terms of use</Link>
                     </li>
                     <li>
-                        <Link href="/">Support</Link>
+                        <Link href="/support">Support</Link>
                     </li>
                     <li>
                         <Link href="/faq">FAQs</Link>

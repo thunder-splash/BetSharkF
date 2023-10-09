@@ -1,0 +1,77 @@
+.container {
+    width: 900px;
+    margin: 24px auto;
+  position: relative;
+  z-index: 2;
+  }
+.greenbg{
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  margin-left: -130px;
+}
+.Payouts_container {
+  background: #191C26;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 900px;
+  padding: 16px;
+  max-width: 100%;
+  margin: 24px auto;
+  border-radius: 12px;
+}
+.subtext {
+  color: #555A71;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.supportButton {
+  display: flex;
+  padding: 8px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid  #263475;
+  background:  #263475;
+  color:  #5271FF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.headerContainer {
+  background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.headerContainer h1 {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+
