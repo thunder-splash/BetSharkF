@@ -1,8 +1,15 @@
 .container {
     width: 900px;
     margin: 24px auto;
+  position: relative;
+  z-index: 2;
   }
-  
+.greenbg{
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  margin-left: -130px;
+}
   .Payouts_container {
     background: #191C26;
     display: flex;

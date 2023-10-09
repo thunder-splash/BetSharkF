@@ -11,8 +11,15 @@
     width: 900px;
     max-width: 100%; 
     margin: 24px 0 ;
+    position: relative;
+    z-index: 2;
 }
-
+.greenbg{
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    margin-left: -130px;
+}
 .headerContainer {
     border-radius: 12px 12px 0 0;
     border-bottom: 1px solid #202430;

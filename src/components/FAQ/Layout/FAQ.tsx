@@ -47,78 +47,81 @@ export default function FAQ() {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.FAQ_container}>
-        <div className={styles.headerContainer}>
-          <Image
-            src="/help-circle-white.svg"
-            alt="Help Circle Icon"
-            width={20} height={20}
-            className={styles.icon}
-          />
-          <h1>Frequently Asked Questions</h1>
-          <div className={styles.headerContent}>
-            <button className={styles.supportButton}>Write to support</button>
+      <div>
+        <img src="/greenbgflow.svg" alt="light" className={styles.greenbg}/>
+        <div className={styles.container}>
+          <div className={styles.FAQ_container}>
+            <div className={styles.headerContainer}>
+              <Image
+                  src="/help-circle-white.svg"
+                  alt="Help Circle Icon"
+                  width={20} height={20}
+                  className={styles.icon}
+              />
+              <h1>Frequently Asked Questions</h1>
+              <div className={styles.headerContent}>
+                <button className={styles.supportButton}>Write to support</button>
+              </div>
+            </div>
+            <p className={styles.subtext}>
+              In this block, we have collected and answered the most frequently asked questions.
+            </p>
           </div>
-        </div>
-        <p className={styles.subtext}>
-          In this block, we have collected and answered the most frequently asked questions.
-        </p>
-      </div>
-      <section className={styles.section}>
-        <div className={styles.faqSection}>
-          <div className={styles.faqColumn}>
-            {faqData.slice(0, 4).map((item, index) => (
-              <div
-                key={index}
-                className={`${styles.faqItem} ${
-                  activeItems.includes(index) ? styles.active : ""
-                }`}
-                onClick={() => toggleItem(index)}
-              >
-                <div className={styles.faqContent}>
-                  <span>{item.question}</span>
-                  <span
-                    className={styles.toggleButton}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleItem(index);
-                    }}
-                  >
+          <section className={styles.section}>
+            <div className={styles.faqSection}>
+              <div className={styles.faqColumn}>
+                {faqData.slice(0, 4).map((item, index) => (
+                    <div
+                        key={index}
+                        className={`${styles.faqItem} ${
+                            activeItems.includes(index) ? styles.active : ""
+                        }`}
+                        onClick={() => toggleItem(index)}
+                    >
+                      <div className={styles.faqContent}>
+                        <span>{item.question}</span>
+                        <span
+                            className={styles.toggleButton}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleItem(index);
+                            }}
+                        >
                     {activeItems.includes(index) ? "-" : "+"}
                   </span>
-                </div>
-                <div className={styles.faqAnswer}>{item.answer}</div>
+                      </div>
+                      <div className={styles.faqAnswer}>{item.answer}</div>
+                    </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className={styles.faqColumn}>
-            {faqData.slice(4, 7).map((item, index) => (
-              <div
-                key={index + 4}
-                className={`${styles.faqItem} ${
-                  activeItems.includes(index + 4) ? styles.active : ""
-                }`}
-                onClick={() => toggleItem(index + 4)}
-              >
-                <div className={styles.faqContent}>
-                  <span>{item.question}</span>
-                  <span
-                    className={styles.toggleButton}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleItem(index + 4);
-                    }}
-                  >
+              <div className={styles.faqColumn}>
+                {faqData.slice(4, 7).map((item, index) => (
+                    <div
+                        key={index + 4}
+                        className={`${styles.faqItem} ${
+                            activeItems.includes(index + 4) ? styles.active : ""
+                        }`}
+                        onClick={() => toggleItem(index + 4)}
+                    >
+                      <div className={styles.faqContent}>
+                        <span>{item.question}</span>
+                        <span
+                            className={styles.toggleButton}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleItem(index + 4);
+                            }}
+                        >
                     {activeItems.includes(index + 4) ? "-" : "+"}
                   </span>
-                </div>
-                <div className={styles.faqAnswer}>{item.answer}</div>
+                      </div>
+                      <div className={styles.faqAnswer}>{item.answer}</div>
+                    </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
+      </div>
   );
 }

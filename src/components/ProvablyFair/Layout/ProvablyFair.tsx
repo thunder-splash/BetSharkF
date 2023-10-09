@@ -5,6 +5,7 @@ import styles from './ProvablyFair.module.css';
 export default function ProvablyFair() {
     return (
         <div>
+            <img src="/greenbgflow.svg" alt="light" className={styles.greenbg}/>
             <div className={styles.container}>
                 <div className={styles.headerContainer}>
                     <div className={styles.headerName}>
