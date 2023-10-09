@@ -34,7 +34,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
 
 p {
@@ -43,7 +43,7 @@ p {
 
 aside {
     position: sticky;
-    top: 0px;
+    top: 0;
     width: 80px;
     height: 100vh;
     display: flex;
@@ -82,7 +82,7 @@ aside ul.game-list li a span {
 
 main {
     background: #13161e;
-    border-radius: 24px 0px 0px 24px;
+    border-radius: 24px 0 0 24px;
     width: 100%;
 }
 

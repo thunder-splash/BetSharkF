@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from 'next/image';
 import styles from "./footer.module.css";
 
 export const Footer = () => {
@@ -7,7 +7,7 @@ export const Footer = () => {
         <footer className={`${styles.footer} container grid grid-cols-12`}>
             <div className="col-span-6">
                 <Link href="/" className={`${styles.logo}`}>
-                    <img src="/logo.svg" alt=""/>
+                    <Image src="/logo.svg" alt="logo" width={32} height={32}/>
                     BetShark
                 </Link>
                 <p>

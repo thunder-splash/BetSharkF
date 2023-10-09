@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import {Fragment} from "react";
 import {Menu, Transition} from "@headlessui/react";
 
@@ -7,7 +8,7 @@ export default function Notification() {
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button className="btn">
-                    <img src="/bell.svg" alt="bell"/>
+                    <Image src="/bell.svg" alt="bell" width={20} height={20} />
                 </Menu.Button>
             </div>
             <Transition

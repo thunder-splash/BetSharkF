@@ -129,7 +129,7 @@
     border: none;
     cursor: pointer;
     display: flex;
-    box-shadow: 0px 4px 0px 0px #263475;
+    box-shadow: 0 4px 0 0 #263475;
     margin-top: 40px;
     padding: 16px 28px;
     justify-content: center;
@@ -332,7 +332,7 @@
     align-items: center;
     gap: 10px;
     margin-top: 8px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0 0 8px;
     background: #262A37;
 
     grid-column: span 4 / span 4;
@@ -350,7 +350,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
-    margin-left:0px;
+    margin-left:0;
 }
 .vip_column:nth-child(2) {
     margin-left:65px;
@@ -359,6 +359,6 @@
     margin-left:30px;
 }
 .vip_column{
-    margin-left:0px;
+    margin-left:0;
     grid-column: span 1 / span 1;
 }

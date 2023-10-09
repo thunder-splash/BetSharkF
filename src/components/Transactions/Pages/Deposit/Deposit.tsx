@@ -2,6 +2,7 @@
 
 import {stylesContent, stylesForm, style} from '../../../../styles/transactions';
 import TransactionHistoryList from "@/components/Transactions/Modules/TransactionHistoryList/TransactionHistoryList";
+import Image from "next/image";
 
 export default function Deposit() {
     return (
@@ -13,7 +14,7 @@ export default function Deposit() {
                 <div className={`${stylesContent.content} ${stylesContent.divider}`}>
                     <div className={`${style.coins}`}>
                         <div className={style.coinItem}>
-                            <img src="/coins/USDT.svg" className={style.icon} alt="USDT"/>
+                            <Image width={52} height={52} src="/coins/USDT.svg" className={style.icon} alt="icon"/>
                             USDT
                         </div>
                     </div>

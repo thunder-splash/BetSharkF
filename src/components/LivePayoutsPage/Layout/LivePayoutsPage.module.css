@@ -4,7 +4,7 @@
   }
   
   .Payouts_container {
-    background: var(--black-50, #191C26);
+    background: #191C26;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -37,8 +37,7 @@
   }
   
   .headerContainer h1 {
-    color: var(--White, #FFF);
-    font-family: Inter;
+    color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;

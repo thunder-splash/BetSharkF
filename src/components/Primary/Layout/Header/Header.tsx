@@ -3,6 +3,7 @@ import Notification from "./Notifications/Notifications";
 import UserMenu from "./UserMenu/UserMenu";
 import styles from "./header.module.css";
 import {useState} from "react";
+import Image from 'next/image';
 import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
 export const Header = () => {
@@ -31,7 +32,7 @@ export const Header = () => {
             <div className={isAuth ? `${styles.wrapperAuth}` : `${styles.wrapper}`}>
                 <div className={`${styles.navWrapper}`}>
                     <Link href="/" className={`${styles.logo}`}>
-                        <img src="/logo.svg" alt=""/>
+                        <Image src="/logo.svg" alt="logo" width={32} height={32}/>
                         BetShark
                     </Link>
 
@@ -60,10 +61,10 @@ export const Header = () => {
                             Deposit
                         </Link>
                         <Link href="#" className="btn">
-                            <img src="/present.svg" alt=""/>
+                            <Image src="/present.svg" alt="present" width={20} height={20}/>
                         </Link>
                         <Link href="#" className="btn">
-                            <img src="/supporting.svg" alt=""/>
+                            <Image src="/supporting.svg" alt="support" width={20} height={20}/>
                         </Link>
 
                         <Notification/>

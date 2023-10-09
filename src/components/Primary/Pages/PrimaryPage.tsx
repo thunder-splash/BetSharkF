@@ -1,5 +1,6 @@
 import Link from "next/link";
-import styles from "./PrimaryPage.module.css"
+import styles from "./PrimaryPage.module.css";
+import Image from 'next/image';
 import LivePayouts from "@/components/Primary/Layout/LivePayouts/LivePayouts";
 
 export default function PrimaryPage() {
@@ -43,32 +44,32 @@ export default function PrimaryPage() {
         <>
             <section className={styles.main_section}>
                 <div className={styles.mainlsec}>
-                    <img src="/mainl1.svg" className={styles.mainl1}></img>
-                    <img src="/mainl2.svg" className={styles.mainl2}></img>
+                    <img src="/mainl1.svg" alt="light" className={styles.mainl1}/>
+                    <img src="/mainl2.svg" alt="light" className={styles.mainl2}/>
                 </div>
                 <h1 className={styles.h1onpage}>New era of online<br></br> gaming crypto casino</h1>
                 <p className={styles.subtextmain}>We provide a $3,000 welcome bonus for all new players.</p>
                 <button className={styles.join_button}>Join Now & Play</button>
             </section>
             <section className={styles.main_section_cards}>
-                    <img src="/lefttoplight.svg" className={styles.cardsl1}></img>
+                    <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
                     <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
                     <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
                     <div className={styles.card_grid}>
                         {cardsMain.map((card) => (
                             <div key={card.id} className={styles.cardmain}>
-                                <img src={card.image}/>
+                                <Image alt="cardimg" width={56} height={56} src={card.image}/>
                                 <p className={styles.cardtt}>{card.title}</p>
                                 <p className={styles.cardut}>{card.subtitle}</p>
                             </div>
                         ))}
                     </div>
-                    <img src="/rightbottomlight.svg" className={styles.cardsl2}></img>
+                    <img src="/rightbottomlight.svg" alt="light" className={styles.cardsl2}/>
             </section>
             <section className={styles.how_it_works}>
                 <div className={styles.greengrad}>
                     <div className={styles.hiwlsec}>
-                        <img src="/hiwl2.svg" className={styles.hiwl1}></img>
+                        <img src="/hiwl2.svg" alt="light" className={styles.hiwl1}/>
                         {/*<img src="/hiwl1.svg" className={styles.hiwl2}></img>*/}
                     </div>
                 </div>
@@ -77,7 +78,7 @@ export default function PrimaryPage() {
                 <div className={styles.hiw_grid}>
                     {cardsHiw.map((card) => (
                         <div key={card.id} className={styles.cardhiw}>
-                            <img src={card.image}/>
+                            <Image alt="cardimg" width={48} height={48} src={card.image}/>
                             <p className={styles.hiwtt}>{card.title}</p>
                             <p className={styles.hiwut}>{card.subtitle}</p>
                         </div>
@@ -92,7 +93,7 @@ export default function PrimaryPage() {
                 <div className={styles.rec_grid}>
                     {cardsRec.map((card) => (
                         <div key={card.id} className={styles.cardrec}>
-                            <img src={card.image}/>
+                            <Image alt="cardimg" width={207} height={207} src={card.image}/>
                             <button className={styles.playnow}>Play now</button>
                         </div>
                     ))}
@@ -101,7 +102,7 @@ export default function PrimaryPage() {
                     <p>Want to play? Deposit now</p>
                     {recCoins.map((coin) => (
                         <div key={coin.id}>
-                            <img src={coin.image}/>
+                            <Image alt="coinimg" width={32} height={32} src={coin.image}/>
                         </div>
                     ))}
                     {/* Предполагается, что вы импортируете Link из 'next/link' */}
@@ -115,15 +116,15 @@ export default function PrimaryPage() {
             </section>
             <section className={styles.vip_system}>
                 {/*<div className={styles.greengrad}>*/}
-                {/*    <img src="/hiwl2.svg" className={styles.hiwl1}></img>*/}
+                {/*    <img src="/hiwl2.svg" alt="light" className={styles.hiwl1}></img>*/}
                 {/*</div>*/}
                 <h2 className={styles.pmtitle}>The #1 VIP system</h2>
                 <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
             <div className={styles.vip_system_container}>
                 <div className={styles.vip_row_images}>
-                    <img src="/vip_crd_regular.svg" className={styles.cardimg}/>
-                    <img src="/vip_crd_silver.svg" className={styles.cardimg} />
-                    <img src="/vip_crd_gold.svg" className={styles.cardimg} />
+                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_regular.svg" className={styles.cardimg}/>
+                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_silver.svg" className={styles.cardimg} />
+                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_gold.svg" className={styles.cardimg} />
                 </div>
                 <div className={styles.vip_row}>
                     <div className={styles.vip_column}>
@@ -170,7 +171,7 @@ export default function PrimaryPage() {
             </div>
         </section>
             <section className={styles.live_payouts}>
-                {/*<img src="/gamesl.svg" className={styles.recgl1}></img>*/}
+                {/*<img src="/gamesl.svg" alt="light" className={styles.recgl1}></img>*/}
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
                 <LivePayouts/>

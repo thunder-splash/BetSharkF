@@ -1,5 +1,5 @@
 .container {
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 0 0 12px 12px;
     background: #191C26;
     display: flex;
     padding: 16px;
@@ -14,7 +14,7 @@
 }
 
 .headerContainer {
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0 0;
     border-bottom: 1px solid #202430;
     background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     backdrop-filter: blur(10px);

@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from "react";
+import Image from 'next/image';
 import styles from "./FAQ.module.css";
 
 export default function FAQ() {
@@ -49,9 +50,10 @@ export default function FAQ() {
     <div className={styles.container}>
       <div className={styles.FAQ_container}>
         <div className={styles.headerContainer}>
-          <img
+          <Image
             src="/help-circle-white.svg"
             alt="Help Circle Icon"
+            width={20} height={20}
             className={styles.icon}
           />
           <h1>Frequently Asked Questions</h1>

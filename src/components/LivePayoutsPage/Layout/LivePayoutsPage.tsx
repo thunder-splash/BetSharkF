@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useState } from "react";
+import React from "react";
+import Image from 'next/image';
 import styles from "./LivePayoutsPage.module.css";
 import LivePayouts from "@/components/LivePayoutsPage/Layout/LivePayoutsHistory/LivePayoutsHistory";
 
@@ -9,11 +10,7 @@ export default function LivePayoutsPage() {
     <div className={styles.container}>
       <div className={styles.Payouts_container}>
         <div className={styles.headerContainer}>
-          <img
-            src="/clock-white.svg"
-            alt="Clock White Icon"
-            className={styles.icon}
-          />
+          <Image className={styles.icon} src="/clock-white.svg" alt="Clock White Icon" width={20} height={20} />
           <h1>Live Payouts</h1>
         </div>
       </div>

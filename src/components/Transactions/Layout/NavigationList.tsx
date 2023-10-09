@@ -3,7 +3,7 @@
 import {useEffect, useState} from 'react';
 import Link from 'next/link';
 import {useSearchParams} from 'next/navigation';
-
+import Image from 'next/image';
 import stylesContent from '../../../styles/transactions/transactions__content.module.css';
 import stylesNavigation from '../../../styles/transactions/transactions__navigation.module.css';
 
@@ -34,7 +34,7 @@ export default function NavigationList() {
         <div>
             <div className={stylesContent.block}>
                 <div className={stylesContent.header}>
-                    <img src="/document-white.svg" className={stylesContent.icon}/>
+                    <Image width={20} height={20} alt="icon" src="/document-white.svg" className={stylesContent.icon}/>
                     <div className={stylesContent.title}>Transactions</div>
                 </div>
                 <div className={stylesContent.content}>
@@ -46,7 +46,7 @@ export default function NavigationList() {
                                         onClick={() => listButtonClick(item.link)}
                                         className={`${activeLink === item.link ? stylesNavigation.active : ""}`}
                                     >
-                                        <img src={item.icon}/>
+                                        <Image width={16} height={16} alt="icon" src={item.icon}/>
                                         {item.text}
                                     </div>
                                 </Link>

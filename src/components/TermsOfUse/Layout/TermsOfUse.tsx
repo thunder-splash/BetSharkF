@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './termsofuse.module.css';
 
 export default function TermsOfUse() {
     return (
         <div className={styles.container}>
             <div className={styles.headerContainer}>
-            <img src="/document-white.svg" alt="Document Icon" className={styles.icon} />
+            <Image width={20} height={20} src="/document-white.svg" alt="Document Icon" className={styles.icon} />
                 <h1>Terms of Use</h1>
             </div>
             <section className={styles.section}>

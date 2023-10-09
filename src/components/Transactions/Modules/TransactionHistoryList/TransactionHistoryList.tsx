@@ -1,5 +1,5 @@
 import {stylesBadge, stylesContent, stylesTable} from "@/styles/transactions";
-
+import Image from 'next/image';
 export default function TransactionHistoryList() {
 
     const tableData = [
@@ -44,7 +44,7 @@ export default function TransactionHistoryList() {
                         <div className={`${stylesTable.row} grid grid-cols-12`} key={item.id}>
                             <div className={`${stylesTable.col} col-span-5`}>{item.date}</div>
                             <div className={`${stylesTable.col} col-span-4`}>
-                                <img src={item.image} alt=""/>
+                                <Image width={52} height={52} src={item.image} alt="coin"/>
                                 {item.amount}
                             </div>
                             <div className={`${stylesTable.col} col-span-3 text-right`}>
