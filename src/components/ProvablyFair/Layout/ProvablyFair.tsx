@@ -14,11 +14,13 @@ export default function ProvablyFair() {
                     </div>
                     <p>Enter a hashed server seed of game to check for fair.</p>
                 </div>
-                <div className={styles.headerForm}>
-                    <h2>Server seed (hashed)</h2>
-                    <div className={styles.inpsec}>
-                        <input type="text" placeholder="Enter a server seed"/>
-                        <button>Check</button>
+                <div className={styles.formContainer}>
+                    <div className={styles.headerForm}>
+                        <h2>Server seed (hashed)</h2>
+                        <div className={styles.inpsec}>
+                            <input type="text" placeholder="Enter a server seed" className={styles.inputField}/>
+                            <button>Check</button>
+                        </div>
                     </div>
                 </div>
             </div>
