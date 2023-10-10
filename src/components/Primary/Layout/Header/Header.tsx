@@ -7,7 +7,7 @@ import Image from 'next/image';
 import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
 export const Header = () => {
-2
+
     const [isAuth, setIsAuth] = useState(false);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
 

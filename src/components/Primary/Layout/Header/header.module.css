@@ -1,4 +1,7 @@
 .header {
+    z-index: 1000;
+    background-color: #13161E;
+    opacity: 1;
 }
 
 .headerAuth {
