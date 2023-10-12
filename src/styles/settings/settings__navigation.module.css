@@ -1,0 +1,18 @@
+ul.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ul.navigation li div {
+    background: #202430;
+    display: flex;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #4a4e62;
+}
+ul.navigation li div:hover,
+ul.navigation li div.active {
+    color: #5271ff;
+    background: #202843;
+}
