@@ -1,11 +1,15 @@
 "use client";
 
 import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import styles from "./support.module.css";
 import SupportHistory from "@/components/Support/Layout/SupportHistory/SupportHistory";
+import CreateTicket from "./CreateTicket/CreateTicket";
 
 export default function Support() {
+  const [showCreateTicket, setShowCreateTicket] = useState(false);
+
   return (
     <div>
       <img src="/greenbgflow.svg" alt="light" className={styles.greenbg} />
@@ -21,7 +25,10 @@ export default function Support() {
             />
             <h1>Support</h1>
             <div className={styles.headerContent}>
-              <button className={styles.supportButton}>
+              <button
+                className={styles.supportButton}
+                onClick={() => setShowCreateTicket(true)}
+              >
                 <Image
                   src="/plus.svg"
                   alt="Plus Icon"
@@ -43,6 +50,7 @@ export default function Support() {
           <SupportHistory />
         </section>
       </div>
+      <CreateTicket show={showCreateTicket} onClose={() => setShowCreateTicket(false)} />
     </div>
   );
 }
