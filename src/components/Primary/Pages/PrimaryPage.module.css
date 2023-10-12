@@ -44,6 +44,21 @@
     z-index: 2;
 }
 
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
 .secondtitlet{
     color:#797E95;
     text-align: center;

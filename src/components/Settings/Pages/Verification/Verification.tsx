@@ -1,7 +1,6 @@
 "use client";
 import React, { ChangeEvent, useState } from "react";
 import { stylesContent, stylesForm, style } from "../../../../styles/settings";
-import Image from "next/image";
 
 export default function Verification() {
   const [activeButton, setActiveButton] = useState("Passport");
@@ -12,8 +11,6 @@ export default function Verification() {
   const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
       const file = event.target.files[0];
-      // Process the uploaded image as needed.
-      // You can use libraries like FileReader to read the image data.
     }
   };
 
