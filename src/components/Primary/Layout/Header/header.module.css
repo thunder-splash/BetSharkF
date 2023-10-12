@@ -2,6 +2,7 @@
     z-index: 1000;
     background-color: #13161E;
     opacity: 1;
+    justify-content: space-between;
 }
 
 .headerAuth {
@@ -9,18 +10,7 @@
     top: 0;
     background: #13161e;
     z-index: 5;
-}
-
-.wrapper {
-    display: flex;
-    margin: auto;
-    gap: 514px;
-}
-
-.wrapperAuth {
-    display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .navWrapper {
