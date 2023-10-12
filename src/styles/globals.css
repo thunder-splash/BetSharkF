@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html, section{
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none;  /* Для Internet Explorer и Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
