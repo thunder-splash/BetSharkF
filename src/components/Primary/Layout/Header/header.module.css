@@ -55,12 +55,12 @@
     color: #4a4e62;
     font-size: 14px;
     font-weight: 600;
-    transition: .3s;
+    transition: .2s;
 }
 
 .navigation li a:hover {
     color: #202843;
-    transition: all .4s ease-in;
+    transition: all .2s ease-in;
 }
 
 .login {
