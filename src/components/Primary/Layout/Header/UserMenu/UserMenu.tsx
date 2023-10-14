@@ -47,7 +47,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
-                            <Link href="/settings" className="dropdown-item">
+                            <Link href="/settings/account" className="dropdown-item">
                                 <img src="/settings.svg" alt=""/>
                                 Settings
                             </Link>
