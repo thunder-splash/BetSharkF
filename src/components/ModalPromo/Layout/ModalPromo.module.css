@@ -1,0 +1,84 @@
+.promowrapper{
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.window{
+    display: flex;
+    width: 500px;
+    padding: 20px;
+    gap: 32px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #202430;
+    flex-direction: column;
+}
+
+.promoheader{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.promobody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promowrapper h1{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+}
+
+.promowrapper p{
+    color: #555A71;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-top: -24px;
+}
+
+.promowrapper input{
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: 1px solid #262A37;
+    background: #191C26;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    color: #555A71;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.promowrapper button{
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #5271FF;
+    background: #5271FF;
+    margin-top: 32px;
+}
