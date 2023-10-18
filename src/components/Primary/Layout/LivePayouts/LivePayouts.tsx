@@ -45,7 +45,7 @@ function LivePayouts() {
       time: "24 Aug 2023 20:00:00",
       username: "Mark",
       betAmount: "0.5 ETH",
-      game: "Jackpot",
+      game: "Main",
     },
   ];
 

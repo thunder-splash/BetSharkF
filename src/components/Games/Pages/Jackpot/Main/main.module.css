@@ -10,6 +10,8 @@
 
 .game {
     width: 372px;
+    background: #191C26;
+    border-radius: 12px;
 }
 
 .header {
@@ -20,9 +22,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
+    border-bottom: 1px solid #202430;
     border-radius: 12px 12px 0px 0px;
-    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     align-items: center;
     gap: 8px;
     color: #fff;
@@ -89,11 +92,9 @@
 .bet {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 210px;
-    padding: 16px;
-    border-radius: 0px 0px 12px 12px;
-    background: #191C26;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
 
 .bet p {
@@ -105,6 +106,20 @@
 }
 
 .sum {
+    display: flex;
+    color: #555A71;
+    align-items: center;
+    background: #202430;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    outline: none;
+}
+
+.sum::placeholder {
+    color: #555A71;
+}
+
+.input__container {
+    display: flex;
     color: #555A71;
     margin-top: 6px;
     padding: 10px 14px;
@@ -112,9 +127,78 @@
     border-radius: 8px;
     border: 1px solid #262A37;
     background: #202430;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    width: 100%;
+    justify-content: space-between;
 }
 
-.sum::placeholder {
-    color: #555A71;
+.button__container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.button__container button {
+    display: flex;
+    padding: 3px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #202430;
+    background: #191C26;
+}
+
+.buttonimp__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.buttonimp__container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    gap: 4px;
+    border-radius: 4px;
+    border: 1px solid #202430;
+    background: #191C26;
+    color: #4A4E62;
+}
+
+.footer {
+    display: flex;
+    width: 372px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.play__button {
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    box-shadow: 0px 4px 0px 0px #263475;
+}
+
+.play__button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.jackpot__light1 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.55;
+    filter: blur(54px);
+    flex-shrink: 0;
+    left: -20%;
+    transform: rotate(40grad);
 }

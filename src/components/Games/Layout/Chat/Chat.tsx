@@ -1,8 +1,14 @@
-import { useState } from "react";
+import {useState} from "react";
 import styles from "./chat.module.css"
 import Message from "../../Modules/ChatMessage/Message"
 
-export default function Chat(){
+export default function Chat() {
+
+    const [message, setMessage] = useState("");
+
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setMessage(event.target.value);
+    }
 
     let [online, setOnline] = useState("50");
 
@@ -76,13 +82,26 @@ export default function Chat(){
 
     ]
 
-    return(
+    const handleSendMessage = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        arrProps.push({
+            name: "username",
+            time: new Date().toLocaleTimeString(),
+            avatar: "https://yt3.googleusercontent.com/9K8pKqHnNx5tIzq8T4XCncUvhg5lcmPT8-ISvL99nOh7kCalkVFsAtil5l11HFK1e_O3L5y6ePI=s900-c-k-c0x00ffffff-no-rj",
+            message: message,
+        });
+        setMessage("");
+    }
+
+    return (
         <div className={`flex flex-col ${styles.main}`}>
             {/* <div className={`flex flex-col ${styles.wrapper}`}> */}
             <div className={`flex justify-between ${styles.header}`}>
                 <div className={`flex ${styles.title}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M17.5 9.58333C17.5029 10.6832 17.2459 11.7682 16.75 12.75C16.162 13.9265 15.2581 14.916 14.1395 15.6077C13.021 16.2995 11.7319 16.6662 10.4167 16.6667C9.31678 16.6695 8.23176 16.4126 7.25 15.9167L2.5 17.5L4.08333 12.75C3.58744 11.7682 3.33047 10.6832 3.33333 9.58333C3.33384 8.26813 3.70051 6.97904 4.39227 5.86046C5.08402 4.74187 6.07355 3.83797 7.25 3.25C8.23176 2.75411 9.31678 2.49713 10.4167 2.5H10.8333C12.5703 2.59583 14.2109 3.32897 15.4409 4.55905C16.671 5.78913 17.4042 7.42971 17.5 9.16667V9.58333Z" stroke="#5271FF" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                            d="M17.5 9.58333C17.5029 10.6832 17.2459 11.7682 16.75 12.75C16.162 13.9265 15.2581 14.916 14.1395 15.6077C13.021 16.2995 11.7319 16.6662 10.4167 16.6667C9.31678 16.6695 8.23176 16.4126 7.25 15.9167L2.5 17.5L4.08333 12.75C3.58744 11.7682 3.33047 10.6832 3.33333 9.58333C3.33384 8.26813 3.70051 6.97904 4.39227 5.86046C5.08402 4.74187 6.07355 3.83797 7.25 3.25C8.23176 2.75411 9.31678 2.49713 10.4167 2.5H10.8333C12.5703 2.59583 14.2109 3.32897 15.4409 4.55905C16.671 5.78913 17.4042 7.42971 17.5 9.16667V9.58333Z"
+                            stroke="#5271FF" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <h2 className={`text-base font-semibold`}>ONLINE CHAT</h2>
                 </div>
@@ -98,21 +117,18 @@ export default function Chat(){
                     <Message key={index} {...props} />
                 ))}
             </div>
-            <div className={`${styles.sendMessage}`}>
-                <input type="text" placeholder="Message..."></input>
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <g clip-path="url(#clip0_415_6930)">
-                            <path d="M18.3337 1.66663L9.16699 10.8333M18.3337 1.66663L12.5003 18.3333L9.16699 10.8333M18.3337 1.66663L1.66699 7.49996L9.16699 10.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_415_6930">
-                                <rect width="20" height="20" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+            <form className={`${styles.sendMessage}`} onSubmit={handleSendMessage}>
+                <input
+                    type="text"
+                    placeholder="Message..."
+                    value={message}
+                    onChange={handleInputChange}
+                    style={{outline:"none"}}
+                />
+                <button type="submit">
+                    <img src="/send-mess.svg" alt="submit"/>
                 </button>
-            </div>
+            </form>
             {/* </div> */}
         </div>
     );

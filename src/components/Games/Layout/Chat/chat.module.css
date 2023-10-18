@@ -1,41 +1,48 @@
-.main{
-    margin-top: 80px;
+.main {
     position: fixed;
+    bottom: 0;
+    margin-top: 80px;
     z-index: 1;
-    right: 0px;
-    width: 396px;
-    height: calc(100vh - 80px);
-
-
+    right: 0;
+    width: 25%;
+    height: calc(100% - 80px);
     background-color: #191C26;
-
     border-top-left-radius: 16px;
 }
 
+.content::-webkit-scrollbar {
+    width: 10px;
+}
 
+.content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
 
-.header{
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
+.header {
     padding: 18px 24px 18px 16px;
     border-bottom: 1px solid #202430;
 }
 
 
-.title{
-
+.title {
     gap: 6px
 }
 
-.title h2{
+.title h2 {
     color: #FFFFFF;
 }
 
-.online{
+.online {
     align-items: center;
     gap: 5px;
 }
 
-.online h3{
+.online h3 {
     color: #555A71;
 }
 
@@ -49,27 +56,16 @@
     overflow-y: scroll;
 }
 
-.content::-webkit-scrollbar{
-    width: 5px;
-}
-
-.content::-webkit-scrollbar-thumb{
-    background-color: #2C303F;
-}
-
-
-.sendMessage{
+.sendMessage {
     height: 92px;
     border-top: 1px solid #202430;
     padding: 24px 24px 24px 16px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between;
 }
 
-.sendMessage input{
-    width: 300px;
-    height: 44px;
+.sendMessage input {
     border-radius: 8px;
     padding: 10px 14px 10px 14px;
     color: #555A71;
@@ -91,7 +87,7 @@
     color: #555A71;
 }
 
-.sendMessage button{
+.sendMessage button {
     width: 44px;
     height: 44px;
     background-color: #202430;
@@ -100,4 +96,3 @@
     justify-content: center;
     align-items: center;
 }
-
