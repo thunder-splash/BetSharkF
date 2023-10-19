@@ -1,0 +1,189 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #202430;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h1 {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.signUpForm {
+  display: flex;
+  width: 500px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: #202430;
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 0px 0;
+}
+
+.checkboxField input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkboxField label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555a71;
+}
+.checkboxField label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #5271ff;
+  border-radius: 4px;
+  background: #191c26;
+}
+.checkboxField label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid #5271ff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.checkboxField input[type="checkbox"]:checked + label::after {
+  display: block;
+}
+
+.inputLabel {
+  color: #555a71;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 10px 0 6px 0;
+}
+
+.signUpButton {
+  display: flex;
+  width: 100%;
+  padding: 10px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #5271ff;
+  background: #5271ff;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.signUpButton:hover {
+  background: #3f8bff;
+}
+
+.inputField {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262a37;
+  background: #191c26;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.inputField input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  outline: none;
+}
+
+.inputField input::placeholder {
+  color: #555a71;
+}
+
+.question_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #6d7078;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.inputField.iconRight {
+    position: relative;
+    padding: 10px 42px 10px 14px;
+}
+
+.inputEye {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }

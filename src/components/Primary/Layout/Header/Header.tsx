@@ -2,7 +2,7 @@ import Link from "next/link";
 import Notification from "./Notifications/Notifications";
 import UserMenu from "./UserMenu/UserMenu";
 import styles from "./header.module.css";
-import {useState} from "react";
+import { useState } from "react";
 import Image from 'next/image';
 import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
@@ -10,17 +10,20 @@ export const Header = () => {
 
     const [isAuth, setIsAuth] = useState(false);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
+    const [isLogin, setIsLogin] = useState(false);
 
     const toggleSignUpForm = () => {
         setShowSignUpForm(!showSignUpForm);
     };
 
     const handleLogin = () => {
-        setIsAuth(true);
+        setIsLogin(true);
+        toggleSignUpForm();
     };
 
     const handleSignUp = () => {
-        setIsAuth(true);
+        setIsLogin(false);
+        toggleSignUpForm();
     };
 
     const handleLogout = () => {
@@ -31,7 +34,7 @@ export const Header = () => {
         <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
             <div className={`${styles.navWrapper}`}>
                 <Link href="/" className={`${styles.logo}`}>
-                    <Image src="/logo.svg" alt="logo" width={32} height={32}/>
+                    <Image src="/logo.svg" alt="logo" width={32} height={32} />
                     BetShark
                 </Link>
 
@@ -60,21 +63,21 @@ export const Header = () => {
                         Deposit
                     </Link>
                     <Link href="#" className="btn">
-                        <Image src="/present.svg" alt="present" width={20} height={20}/>
+                        <Image src="/present.svg" alt="present" width={20} height={20} />
                     </Link>
                     <Link href="#" className="btn">
-                        <Image src="/supporting.svg" alt="support" width={20} height={20}/>
+                        <Image src="/supporting.svg" alt="support" width={20} height={20} />
                     </Link>
 
-                    <Notification/>
-                    <UserMenu onLogout={handleLogout}/>
+                    <Notification />
+                    <UserMenu onLogout={handleLogout} />
                 </div>
             ) : (
                 <div className={`${styles.loginPanel}`}>
                     <button onClick={handleLogin} className={`${styles.login}`}>
                         Login
                     </button>
-                    <button onClick={toggleSignUpForm} className={`${styles.signUp}`}>
+                    <button onClick={handleSignUp} className={`${styles.signUp}`}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -96,6 +99,7 @@ export const Header = () => {
                         <SignUpPopup
                             handleSignUp={handleSignUp}
                             onClose={toggleSignUpForm}
+                            showLogin={isLogin}
                         />
                     )}
                 </div>

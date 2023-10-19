@@ -1,117 +1,210 @@
-import React, {useState, ChangeEvent, FormEvent} from "react";
-import styles from "./signuppopup.css";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import styles from "./signuppopup.module.css";
+import Image from "next/image";
 
 interface SignUpProps {
-    handleSignUp: (formData: any) => void;
-    onClose: () => void;
+  handleSignUp: (formData: any) => void;
+  onClose: () => void;
+  showLogin?: boolean;
 }
 
-const SignUpPopup: React.FC<SignUpProps> = ({handleSignUp, onClose}) => {
-    const [formData, setFormData] = useState({
-        email: "",
-        username: "",
-        password: "",
-        confirmPassword: "",
-        referralCode: "",
-        agreeToTOS: false,
+const SignUpPopup: React.FC<SignUpProps> = ({
+  handleSignUp,
+  onClose,
+  showLogin,
+}) => {
+  const [formData, setFormData] = useState({
+    email: "",
+    username: "",
+    password: "",
+    confirmPassword: "",
+    referralCode: "",
+    agreeToTOS: false,
+  });
+
+  const [isLogin, setIsLogin] = useState(showLogin);
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    const target = e.target as HTMLInputElement;
+    const { name, value, type, checked } = target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
     });
+  };
 
-    const handleChange = (
-        e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
-    ) => {
-        const target = e.target as HTMLInputElement;
-        const {name, value, type, checked} = target;
-        setFormData({
-            ...formData,
-            [name]: type === "checkbox" ? checked : value,
-        });
-    };
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    handleSignUp(formData);
+  };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        handleSignUp(formData);
-    };
+  const handleLoginClick = () => {
+    setIsLogin(true);
+  };
 
-    return (
-        <div className={styles.modal}>
-            <div className={styles["modal-content"]}>
-                <button className={styles["close-button"]} onClick={onClose}>
-                    Close
-                </button>
-                <form
-                    onSubmit={handleSubmit}
-                    className={styles["signUpForm"]}
-                >
-                    <h2 className="text-white font-semibold text-24px">Sign Up</h2>
-                    <input
-                        type="text"
-                        name="email"
-                        placeholder="Email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="input-field"
-                    />
-                    <input
-                        type="text"
-                        name="username"
-                        placeholder="Username"
-                        value={formData.username}
-                        onChange={handleChange}
-                        className="input-field"
-                    />
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        className="input-field"
-                    />
-                    <input
-                        type="password"
-                        name="confirmPassword"
-                        placeholder="Confirm Password"
-                        value={formData.confirmPassword}
-                        onChange={handleChange}
-                        className="input-field"
-                    />
-                    <input
-                        type="text"
-                        name="referralCode"
-                        placeholder="Referral Code (optional)"
-                        value={formData.referralCode}
-                        onChange={handleChange}
-                        className="input-field"
-                    />
-                    <label className="flex items-center text-white">
-                        <input
-                            type="checkbox"
-                            name="agreeToTOS"
-                            checked={formData.agreeToTOS}
-                            onChange={handleChange}
-                            className="mr-2"
-                        />
-                        I agree to the Terms of Service
-                    </label>
-                    <button
-                        type="submit"
-                        className="flex justify-center items-center p-10px 18px flex-shrink-0 bg-primary-400 rounded-lg"
-                    >
-                        Sign Up
-                    </button>
-                    <p className="text-white">
-                        Already have an account?{" "}
-                        <button
-                            onClick={onClose}
-                            className="border rounded-lg border-primary-400 bg-primary-400"
-                        >
-                            X
-                        </button>
-                    </p>
-                </form>
+  const handleSignUpClick = () => {
+    setIsLogin(false);
+  };
+
+  return (
+    <div className={styles.modal}>
+      <div className={styles["modal-content"]}>
+        {isLogin ? (
+          <form onSubmit={handleSubmit} className={styles["signUpForm"]}>
+            <div className={styles.headerContainer}>
+              <h1 className={styles.header}>Log in</h1>
+              <button className={styles["close-button"]} onClick={onClose}>
+                <Image src="/x.svg" alt="Close" width={24} height={24} />
+              </button>
             </div>
-        </div>
-    );
+            <div className={styles.inputLabel}>Email</div>
+            <div className={styles.inputField}>
+              <input
+                type="text"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div className={styles.inputLabel}>Password</div>
+            <div className={`${styles.inputField} ${styles.iconRight}`}>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="••••••••"
+              />
+              <Image
+                width={20}
+                height={20}
+                src="/eye.svg"
+                alt="eye-icon"
+                className={`${styles.inputEye}`}
+              />
+            </div>
+            <button type="submit" className={styles.signUpButton}>
+              Sign Up
+            </button>
+            <div className={styles.question_content}>
+              <p>
+                You don't have an account?{" "}
+                <span
+                  onClick={handleSignUpClick}
+                  style={{ cursor: "pointer", color: "#5271FF" }}
+                >
+                  Sign up
+                </span>
+              </p>
+            </div>
+          </form>
+        ) : (
+          <form onSubmit={handleSubmit} className={styles["signUpForm"]}>
+            <div className={styles.headerContainer}>
+              <h1 className={styles.header}>Sign Up</h1>
+              <button className={styles["close-button"]} onClick={onClose}>
+                <Image src="/x.svg" alt="Close" width={24} height={24} />
+              </button>
+            </div>
+            <div className={styles.inputLabel}>Email</div>
+            <div className={styles.inputField}>
+              <input
+                type="text"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div className={styles.inputLabel}>Username</div>
+            <div className={styles.inputField}>
+              <input
+                type="text"
+                name="username"
+                value={formData.username}
+                onChange={handleChange}
+                placeholder="Enter a username"
+              />
+            </div>
+            <div className={styles.inputLabel}>Password</div>
+            <div className={`${styles.inputField} ${styles.iconRight}`}>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="••••••••"
+              />
+              <Image
+                width={20}
+                height={20}
+                src="/eye.svg"
+                alt="eye-icon"
+                className={`${styles.inputEye}`}
+              />
+            </div>
+            <div className={styles.inputLabel}>Confirm Password</div>
+            <div className={`${styles.inputField} ${styles.iconRight}`}>
+              <input
+                type="password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                placeholder="••••••••"
+              />
+              <Image
+                width={20}
+                height={20}
+                src="/eye.svg"
+                alt="eye-icon"
+                className={`${styles.inputEye}`}
+              />
+            </div>
+            <div className={styles.inputLabel}>Referral Code (optional)</div>
+            <div className={styles.inputField}>
+              <input
+                type="text"
+                name="referralCode"
+                value={formData.referralCode}
+                onChange={handleChange}
+              />
+            </div>
+            <div className={styles.checkboxField}>
+              <input
+                type="checkbox"
+                id="agreeToTOS"
+                name="agreeToTOS"
+                checked={formData.agreeToTOS}
+                onChange={handleChange}
+              />
+              <label htmlFor="agreeToTOS">
+                By registering, I accept the terms of use and undertake to
+                comply with them.
+              </label>
+            </div>
+
+            <button type="submit" className={styles.signUpButton}>
+              Sign Up
+            </button>
+            <div className={styles.question_content}>
+              <p>
+                Already have an account?{" "}
+                <span
+                  onClick={handleLoginClick}
+                  style={{ cursor: "pointer", color: "#5271FF" }}
+                >
+                  Log in
+                </span>
+              </p>
+            </div>
+          </form>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default SignUpPopup;
