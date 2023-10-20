@@ -8,6 +8,11 @@
     max-width: 990px; 
     overflow: auto; 
     padding: 16px;
+
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   }
   
   .tableHeader {
@@ -50,7 +55,6 @@
     background: #262A37;
     color: white;
     margin-top: 8px;
-    font-family: Inter;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -87,27 +91,23 @@
   background: #202843;
   color: #5271FF;
 }
-
 .amount_txt {
   display: inline-block;
-  padding: 0px 6px;
+  padding: 0 6px;
   border-radius: 16px;
-  background: var(--black-300, #2C303F);
-  color: var(--black-800, #666B84);
+  background: #2C303F;
+  color: #666B84;
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
 }
 .amount{
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
 }
 .time{
   color: #797E95;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
