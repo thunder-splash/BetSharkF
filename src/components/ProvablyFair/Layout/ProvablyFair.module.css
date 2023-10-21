@@ -1,7 +1,6 @@
 .container {
     border-radius: 12px;
     display: flex;
-    padding: 16px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
@@ -19,7 +18,7 @@
 }
 .headerContainer {
     border-bottom: 1px solid #202430;
-    background: linear-gradient(90deg, rgba(25, 28, 38, 0.10) 0.02%, rgba(25, 28, 38, 0.15) 99.98%);
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;

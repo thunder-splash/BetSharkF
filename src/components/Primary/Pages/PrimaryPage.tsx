@@ -70,7 +70,7 @@ export default function PrimaryPage() {
                 <div className={styles.greengrad}>
                     <div className={styles.hiwlsec}>
                         <img src="/hiwl2.svg" alt="light" className={styles.hiwl1}/>
-                        {/*<img src="/hiwl1.svg" className={styles.hiwl2}></img>*/}
+                        <img src="/hiwl1.svg" alt="light" className={styles.hiwl2}></img>
                     </div>
                 </div>
                 <h2 className={styles.pmtitle}>How it all works</h2>
@@ -87,7 +87,7 @@ export default function PrimaryPage() {
                 <button className={styles.join_button_hiw}>JOIN NOW & PLAY</button>
             </section>
             <section className={styles.recommended_game}>
-                    {/*<img src="/gamesl.svg" className={styles.recgl1}></img>*/}
+                <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
                 <h2>Recommended game</h2>
                 <p className={styles.abouttext}>This is a selection of our games, you can play any of them.</p>
                 <div className={styles.rec_grid}>
@@ -113,11 +113,15 @@ export default function PrimaryPage() {
                         Deposit
                     </Link>
                 </div>
+                <img src="/rightbottomlight.svg" alt="light" className={styles.cardsl2}/>
             </section>
             <section className={styles.vip_system}>
-                {/*<div className={styles.greengrad}>*/}
-                {/*    <img src="/hiwl2.svg" alt="light" className={styles.hiwl1}></img>*/}
-                {/*</div>*/}
+                <div className={styles.greengrad}>
+                    <div className={styles.hiwlsec}>
+                        <img src="/hiwl2.svg" alt="light" className={styles.hiwl1}/>
+                        <img src="/hiwl1.svg" alt="light" className={styles.hiwl2}></img>
+                    </div>
+                </div>
                 <h2 className={styles.pmtitle}>The #1 VIP system</h2>
                 <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
             <div className={styles.vip_system_container}>
@@ -171,10 +175,12 @@ export default function PrimaryPage() {
             </div>
         </section>
             <section className={styles.live_payouts}>
+                {/*<img src="/payunderl.svg" alt="light" className={styles.cardsl1}></img>*/}
                 {/*<img src="/gamesl.svg" alt="light" className={styles.recgl1}></img>*/}
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
                 <LivePayouts/>
+                {/*<img src="/payunderr.svg" alt="light" className={styles.cardsl2}/>*/}
             </section>
         </>
     );
