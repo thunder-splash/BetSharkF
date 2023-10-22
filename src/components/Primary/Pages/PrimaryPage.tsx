@@ -175,12 +175,14 @@ export default function PrimaryPage() {
             </div>
         </section>
             <section className={styles.live_payouts}>
-                {/*<img src="/payunderl.svg" alt="light" className={styles.cardsl1}></img>*/}
-                {/*<img src="/gamesl.svg" alt="light" className={styles.recgl1}></img>*/}
+                <img src="/payunderl.svg" alt="light" className={styles.cardslp1}></img>
+                {/*<div className={styles.recgl1sec}>*/}
+                {/*    <img src="/gamesl.svg" alt="light" className={styles.recgl1}></img>*/}
+                {/*</div>*/}
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
                 <LivePayouts/>
-                {/*<img src="/payunderr.svg" alt="light" className={styles.cardsl2}/>*/}
+                <img src="/payunderr.svg" alt="light" className={styles.cardslp2}/>
             </section>
         </>
     );

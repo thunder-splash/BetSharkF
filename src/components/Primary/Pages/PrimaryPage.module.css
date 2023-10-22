@@ -21,16 +21,27 @@
     top: 0;
     z-index: 0;
 }
-.cardsl1 , .cardsl2{
+.cardsl1 , .cardsl2 , .cardslp1 , .cardslp2{
     position: absolute;
     z-index: 0;
     object-fit: contain;
 }
 .cardsl1{
     left:0;
+    height: 17.5%;
 }
 .cardsl2{
     right:0;
+    height: 17.5%;
+}
+
+.cardslp1{
+    left:0;
+    height: 13.7%;
+}
+.cardslp2{
+    right:0;
+    height: 13.7%;
 }
 .main_section , .main_section_cards , .how_it_works ,
 .recommended_game , .vip_system , .live_payouts {
@@ -95,10 +106,20 @@
     position: relative;
     justify-content: center;
 }
-.hiwl1 , .recgl1{
+.hiwl1{
     z-index: 1;
     top: 0;
     position: relative;
+}
+.recgl1{
+    position: absolute;
+    z-index: 0;
+    object-fit: contain;
+    top: 0;
+}
+.recgl1sec{
+        position: relative;
+        justify-content: center;
 }
 .hiwl2{
     z-index: 2;
@@ -366,7 +387,3 @@
     margin-left:0;
     grid-column: span 1 / span 1;
 }
-
-/*.mainl1 , .mainl2 , .cardsl1 , .cardsl2{*/
-
-/*}*/
