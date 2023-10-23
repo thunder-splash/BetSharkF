@@ -5,8 +5,10 @@
     display: flex;
     gap: 8px;
     align-items: center;
+    width: 100%;
 }
 .block {
+    min-width: 372px; 
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 24px;

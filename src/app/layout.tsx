@@ -23,7 +23,7 @@ export default function RootLayout({children}: {
         <body className={inter.className} style={{width: '100%'}}>
         <div className={`${styles.wrapper}`}>
             <GameMenu/>
-            <div className={`${styles.main}`}>
+            <div className={`${styles.main}` }>
                 <Header/>
                 {/* <Chat/> */}
                 {children}
