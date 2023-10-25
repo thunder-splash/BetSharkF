@@ -49,5 +49,9 @@
 }
 
 .list__header {
-display: flex;
+    display: flex;
+}
+
+.list__header p {
+    color: #4A4E62;
 }
