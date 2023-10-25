@@ -21,7 +21,7 @@ export default function PrimaryPage() {
     ];
 
     const cardsRec = [
-        {id: '1', image: '/jackpot.svg'},
+        {id: '1', image: '/jackpot.svg' },
         {id: '2', image: '/roulette.svg'},
         {id: '3', image: '/coinflip.svg'},
         {id: '4', image: '/dice.svg'},

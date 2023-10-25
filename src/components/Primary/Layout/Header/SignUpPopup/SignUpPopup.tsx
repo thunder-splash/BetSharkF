@@ -91,7 +91,7 @@ const SignUpPopup: React.FC<SignUpProps> = ({
             </button>
             <div className={styles.question_content}>
               <p>
-                You don't have an account?{" "}
+                You don`t have an account?{" "}
                 <span
                   onClick={handleSignUpClick}
                   style={{ cursor: "pointer", color: "#5271FF" }}

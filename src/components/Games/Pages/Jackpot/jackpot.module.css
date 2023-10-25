@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 900px;
-    margin: 24px auto 0px auto;
+    margin: 24px auto 0 auto;
     height: 2000px;
 }
 
@@ -23,7 +23,7 @@
     font-weight: 600;
     line-height: 28px;
     border-bottom: 1px solid #202430;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0 0;
     backdrop-filter: blur(10px);
     background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     align-items: center;
@@ -110,7 +110,7 @@
     color: #555A71;
     align-items: center;
     background: #202430;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
     outline: none;
 }
 
@@ -185,7 +185,7 @@
     align-items: center;
     border-radius: 8px;
     background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
-    box-shadow: 0px 4px 0px 0px #263475;
+    box-shadow: 0 4px 0 0 #263475;
 }
 
 .play__button:active {
@@ -207,4 +207,45 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.jackcollumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.gamesecure{
+    display: flex;
+    width: 372px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: #062D24;
+    flex-direction: row;
+
+    margin-top: 12px;
+}
+.secname , .secnum{
+    display: flex;
+    flex-direction: row;
+}
+.secname h1{
+    color: #41B196;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    margin-left: 6px;
+}
+
+.secnum p{
+    color: #41B196;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 6px;
 }
