@@ -1,9 +1,9 @@
-import Main from "@/components/Games/Pages/Jackpot/Main/Main";
+import Jackpot from "@/components/Games/Pages/Jackpot/Jackpot";
 
 export default function Games() {
     return (
         <div>
-            <Main/>
+            <Jackpot/>
         </div>
     )
 }

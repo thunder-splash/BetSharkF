@@ -4,18 +4,18 @@
     gap: 14px;
     background: #191C26;
     border-radius: 12px;
-    width: 100%; 
-    max-width: 990px; 
-    overflow: auto; 
+    width: 100%;
+    max-width: 990px;
+    overflow: auto;
     padding: 16px;
 
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  }
-  
-  .tableHeader {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.tableHeader {
     gap: 10px;
     border-radius: 8px;
     background: #13161E;
@@ -24,28 +24,28 @@
     font-weight: 600;
     line-height: 18px;
     padding: 8px 16px;
-    
-  }
 
-  .tableHeader,
-  .tableItem {
+}
+
+.tableHeader,
+.tableItem {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .tableHeader p,
-  .tableItem p {
+}
+
+.tableHeader p,
+.tableItem p {
     flex: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  
-  .tableItem:first-child {
+}
+
+.tableItem:first-child {
     margin-top: 0;
-  }
-  
-  .tableItem {
+}
+
+.tableItem {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,57 +59,63 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
-  }
-  
-  
-  .tableItem:nth-child(even) {
-    background: #202430;
-  }
+}
 
-.view-button{
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: #191C26;
-  color: white;
-  cursor: pointer;
-  border: none;
+
+.tableItem:nth-child(even) {
+    background: #202430;
 }
+
+.view-button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #191C26;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
 .buttonGroup {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
+
 .buttonGroup .viewButton {
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: #191C26;
-  color: white;
-  cursor: pointer;
-  border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #191C26;
+    color: white;
+    cursor: pointer;
+    border: none;
 }
+
 .buttonGroup .viewButton.active {
-  background: #202843;
-  color: #5271FF;
+    background: #202843;
+    color: #5271FF;
 }
+
 .amount_txt {
-  display: inline-block;
-  padding: 0 6px;
-  border-radius: 16px;
-  background: #2C303F;
-  color: #666B84;
-  text-align: center;
-  font-size: 12px;
-  font-style: normal;
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 16px;
+    background: #2C303F;
+    color: #666B84;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
 }
-.amount{
-  text-align: center;
-  font-size: 12px;
-  font-style: normal;
+
+.amount {
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
 }
-.time{
-  color: #797E95;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px; /* 150% */
+
+.time {
+    color: #797E95;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
 }
