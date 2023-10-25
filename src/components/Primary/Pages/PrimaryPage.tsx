@@ -94,7 +94,7 @@ export default function PrimaryPage() {
                     {cardsRec.map((card) => (
                         <div key={card.id} className={styles.cardrec}>
                             <Image alt="cardimg" width={207} height={207} src={card.image}/>
-                            <Link href={`/games/${card.link}`} style={{ width: "100%" }}>
+                            <Link href={`/games/${card.link}`} style={{width: "100%"}}>
                                 <p className={styles.playnow}>Play now</p>
                             </Link>
                         </div>

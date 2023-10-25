@@ -1,14 +1,9 @@
-"use client";
-
-import styles from "./jackpot.module.css"
+import styles from "./roulette.module.css"
 import Image from 'next/image';
-import ActivePlayersList from "@/components/Games/Modules/ActivePlayersList/ActivePlayersList";
-import LatestGames from "@/components/Games/Modules/LatestGames/LatestGames";
 import BetContainer from "@/components/Games/Modules/BetContainer/BetContainer";
 import GameSecurity from "@/components/Games/Modules/GameSecurity/GameSecurity";
 
-export default function Jackpot() {
-
+export default function Roulette() {
     return (
         <div className={`${styles.main}`}>
             <div className={styles.upper}>
@@ -17,22 +12,10 @@ export default function Jackpot() {
                         <div className={`${styles.header}`}>
                             <img src="/Ellipse%2087.svg" alt="light" className={styles.jackpot__light1}></img>
                             <Image src="/jackpoticon.svg" alt="Jackpot Icon" width={20} height={20}/>
-                            <h2>JACKPOT</h2>
+                            <h2>ROULETTE</h2>
                         </div>
-                        <div className={`${styles.wheel}`}>
-                            <div className={`${styles.outsideCircle}`}></div>
-                            <div className={`${styles.mainCircle}`}></div>
-                            <div className={`${styles.timer}`}>
-                                <h2>
-                                    120
-                                </h2>
-                                <h3>
-                                    SECONDS
-                                </h3>
-                            </div>
-                        </div>
+                        <BetContainer/>
                         <div className={styles.footer}>
-                            <BetContainer/>
                             <button onClick={() => console.log('Play button clicked!')} className={styles.play__button}>
                                 Play
                             </button>
@@ -40,9 +23,7 @@ export default function Jackpot() {
                     </div>
                     <GameSecurity/>
                 </div>
-                <ActivePlayersList/>
             </div>
-            {/*<LatestGames/>*/}
         </div>
     );
 }

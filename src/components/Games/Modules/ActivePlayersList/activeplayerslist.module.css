@@ -68,7 +68,7 @@
     line-height: 18px; /* 150% */
 }
 
-.playersection{
+.playersection {
     background: #262A37;
     flex-direction: row;
     display: flex;
@@ -80,13 +80,13 @@
     margin-top: 8px;
 }
 
-.prof{
+.prof {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.name{
+.name {
     margin-left: 10px;
     color: #FFF;
     font-size: 12px;
@@ -95,7 +95,7 @@
     line-height: 18px; /* 150% */
 }
 
-.bet{
+.bet {
     color: #FFF;
     font-size: 12px;
     font-style: normal;
@@ -103,7 +103,7 @@
     line-height: 18px; /* 150% */
 }
 
-.procent{
+.procent {
     border-radius: 16px;
     background: rgba(136, 106, 221, 0.15);
 

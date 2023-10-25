@@ -1,0 +1,34 @@
+
+.gamesecure{
+    display: flex;
+    width: 372px;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: #062D24;
+    flex-direction: row;
+
+    margin-top: 12px;
+}
+.secname , .secnum{
+    display: flex;
+    flex-direction: row;
+}
+.secname h1{
+    color: #41B196;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    margin-left: 6px;
+}
+
+.secnum p{
+    color: #41B196;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 6px;
+}
