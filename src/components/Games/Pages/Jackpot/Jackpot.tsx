@@ -42,7 +42,7 @@ export default function Jackpot() {
                 </div>
                 <ActivePlayersList/>
             </div>
-            {/*<LatestGames/>*/}
+            <LatestGames/>
         </div>
     );
 }

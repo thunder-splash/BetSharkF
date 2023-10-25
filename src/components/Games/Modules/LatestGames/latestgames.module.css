@@ -1,17 +1,8 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 900px;
-    margin: 24px auto 0px auto;
-    height: 2000px;
-}
-
 .game {
-    width: 372px;
+    width: 100%;
     background: #191C26;
     border-radius: 12px;
+    margin: 40px 0 140px 0;
 }
 
 .header {
@@ -23,174 +14,12 @@
     font-weight: 600;
     line-height: 28px;
     border-bottom: 1px solid #202430;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 12px 0 0;
     backdrop-filter: blur(10px);
     background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     align-items: center;
     gap: 8px;
     color: #fff;
-}
-
-.wheel {
-    width: 100%;
-    height: fit-content;
-    position: relative;
-    padding: 32px 61px;
-    background: #191C26;
-}
-
-.outsideCircle {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2.203px solid #262A37;
-    background: #13161E;
-}
-
-.mainCircle {
-    margin: auto;
-    top: 46px;
-    left: 75px;
-    position: absolute;
-    width: 222px;
-    height: 222px;
-    border-radius: 50%;
-    background-color: yellow;
-}
-
-.timer {
-    width: calc(222px - 55px);
-    height: calc(222px - 55px);
-    border-radius: 50%;
-    top: calc(46px + (55px / 2));
-    left: calc(75px + (55px / 2));
-    background: #13161E;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.timer h2 {
-    color: #FFF;
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-}
-
-.timer h3 {
-    color: #4A4E62;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-.bet {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
-}
-
-.bet p {
-    color: #555A71;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-.sum {
-    display: flex;
-    color: #555A71;
-    align-items: center;
-    background: #202430;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    outline: none;
-}
-
-.sum::placeholder {
-    color: #555A71;
-}
-
-.input__container {
-    display: flex;
-    color: #555A71;
-    margin-top: 6px;
-    padding: 10px 14px;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid #262A37;
-    background: #202430;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.button__container {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-
-.button__container button {
-    display: flex;
-    padding: 3px 8px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 4px;
-    border: 1px solid #202430;
-    background: #191C26;
-}
-
-.buttonimp__container {
-    display: flex;
-    align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
-}
-
-.buttonimp__container button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    gap: 4px;
-    border-radius: 4px;
-    border: 1px solid #202430;
-    background: #191C26;
-    color: #4A4E62;
-}
-
-.footer {
-    display: flex;
-    width: 372px;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-}
-
-.play__button {
-    color: #FFF;
-    width: 100%;
-    display: flex;
-    padding: 10px 18px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
-    box-shadow: 0px 4px 0px 0px #263475;
-}
-
-.play__button:active {
-    box-shadow: none;
-    transform: translateY(4px);
 }
 
 .jackpot__light1 {
@@ -201,4 +30,96 @@
     flex-shrink: 0;
     left: -20%;
     transform: rotate(40grad);
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.list__header {
+    display: flex;
+    background: #13161E;
+    padding: 8px 0 8px 0;
+    width: 100%;
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+}
+
+.list__header p {
+    color: #4A4E62;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 150% */
+}
+
+.playersection {
+    background: #262A37;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gamenum , .time{
+    color: #797E95;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.winner {
+    margin-left: 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+}
+
+.prizesection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.prize {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    margin-left: 6px;
+}
+
+.chance {
+    border-radius: 16px;
+    background: #2C303F;
+
+    display: flex;
+    padding: 0 6px;
+    justify-content: center;
+    align-items: center;
+
+    color: #666B84;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
 }

@@ -2,82 +2,76 @@
 
 import styles from "./latestgames.module.css"
 import Image from 'next/image';
-import {useState} from 'react';
 
+type ListItem = {
+    id: number;
+    game:string;
+    winner: string;
+    chance: string;
+    prize: string;
+    time: string;
+};
 export default function LatestGames() {
 
-    const [value, setValue] = useState<string>("0.00");
-
-    const divideByTwo = () => {
-        const numValue = Number(value);
-        setValue((Math.floor(numValue / 2)).toString());
-    };
-
-    const multiplyByTwo = () => {
-        const numValue = Number(value);
-        setValue((Math.floor(numValue * 2)).toString());
-    };
-
-    const addValue = (increment: number) => {
-        const numValue = Number(value);
-        setValue((numValue + increment).toString());
-    };
+    const tableData: ListItem[] = [
+        {
+            id: 10,
+            game: '401',
+            winner: 'Pants`of Fortune',
+            chance: '69',
+            prize: '19234',
+            time: '25 Aug 2023 23:23:23'
+        },
+        {
+            id: 11,
+            game: '402',
+            winner: 'Pants`of Fortune',
+            chance: '2',
+            prize: '1000',
+            time: '14 Aug 2023 19:12:08'
+        },
+        {
+            id: 12,
+            game: '403',
+            winner: 'Pants`of Fortune',
+            chance: '100',
+            prize: '100021',
+            time: '28 Aug 2023 14:22:18'
+        },
+    ];
 
     return (
         <div className={`${styles.game}`}>
             <div className={`${styles.header}`}>
                 <img src="/Ellipse%2087.svg" alt="light" className={styles.jackpot__light1}></img>
-                <Image src="/jackpoticon.svg" alt="Jackpot Icon" width={20} height={20}/>
-                <h2>JACKPOT</h2>
+                <Image src="/clockjack.svg" alt="Icon" width={20} height={20}/>
+                <h2>LATEST GAMES</h2>
             </div>
-            <div className={`${styles.wheel}`}>
-                <div className={`${styles.outsideCircle}`}></div>
-                <div className={`${styles.mainCircle}`}></div>
-                <div className={`${styles.timer}`}>
-                    <h2>
-                        120
-                    </h2>
-                    <h3>
-                        SECONDS
-                    </h3>
+            <div className={styles.list}>
+                <div className={styles.list__header}>
+                    <p>Game</p>
+                    <p>Winner</p>
+                    <p>Chance</p>
+                    <p>Prize</p>
+                    <p>Time</p>
                 </div>
-            </div>
-            <div className={styles.footer}>
-                <div className={styles.bet}>
-                    <p>Enter the amount</p>
-                    <div className={styles.input__container}>
-                        <input
-                            className={styles.sum}
-                            type="text"
-                            placeholder="0"
-                            value={value}
-                            onChange={e => {
-                                const val = e.target.value;
-
-                                if (/^\d+$/.test(val) || val === "") {
-                                    setValue(val.replace(/^0+/, "") || "0");
-                                } else {
-                                    alert("Error: Please enter only digits.");
-                                }
-                            }}
-                        />
-                        <div className={styles.button__container}>
-                            <button onClick={divideByTwo}>/2</button>
-                            <button onClick={multiplyByTwo}>x2</button>
+                {tableData.map((item) => (
+                    <div key="id" className={styles.playersection}>
+                        <p className={styles.gamenum}>#{item.game}</p>
+                        <div className={styles.prof}>
+                            <Image src="/Avatar.png" alt="profile" width={32} height={32}/>
+                            <p className={styles.winner}>{item.winner}</p>
                         </div>
+                        <p className={styles.chance}>{item.chance}%</p>
+                        <div className={styles.prizesection}>
+                            <Image src="/dol.svg" alt="icon" width={16} height={16}/>
+                            <p className={styles.prize}>
+                                {parseFloat(item.prize).toLocaleString('en-US')}
+                            </p>
+                        </div>
+                        <p className={styles.time}>{item.time}</p>
                     </div>
-                    <div className={styles.buttonimp__container}>
-                        <button onClick={() => addValue(1)}>+1</button>
-                        <button onClick={() => addValue(5)}>+5</button>
-                        <button onClick={() => addValue(10)}>+10</button>
-                        <button onClick={() => addValue(100)}>+100</button>
-                        <button onClick={() => addValue(500)}>+500</button>
-                        <button onClick={() => setValue("ALL")}>ALL</button>
-                    </div>
-                </div>
-                <button onClick={() => console.log('Play button clicked!')} className={styles.play__button}>
-                    Play
-                </button>
+                ))}
             </div>
         </div>
     );
