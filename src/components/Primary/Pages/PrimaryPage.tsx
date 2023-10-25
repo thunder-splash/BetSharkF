@@ -21,10 +21,10 @@ export default function PrimaryPage() {
     ];
 
     const cardsRec = [
-        {id: '1', image: '/jackpot.svg' },
-        {id: '2', image: '/roulette.svg'},
-        {id: '3', image: '/coinflip.svg'},
-        {id: '4', image: '/dice.svg'},
+        {id: '1', image: '/jackpot.svg', link: 'jackpot'},
+        {id: '2', image: '/roulette.svg', link: 'roulette'},
+        {id: '3', image: '/coinflip.svg', link: 'coinflip'},
+        {id: '4', image: '/dice.svg', link: 'dice'},
     ];
 
     const recCoins = [
@@ -52,19 +52,19 @@ export default function PrimaryPage() {
                 <button className={styles.join_button}>Join Now & Play</button>
             </section>
             <section className={styles.main_section_cards}>
-                    <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
-                    <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
-                    <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
-                    <div className={styles.card_grid}>
-                        {cardsMain.map((card) => (
-                            <div key={card.id} className={styles.cardmain}>
-                                <Image alt="cardimg" width={56} height={56} src={card.image}/>
-                                <p className={styles.cardtt}>{card.title}</p>
-                                <p className={styles.cardut}>{card.subtitle}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <img src="/rightbottomlight.svg" alt="light" className={styles.cardsl2}/>
+                <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
+                <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
+                <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
+                <div className={styles.card_grid}>
+                    {cardsMain.map((card) => (
+                        <div key={card.id} className={styles.cardmain}>
+                            <Image alt="cardimg" width={56} height={56} src={card.image}/>
+                            <p className={styles.cardtt}>{card.title}</p>
+                            <p className={styles.cardut}>{card.subtitle}</p>
+                        </div>
+                    ))}
+                </div>
+                <img src="/rightbottomlight.svg" alt="light" className={styles.cardsl2}/>
             </section>
             <section className={styles.how_it_works}>
                 <div className={styles.greengrad}>
@@ -94,7 +94,9 @@ export default function PrimaryPage() {
                     {cardsRec.map((card) => (
                         <div key={card.id} className={styles.cardrec}>
                             <Image alt="cardimg" width={207} height={207} src={card.image}/>
-                            <button className={styles.playnow}>Play now</button>
+                            <Link href={`/games/${card.link}`} style={{ width: "100%" }}>
+                                <p className={styles.playnow}>Play now</p>
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -105,10 +107,7 @@ export default function PrimaryPage() {
                             <Image alt="coinimg" width={32} height={32} src={coin.image}/>
                         </div>
                     ))}
-                    {/* Предполагается, что вы импортируете Link из 'next/link' */}
-                    {/* Если это не так, замените Link на соответствующий компонент или элемент */}
-                    {/* Если вы используете 'react-router-dom', замените Link на NavLink или RouterLink */}
-                    {/* Если вы не используете маршрутизацию, замените Link на button или a, в зависимости от вашего случая */}
+                    {/* Используйте Link для создания ссылки */}
                     <Link href="/transactions/deposit" className={styles.recbut}>
                         Deposit
                     </Link>
@@ -124,61 +123,61 @@ export default function PrimaryPage() {
                 </div>
                 <h2 className={styles.pmtitle}>The #1 VIP system</h2>
                 <p className={styles.abouttext}>We tell you more about the possible bonuses of each status.</p>
-            <div className={styles.vip_system_container}>
-                <div className={styles.vip_row_images}>
-                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_regular.svg" className={styles.cardimg}/>
-                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_silver.svg" className={styles.cardimg} />
-                    <Image alt="cardimg" width={160} height={160} src="/vip_crd_gold.svg" className={styles.cardimg} />
+                <div className={styles.vip_system_container}>
+                    <div className={styles.vip_row_images}>
+                        <Image alt="cardimg" width={160} height={160} src="/vip_crd_regular.svg"
+                               className={styles.cardimg}/>
+                        <Image alt="cardimg" width={160} height={160} src="/vip_crd_silver.svg"
+                               className={styles.cardimg}/>
+                        <Image alt="cardimg" width={160} height={160} src="/vip_crd_gold.svg"
+                               className={styles.cardimg}/>
+                    </div>
+                    <div className={styles.vip_row}>
+                        <div className={styles.vip_column}>
+                            <p>Your turnover</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>$0-10,000</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>$10,000 - 20,000</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>$20,000+</p>
+                        </div>
+                    </div>
+                    <div className={styles.vip_row}>
+                        <div className={styles.vip_column}>
+                            <p>Withdrawal fee</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>1%</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>0.5%</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div className={styles.vip_row}>
+                        <div className={styles.vip_column}>
+                            <p>Weekly bonus</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>#402</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>#402</p>
+                        </div>
+                        <div className={styles.vip_column}>
+                            <p>#402</p>
+                        </div>
+                    </div>
                 </div>
-                <div className={styles.vip_row}>
-                    <div className={styles.vip_column}>
-                        <p>Your turnover</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>$0-10,000</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>$10,000 - 20,000</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>$20,000+</p>
-                    </div>
-                </div>
-                <div className={styles.vip_row}>
-                    <div className={styles.vip_column}>
-                        <p>Withdrawal fee</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>1%</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>0.5%</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>0</p>
-                    </div>
-                </div>
-                <div className={styles.vip_row}>
-                    <div className={styles.vip_column}>
-                        <p>Weekly bonus</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>#402</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>#402</p>
-                    </div>
-                    <div className={styles.vip_column}>
-                        <p>#402</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
             <section className={styles.live_payouts}>
                 <img src="/payunderl.svg" alt="light" className={styles.cardslp1}></img>
-                {/*<div className={styles.recgl1sec}>*/}
-                {/*    <img src="/gamesl.svg" alt="light" className={styles.recgl1}></img>*/}
-                {/*</div>*/}
                 <h2>Live payouts & latest bet</h2>
                 <p className={styles.abouttext}>The latest payouts and bets are collected here.</p>
                 <LivePayouts/>

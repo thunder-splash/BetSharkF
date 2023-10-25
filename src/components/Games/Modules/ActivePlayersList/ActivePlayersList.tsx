@@ -42,6 +42,7 @@ export default function ActivePlayersList() {
             </div>
             <div className={styles.list}>
                 <div className={styles.list__header}>
+                    <Image src="/dot.svg" alt="dot" width={10} height={10}/>
                     <p>User</p>
                     <p>Rate</p>
                     <p>Chance</p>
