@@ -15,13 +15,13 @@ export default function ActivePlayersList() {
         {
             id: 1,
             name: 'паша',
-            bet: '1234' ,
+            bet: '1234',
             procent: '12'
         },
         {
             id: 2,
             name: 'Pants`of Fortune',
-            bet: '1234' ,
+            bet: '1234',
             procent: '12'
         },
         {
@@ -42,23 +42,27 @@ export default function ActivePlayersList() {
             </div>
             <div className={styles.list}>
                 <div className={styles.list__header}>
+                    <Image src="/dot.svg" alt="dot" width={10} height={10} className={styles.dot__inheader}/>
                     <p>User</p>
                     <p>Rate</p>
                     <p>Chance</p>
                 </div>
                 {tableData.map((item) => (
                     <div key={item.id} className={styles.playersection}>
-                        <Image src="/dot.svg" alt="dot" width={10} height={10}/>
+                        <Image src="/dot.svg" alt="dot" width={10} height={10} className={styles.dot__inbody}/>
                         <div className={styles.prof}>
                             <Image src="/Avatar.png" alt="profile" width={32} height={32}/>
                             <p className={styles.name}>{item.name}</p>
                         </div>
                         <p className={styles.bet}>
                             {new Intl.NumberFormat('us-US', {
-                            style: 'currency',
-                            currency: 'USD',
-                        }).format(parseFloat(item.bet))}</p>
-                        <p className={styles.procent}>{item.procent}%</p>
+                                style: 'currency',
+                                currency: 'USD',
+                            }).format(parseFloat(item.bet))}
+                        </p>
+                        <div className={styles.percentContainer}>
+                            <p className={styles.procent}>{item.procent}%</p>
+                        </div>
                     </div>
                 ))}
             </div>

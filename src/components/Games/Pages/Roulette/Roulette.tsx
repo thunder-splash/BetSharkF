@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./roulette.module.css"
 import Image from 'next/image';
 import BetContainer from "@/components/Games/Modules/BetContainer/BetContainer";

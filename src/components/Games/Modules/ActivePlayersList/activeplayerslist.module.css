@@ -53,7 +53,7 @@
 .list__header {
     display: flex;
     background: #13161E;
-    padding: 8px 0 8px 0;
+    padding: 8px 0 8px 16px;
     width: 100%;
     border-radius: 8px;
     align-items: center;
@@ -61,6 +61,7 @@
 }
 
 .list__header p {
+    flex: 1;
     color: #4A4E62;
     font-size: 12px;
     font-style: normal;
@@ -69,15 +70,24 @@
 }
 
 .playersection {
+    flex: 1;
     background: #262A37;
     flex-direction: row;
     display: flex;
     width: 100%;
-    padding: 8px 16px;
+    padding: 8px 0 8px 16px;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
     margin-top: 8px;
+}
+
+.playersection p,
+.playersection div,
+.dot__inheader,
+.dot__inbody {
+    display: flex;
+    flex: 1 0 1;
 }
 
 .prof {
@@ -118,4 +128,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
+    position: absolute;
+}
+
+.dot__inheader {
+    opacity: 0;
 }

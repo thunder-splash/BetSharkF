@@ -62,7 +62,9 @@ export default function LatestGames() {
                             <Image src="/Avatar.png" alt="profile" width={32} height={32}/>
                             <p className={styles.winner}>{item.winner}</p>
                         </div>
-                        <p className={styles.chance}>{item.chance}%</p>
+                        <div className={styles.chanceContainer}>
+                            <p className={styles.chance}>{item.chance}%</p>
+                        </div>
                         <div className={styles.prizesection}>
                             <Image src="/dol.svg" alt="icon" width={16} height={16}/>
                             <p className={styles.prize}>

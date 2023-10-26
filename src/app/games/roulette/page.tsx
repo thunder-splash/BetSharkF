@@ -1,9 +1,9 @@
-import Jackpot from "@/components/Games/Pages/Jackpot/Jackpot";
+import Roulette from "@/components/Games/Pages/Roulette/Roulette";
 
 export default function Games() {
     return (
         <div>
-            <Jackpot/>
+            <Roulette/>
         </div>
     )
 }
