@@ -40,6 +40,10 @@
     justify-content: space-between;
 }
 
+.input__container input {
+    width: 100%;
+}
+
 .button__container {
     display: flex;
     align-items: center;

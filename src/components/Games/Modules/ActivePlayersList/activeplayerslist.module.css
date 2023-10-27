@@ -83,14 +83,12 @@
 }
 
 .playersection p,
-.playersection div,
-.dot__inheader,
-.dot__inbody {
+.playersection div {
     display: flex;
-    flex: 1 0 1;
+    flex: 1;
 }
 
-.prof {
+.prof , .percentContainer {
     display: flex;
     flex-direction: row;
     align-items: center;

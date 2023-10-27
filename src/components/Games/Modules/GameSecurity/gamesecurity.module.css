@@ -1,7 +1,6 @@
-
 .gamesecure{
     display: flex;
-    width: 372px;
+    width: 100%;
     padding: 8px;
     justify-content: space-between;
     align-items: flex-start;
