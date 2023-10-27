@@ -1,0 +1,48 @@
+.roll{
+    width: 504px;
+    background: #191C26;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid #202430;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.header span {
+    color: #555A71;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.spin{
+    padding: 24px 16px 24px 16px;
+}
+
+.rollhistory{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 16px;
+
+    color: #4A4E62;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
