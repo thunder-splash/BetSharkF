@@ -1,12 +1,11 @@
 import styles from "./activeplayerslist.module.css"
 import Image from 'next/image';
-import {stylesBadge} from "@/styles/transactions";
 
 type ListItem = {
     id: number;
     name: string;
     bet: string;
-    procent: string;
+    percent: string;
 };
 
 export default function ActivePlayersList() {
@@ -16,19 +15,19 @@ export default function ActivePlayersList() {
             id: 1,
             name: 'паша',
             bet: '1234',
-            procent: '12'
+            percent: '12'
         },
         {
             id: 2,
             name: 'Pants`of Fortune',
             bet: '1234',
-            procent: '12'
+            percent: '12'
         },
         {
             id: 3,
             name: 'Вася Пупкин',
             bet: '1',
-            procent: '1'
+            percent: '1'
         },
     ];
 
@@ -61,7 +60,7 @@ export default function ActivePlayersList() {
                             }).format(parseFloat(item.bet))}
                         </p>
                         <div className={styles.percentContainer}>
-                            <p className={styles.procent}>{item.procent}%</p>
+                            <p className={styles.percent}>{item.percent}%</p>
                         </div>
                     </div>
                 ))}
