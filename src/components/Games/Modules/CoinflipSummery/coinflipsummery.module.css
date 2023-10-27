@@ -1,0 +1,53 @@
+.summery{
+    width: 472px;
+    background: #191C26;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    border-bottom: 1px solid #202430;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+.info{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.text , .text1{
+    display: flex;
+    justify-content: space-between;
+}
+.text1{
+    margin-top: 10px;
+}
+
+.graytext{
+    color: #4A4E62;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.value{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
