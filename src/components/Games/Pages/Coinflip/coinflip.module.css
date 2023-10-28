@@ -47,6 +47,7 @@
     line-height: 28px;
     border-radius: 12px 12px 0 0;
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid #202430;
     background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     align-items: center;
     gap: 8px;

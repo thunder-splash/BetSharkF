@@ -1,0 +1,53 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 830px;
+    margin: 24px auto 140px auto;
+}
+
+.allgames{
+    width: 100%;
+    background: #191C26;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #202430;
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+
+.coinflip__light1{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.55;
+    filter: blur(54px);
+    flex-shrink: 0;
+    left: -20%;
+    transform: rotate(40grad);
+}
+
+.body{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 14px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 0 0 12px 12px;
+    background: #191C26;
+}

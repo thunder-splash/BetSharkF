@@ -30,7 +30,7 @@
 .input__container {
     display: flex;
     color: #555A71;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
     padding: 10px 14px;
     align-items: center;
     border-radius: 8px;

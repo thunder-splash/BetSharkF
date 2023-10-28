@@ -6,6 +6,7 @@ import BetContForCoinflip from "@/components/Games/Modules/BetContForCoinflip/Be
 import CoinflipSummery from "@/components/Games/Modules/CoinflipSummery/CoinflipSummery";
 import RollContainer from "@/components/Games/Modules/RollContainer/RollContainer";
 import CoinflipStatus from "@/components/Games/Modules/CoinflipStatus/CoinflipStatus";
+import AllGamesCoinflip from "@/components/Games/Modules/AllGamesCoinflip/AllGamesCoinflip";
 // import GameSecurity from "@/components/Games/Modules/GameSecurity/GameSecurity";
 // import RollContainer from "@/components/Games/Modules/RollContainer/RollContainer";
 // import RoulettePlayers from "@/components/Games/Modules/RoulettePlayers/RoulettePlayers";
@@ -33,8 +34,8 @@ export default function Coinflip() {
                     <CoinflipSummery/>
                     <CoinflipStatus/>
                 </div>
-
             </div>
+            <AllGamesCoinflip/>
         </div>
     );
 }
