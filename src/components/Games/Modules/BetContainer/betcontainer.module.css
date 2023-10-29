@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
     align-self: stretch;
 }
 
@@ -40,8 +39,22 @@
     justify-content: space-between;
 }
 
-.input__container input {
+.input__container2 {
+    display: flex;
+    color: #555A71;
+    margin-top: 6px;
+    padding: 10px 14px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #262A37;
+    background: #191C26;
     width: 100%;
+    justify-content: space-between;
+}
+
+.input__container input,
+.input__container2 input{
+    width: 300px;
 }
 
 .button__container {
@@ -66,6 +79,7 @@
     align-items: flex-start;
     gap: 4px;
     align-self: stretch;
+    margin-top: 6px;
 }
 
 .buttonimp__container button {
@@ -78,4 +92,18 @@
     border: 1px solid #202430;
     background: #191C26;
     color: #4A4E62;
+}
+
+.profit {
+    padding-top: 20px;
+    gap: 6px;
+}
+
+.profitinput {
+    display: flex;
+    color: #555A71;
+    align-items: center;
+    background: #191C26;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    outline: none;
 }

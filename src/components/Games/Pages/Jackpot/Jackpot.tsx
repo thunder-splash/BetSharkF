@@ -3,8 +3,8 @@
 import styles from "./jackpot.module.css"
 import Image from 'next/image';
 import ActivePlayersList from "@/components/Games/Modules/ActivePlayersList/ActivePlayersList";
-import LatestGames from "@/components/Games/Modules/LatestGames/LatestGames";
-import BetContainer from "@/components/Games/Modules/BetContainer/BetContainer";
+import LatestGames from "@/components/Games/Modules/LatestGames/Jackpot/LatestGames";
+import BetContainer from "@/components/Games/Modules/BetContainer/Jackpot/BetContainer";
 import GameSecurity from "@/components/Games/Modules/GameSecurity/GameSecurity";
 
 export default function Jackpot() {

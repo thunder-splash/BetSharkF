@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./latestgames.module.css"
+import styles from "../latestgames.module.css"
 import Image from 'next/image';
 
 type ListItem = {

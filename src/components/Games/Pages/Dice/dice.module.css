@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 900px;
+    margin: 24px auto 0 auto;
+    height: 100%;
+}
+
+.game {
+    width: 372px;
+    background: #191C26;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    border-bottom: 1px solid #202430;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    width: 372px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.play__button {
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    box-shadow: 0 4px 0 0 #263475;
+}
+
+.play__button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.jackpot__light1 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.55;
+    filter: blur(54px);
+    flex-shrink: 0;
+    left: -20%;
+    transform: rotate(40grad);
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.jackcollumn{
+    display: flex;
+    flex-direction: column;
+}

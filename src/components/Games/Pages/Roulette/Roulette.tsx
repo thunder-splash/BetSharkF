@@ -2,7 +2,7 @@
 
 import styles from "./roulette.module.css"
 import Image from 'next/image';
-import BetContainer from "@/components/Games/Modules/BetContainer/BetContainer";
+import BetContainer from "@/components/Games/Modules/BetContainer/Jackpot/BetContainer";
 import GameSecurity from "@/components/Games/Modules/GameSecurity/GameSecurity";
 import RollContainer from "@/components/Games/Modules/RollContainer/RollContainer";
 import RoulettePlayers from "@/components/Games/Modules/RoulettePlayers/RoulettePlayers";

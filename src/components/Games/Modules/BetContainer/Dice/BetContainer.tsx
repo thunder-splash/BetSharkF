@@ -1,5 +1,6 @@
-import styles from "./betcontainer.module.css";
+import styles from "../betcontainer.module.css";
 import {useState} from "react";
+import Image from "next/image";
 
 export default function BetContainer() {
 
@@ -52,6 +53,19 @@ export default function BetContainer() {
                 <button onClick={() => addValue(100)}>+100</button>
                 <button onClick={() => addValue(500)}>+500</button>
                 <button onClick={() => setValue("ALL")}>ALL</button>
+            </div>
+            <div className={styles.profit}>
+                <p>Profit</p>
+                <div className={styles.input__container2}>
+                    <Image src="/dol.svg" alt="icon" width={16} height={16} style={{marginRight: "8px", width: "16px"}}/>
+                    <input
+                        className={styles.profitinput}
+                        type="text"
+                        placeholder="0"
+                        value={value}
+                        readOnly
+                    />
+                </div>
             </div>
         </div>
     );
