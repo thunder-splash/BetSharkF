@@ -84,14 +84,15 @@
     display: flex;
 }
 
-.btcbuttons{
+.bitbuttons{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 12px;
+    gap: 8px;
 }
 
-.btcbuttons button{
+.btcbdef{
     display: flex;
     padding: 6px;
     flex-direction: column;
@@ -102,4 +103,17 @@
     border-radius: 8px;
     border: 1px solid #262A37;
     background: #202430;
+}
+
+.btcbtrue{
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    border-radius: 8px;
+    border: 1px solid #5271FF;
+    background-color: #263475;
 }

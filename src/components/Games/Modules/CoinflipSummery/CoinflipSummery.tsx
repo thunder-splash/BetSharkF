@@ -6,7 +6,7 @@ export default function CoinflipSummery() {
     return (
         <div className={styles.summery}>
             <div className={styles.header}>
-                <p>Coinflip summary</p>
+                <h2>Coinflip summary</h2>
             </div>
             <div className={styles.info}>
                 <div className={styles.text}>
@@ -14,7 +14,7 @@ export default function CoinflipSummery() {
                     <p className={styles.value}>$
                         {new Intl.NumberFormat('us-US', {
                             style: 'decimal',
-                        }).format(parseFloat("0"))}
+                        }).format(parseFloat("2322"))}
                     </p>
                 </div>
                 <div className={styles.text1}>

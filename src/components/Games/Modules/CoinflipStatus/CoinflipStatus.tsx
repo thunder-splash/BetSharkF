@@ -6,7 +6,7 @@ export default function CoinflipStatus() {
     return (
         <div className={styles.summery}>
             <div className={styles.header}>
-                <p>Your coinflip status</p>
+                <h2>Your coinflip status</h2>
             </div>
             <div className={styles.info}>
                 <div className={styles.text}>

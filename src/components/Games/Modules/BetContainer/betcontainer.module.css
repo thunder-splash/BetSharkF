@@ -54,7 +54,7 @@
 
 .input__container input,
 .input__container2 input{
-    width: 300px;
+    width: 100%;
 }
 
 .button__container {
