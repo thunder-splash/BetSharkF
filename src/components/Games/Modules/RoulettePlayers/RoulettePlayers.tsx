@@ -24,6 +24,51 @@ export default function RoulettePlayers() {
             name: 'Вася Пупкин',
             bet: '1',
         },
+        {
+            id: 4,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 5,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 6,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 7,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 8,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 9,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 10,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 11,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
+        {
+            id: 12,
+            name: 'Вася Пупкин',
+            bet: '1',
+        },
     ];
 
     const columns = [
@@ -60,20 +105,22 @@ export default function RoulettePlayers() {
                             <p>USER</p>
                             <p>RATE</p>
                         </div>
-                        {tableData.map((item) => (
-                            <div key={item.id} className={styles.playersection}>
-                                <div className={styles.prof}>
-                                    <Image src="/Avatar.png" alt="profile" width={32} height={32}/>
-                                    <p className={styles.name}>{item.name}</p>
+                        <div className={styles.playeroverflow}>
+                            {tableData.map((item , index) => (
+                                <div key={item.id} className={index % 2 === 0 ? styles.playersection : styles.playersectionsec}>
+                                    <div className={styles.prof}>
+                                        <Image src="/Avatar.png" alt="profile" width={32} height={32}/>
+                                        <p className={styles.name}>{item.name}</p>
+                                    </div>
+                                    <p className={styles.bet}>
+                                        {new Intl.NumberFormat('us-US', {
+                                            style: 'currency',
+                                            currency: 'USD',
+                                        }).format(parseFloat(item.bet))}
+                                    </p>
                                 </div>
-                                <p className={styles.bet}>
-                                    {new Intl.NumberFormat('us-US', {
-                                        style: 'currency',
-                                        currency: 'USD',
-                                    }).format(parseFloat(item.bet))}
-                                </p>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             ))}

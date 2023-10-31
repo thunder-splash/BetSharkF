@@ -34,10 +34,12 @@
 
 .list {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    /*justify-content: space-between;*/
+    /*align-items: flex-start;*/
     padding: 16px;
     flex-direction: column;
+
+    height: 90%;
 }
 
 .list__header {
@@ -70,9 +72,30 @@
     border-radius: 8px;
     margin-top: 8px;
     overflow: hidden;
+
+    position: relative;
 }
 
 .playersection p, .playersection div {
+    flex: 1 0 0;
+}
+
+.playersectionsec {
+    background: #202430;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding: 8px 0 8px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.playersectionsec p, .playersectionsec div {
     flex: 1 0 0;
 }
 
@@ -141,4 +164,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
+}
+
+.playeroverflow{
+    width: 100%;
+    height: 350px; /* Установите нужную высоту */
+    overflow-y: auto;
 }
