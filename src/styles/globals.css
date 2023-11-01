@@ -72,8 +72,6 @@ aside {
     display: flex;
     justify-content: center;
     padding-top: 24px;
-
-    display: none;
 }
 
 aside ul.game-list li a {
@@ -153,6 +151,15 @@ header .btn {
     align-items: center;
     font-size: 16px;
     font-weight: 500;
+}
+
+.chat{
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        border-radius: 8px;
+        background: #202430;
+        margin-left: 0;
 }
 
 header .btn.blue {

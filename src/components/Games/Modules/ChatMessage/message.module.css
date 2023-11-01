@@ -1,7 +1,7 @@
 .main{
     display: flex;
     gap: 12px;
-    padding: 0px 24px 24px 16px;
+    padding: 0 24px 24px 16px;
     align-items: flex-start;
 }
 

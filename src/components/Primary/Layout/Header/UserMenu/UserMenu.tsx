@@ -11,10 +11,13 @@ type UserMenuProps = {
 export default function UserMenu({onLogout}: UserMenuProps) {
     return (
         <Menu as="div" className="relative inline-block text-left">
-            <div>
+            <div className="flex flex-row">
                 <Menu.Button className="btn dropdown">
-                    <img className="avatar" src="/Avatar.png" alt=""/>
+                    <img className="avatar" src="/Avatar.png" alt="ava"/>
                     janstay
+                </Menu.Button>
+                <Menu.Button className="btn chat">
+                    <img src="/chaticon.svg" alt="chat" />
                 </Menu.Button>
             </div>
             <Transition

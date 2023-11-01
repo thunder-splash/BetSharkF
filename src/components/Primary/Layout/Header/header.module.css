@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     background: #13161e;
-    z-index: 5;
+    z-index: 1000;
     justify-content: space-between;
 }
 
