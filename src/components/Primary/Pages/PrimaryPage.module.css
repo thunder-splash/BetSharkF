@@ -442,8 +442,10 @@
     .card_grid {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .greengrad {
+    .cardsl2 , .cardsl1 , .hiwl2{
+        display: none;
+    }
+    .greengrad , .rec_pay{
         width: 320px;
     }
     .abouttext{

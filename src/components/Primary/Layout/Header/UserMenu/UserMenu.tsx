@@ -2,6 +2,8 @@ import Link from "next/link";
 import {Fragment} from "react";
 import {Menu, Transition} from "@headlessui/react";
 
+import Chat from "@components/"
+
 import styles from "../header.module.css"
 
 type UserMenuProps = {
@@ -16,9 +18,9 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     <img className="avatar" src="/Avatar.png" alt="ava"/>
                     janstay
                 </Menu.Button>
-                <Menu.Button className="btn chat">
+                <button className="btn chat">
                     <img src="/chaticon.svg" alt="chat" />
-                </Menu.Button>
+                </button>
             </div>
             <Transition
                 as={Fragment}
