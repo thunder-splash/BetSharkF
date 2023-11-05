@@ -5,19 +5,19 @@ import styles from "./footer.module.css";
 export const Footer = () => {
     return (
         <>
-            <footer className={`${styles.footer} container grid grid-cols-12`}>
-                <div className="col-span-6">
+            <footer className={`${styles.footer}  container grid md:grid-cols-12 w-full grid-cols-1`}>
+                <div className="col-span-6 pb-10">
                     <Link href="/" className={`${styles.logo}`}>
                         <Image src="/logo.svg" alt="logo" width={32} height={32}/>
                         BetShark
                     </Link>
-                    <p>
+                    <p className="w-full">
                         BetShark — is owned and operated by Nonce Gaming B.V. It is licensed
                         and regulated by the Government of Curaçao under the gaming license
                         8048/JAZ.
                     </p>
                 </div>
-                <div className="col-span-3">
+                <div className="md:col-span-3  w-full col-span-1">
                     <div className={`${styles.title}`}>BetShark</div>
                     <ul className={`${styles.list}`}>
                         <li>
@@ -34,7 +34,7 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-span-2">
+                <div className="md:col-span-2  w-full col-span-1">
                     <div className={`${styles.title}`}>Games</div>
                     <ul className={`${styles.list}`}>
                         <li>
@@ -51,9 +51,9 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-span-1">
+                <div className="md:col-span-1 w-full col-span-1">
                     <Link href="/">
-                        <img src="/Telegram.svg" alt=""/>
+                        <img src="/Telegram.svg" alt="tg"/>
                     </Link>
                 </div>
             </footer>

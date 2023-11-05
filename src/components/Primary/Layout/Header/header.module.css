@@ -18,14 +18,17 @@
 }
 
 .logo {
-    color: #fff;
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.hide_on_mobile{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
     margin-right: 40px;
+    color: #fff;
 }
 
 .navigation {
@@ -115,4 +118,10 @@
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
+}
+
+@media (max-width: 360px) {
+    .headerAuth{
+        display: none;
+    }
 }

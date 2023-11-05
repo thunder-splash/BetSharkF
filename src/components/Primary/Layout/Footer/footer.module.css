@@ -7,10 +7,6 @@
     width: 100vw;
 }
 
-.footer p {
-    max-width: 232px;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -43,7 +39,7 @@
 
 .rights{
     display: flex;
-    padding: 16px 320px;
+    padding: 16px 32px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -60,14 +56,14 @@
 }
 
 @media (max-width: 360px) {
-    .grid-cols-12 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .col-span-6 {
-        grid-column: span 10 / span 10;
-    }
-
-    .col-span-6 p {
-        width: 120%;
+    .rights {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background-color: #13161E;
+        width: 100%;
     }
 }

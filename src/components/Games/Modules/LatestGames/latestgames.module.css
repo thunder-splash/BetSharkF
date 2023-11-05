@@ -171,3 +171,9 @@
     height: 350px; /* Установите нужную высоту */
     overflow-y: auto;
 }
+
+@media (max-width: 360px) {
+    .list__header p:nth-child(1), .list__header p:nth-child(5) , .gamenum , .prof p , .time {
+        display: none;
+    }
+}

@@ -42,6 +42,7 @@ export default function PrimaryPage() {
 
         return (
             <>
+                {/*<img src="/main_section_bg.svg" alt="bgimg" className={styles.bgimg} />*/}
                 <section className={styles.main_section}>
                     <div className={styles.mainlsec}>
                         <img src="/mainl1.svg" alt="light" className={styles.mainl1}/>
@@ -102,11 +103,11 @@ export default function PrimaryPage() {
                     </div>
                     <div className={styles.rec_pay}>
                         <p>Want to play? Deposit now</p>
-                        {recCoins.map((coin) => (
-                            <div key={coin.id}>
-                                <Image alt="coinimg" width={32} height={32} src={coin.image}/>
-                            </div>
-                        ))}
+                        <div className={styles.imgrow}>
+                            {recCoins.map((coin) => (
+                                <Image key={coin.id} alt="coinimg" width={32} height={32} src={coin.image}/>
+                            ))}
+                        </div>
                         {/* Используйте Link для создания ссылки */}
                         <Link href="/transactions/deposit" className={styles.recbut}>
                             Deposit

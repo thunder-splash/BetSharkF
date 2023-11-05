@@ -9,6 +9,9 @@
     background-position-x: center;
     position: relative;
 }
+/*.bgimg{*/
+/*    */
+/*}*/
 .mainlsec{
     display: flex;
     justify-content: center;
@@ -315,6 +318,12 @@
     background: linear-gradient(90deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 20%), linear-gradient(90deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
     margin-top: 60px;
 }
+.imgrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
 
 .recbut{
     border-radius: 8px;
@@ -448,6 +457,16 @@
     .greengrad , .rec_pay{
         width: 320px;
     }
+    .rec_pay{
+        display: flex;
+        flex-direction: column;
+    }
+    /*.recimgs{*/
+    /*    !*display: flex;*!*/
+    /*    !*flex-direction: row;*!*/
+    /*    display: grid;*/
+    /*    grid-template-rows: 1fr 1fr;*/
+    /*}*/
     .abouttext{
         color: #555A71;
         text-align: center;
@@ -472,5 +491,24 @@
     }
     .rec_grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .vip_system{
+        display: none;
+    }
+    .rec_pay{
+        background: linear-gradient(180deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 35.27%), linear-gradient(180deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    }
+    .imgrow {
+        margin: 24px 0 24px 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 288px;
+        justify-content: space-between;
+    }
+    .imgrow img {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px; /* Если вы хотите добавить пространство между рядами */
     }
 }

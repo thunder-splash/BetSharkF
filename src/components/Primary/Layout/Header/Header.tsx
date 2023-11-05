@@ -8,7 +8,7 @@ import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
 export const Header = () => {
 
-    const [isAuth, setIsAuth] = useState(true);
+    const [isAuth, setIsAuth] = useState(false);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
     const [isLogin, setIsLogin] = useState(false);
 
@@ -34,8 +34,8 @@ export const Header = () => {
         <header className={isAuth ? `${styles.headerAuth}` : `${styles.header}`}>
             <div className={`${styles.navWrapper}`}>
                 <Link href="/" className={`${styles.logo}`}>
-                    <Image src="/logo.svg" alt="logo" width={32} height={32} />
-                    BetShark
+                    <Image className={styles.logoimg} src="/logo.svg" alt="logo" width={32} height={32} />
+                    <span className={styles.hide_on_mobile}>BetShark</span>
                 </Link>
 
                 <ul className={`${styles.navigation}`}>
