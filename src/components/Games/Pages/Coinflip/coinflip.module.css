@@ -85,3 +85,22 @@
     box-shadow: none;
     transform: translateY(4px);
 }
+
+@media (max-width: 360px) {
+    .upper {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 320px;
+        margin: 16px auto 0 auto;
+    }
+
+    .game {
+        width: 320px;
+    }
+    .upper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

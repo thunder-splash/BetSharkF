@@ -59,12 +59,12 @@ export default function BetContForCoinflip() {
                     </div>
                 </div>
                 <div className={styles.bitbuttons}>
-                    {/*<button> <Image src="/btcfront.png" alt="btc" width={32} height={32}/></button>*/}
-                    {/*<button> <Image src="/btcback.jpg" alt="btc" width={32} height={32}/></button>*/}
-                    <button onClick={handleClick1}
-                            className={isClicked1 ? 'btcbtrue' : 'btcbdef'}>btc1</button>
-                    <button onClick={handleClick2}
-                            className={isClicked2 ? 'btcbtrue' : 'btcbdef'}>btc2</button>
+                    <button> <Image src="/btcfront.png" alt="btc" width={48} height={48}/></button>
+                    <button> <Image src="/btcback.png" alt="btc" width={48} height={48}/></button>
+                    {/*<button onClick={handleClick1}*/}
+                    {/*        className={isClicked1 ? 'btcbtrue' : 'btcbdef'}>btc1</button>*/}
+                    {/*<button onClick={handleClick2}*/}
+                    {/*        className={isClicked2 ? 'btcbtrue' : 'btcbdef'}>btc2</button>*/}
                 </div>
             </div>
             <div className={styles.buttonimp__container}>

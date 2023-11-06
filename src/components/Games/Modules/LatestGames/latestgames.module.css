@@ -176,4 +176,8 @@
     .list__header p:nth-child(1), .list__header p:nth-child(5) , .gamenum , .prof p , .time {
         display: none;
     }
+
+    .list__header p:nth-child(1), .list__header p:nth-child(3) , .list__header p:nth-child(5) , .gamenum , .prof p , .time , .bet  {
+        display: none;
+    }
 }

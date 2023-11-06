@@ -91,6 +91,19 @@
     margin-left: 12px;
     gap: 8px;
 }
+.bitbuttons button{
+    border-radius: 8px;
+    border: 1px solid #262A37;
+    background: #202430;
+    display: flex;
+    padding: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    height: 54px;
+    width: 54px;
+}
 
 .btcbdef{
     display: flex;

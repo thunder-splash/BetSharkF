@@ -48,6 +48,27 @@ export default function AllGamesCoinflip() {
                             </div>
                         </div>
                     </div>
+                    <div  className={styles.gameadp}>
+                        <div className={styles.adphead}>
+                            <div className={styles.adpplayers}>
+                                <Image src="/Avatar.png" alt="playericon" width={28} height={28}/>
+                                <p className={styles.adpvs}>vs</p>
+                                <Image src="/Avatar.png" alt="playericon" width={28} height={28}/>
+                            </div>
+                            <div className={styles.adptmoney}>
+                                <Image src="/dol.svg" alt="icon" width={16} height={16}/>
+                                <p>
+                                    {new Intl.NumberFormat('us-US', {
+                                        style: 'decimal',
+                                    }).format(parseFloat("2322"))}
+                                </p>
+                            </div>
+                        </div>
+                        <div className={styles.adpfooter}>
+                            <button className={styles.join_button}>Join game</button>
+                            <button className={styles.shieldbuttonactive}><Image src="/shieldCoinflip.svg" alt="shieldicon" width={20} height={20}/></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

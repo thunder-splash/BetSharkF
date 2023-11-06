@@ -212,4 +212,70 @@
     transform: translateY(4px);
 }
 
+.gameadp{
+    display: none;
+}
+
+@media (max-width: 360px) {
+    .wrapper{
+        width: 320px;
+    }
+    .gameinfo{
+        display: none;
+    }
+    .gameadp{
+        display: block;
+        padding: 8px 8px 12px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        border-radius: 12px;
+        background: #13161E;
+        flex-direction: column;
+        width: 288px;
+    }
+    .adphead{
+        border-radius: 8px;
+        background: #202430;
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .adpplayers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .adpvs{
+        color: #353949;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 155.556% */
+    }
+    .adptmoney{
+        display: flex;
+        padding: 6px;
+        align-items: center;
+        gap: 6px;
+        border-radius: 6px;
+        background: #191C26;
+    }
+
+    .adpfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6px;
+    }
+    .join_button{
+        width: 100%;
+    }
+}
+
 
