@@ -153,9 +153,20 @@
         width: 100%;
     }
     .wheel {
+        display: flex;
         width: 320px;
         padding: 32px 35px;
         justify-content: center;
         align-items: center;
+    }
+
+    .mainCircle{
+        top: auto;
+        left: auto;
+    }
+
+    .timer {
+        top: auto;
+        left: auto;
     }
 }
