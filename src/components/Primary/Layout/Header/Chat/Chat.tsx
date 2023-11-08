@@ -1,6 +1,6 @@
 import {useState} from "react";
 import styles from "./chat.module.css"
-import Message from "../../Modules/ChatMessage/Message"
+import Message from "../../../../Games/Modules/ChatMessage/Message"
 
 export default function Chat() {
 

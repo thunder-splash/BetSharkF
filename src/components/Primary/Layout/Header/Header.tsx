@@ -8,7 +8,7 @@ import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
 export const Header = () => {
 
-    const [isAuth, setIsAuth] = useState(false);
+    const [isAuth, setIsAuth] = useState(true);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
     const [isLogin, setIsLogin] = useState(false);
 

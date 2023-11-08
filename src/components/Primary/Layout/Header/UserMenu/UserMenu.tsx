@@ -1,16 +1,22 @@
 import Link from "next/link";
 import {Fragment} from "react";
 import {Menu, Transition} from "@headlessui/react";
-
-import Chat from "@components/"
-
+import {useState} from "react";
 import styles from "../header.module.css"
+import Chat from "@/components/Primary/Layout/Header/Chat/Chat";
 
 type UserMenuProps = {
     onLogout: () => void;
 };
 
 export default function UserMenu({onLogout}: UserMenuProps) {
+
+    const [isChatOpen, setIsChatOpen] = useState(false);
+
+    const toggleChat = () => {
+        setIsChatOpen(!isChatOpen);
+    };
+
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div className="flex flex-row">
@@ -18,7 +24,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     <img className="avatar" src="/Avatar.png" alt="ava"/>
                     janstay
                 </Menu.Button>
-                <button className="btn chat">
+                <button className="btn chat" onClick={toggleChat}>
                     <img src="/chaticon.svg" alt="chat" />
                 </button>
             </div>
@@ -86,6 +92,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     </div>
                 </Menu.Items>
             </Transition>
+            {isChatOpen && <Chat />}
         </Menu>
     );
 }
