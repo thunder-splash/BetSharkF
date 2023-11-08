@@ -6,7 +6,6 @@ import LatestGames from "@/components/Games/Modules/LatestGames/Dice/LatestGames
 import BetContainer from "@/components/Games/Modules/BetContainer/Dice/BetContainer";
 import GameSecurity from "@/components/Games/Modules/GameSecurity/GameSecurity";
 import DiceChance from "@/components/Games/Modules/DiceChance/DiceChance"
-import ActivePlayersList from "@/components/Games/Modules/ActivePlayersList/ActivePlayersList";
 
 export default function Dice() {
 

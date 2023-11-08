@@ -9,45 +9,53 @@
     background-position-x: center;
     position: relative;
 }
+
 /*.bgimg{*/
 /*    */
 /*}*/
-.mainlsec{
+.mainlsec {
     display: flex;
     justify-content: center;
 }
-.mainl1{
+
+.mainl1 {
     margin-right: 500px;
 }
-.mainl1 , .mainl2{
+
+.mainl1, .mainl2 {
     position: absolute;
     top: 0;
     z-index: 0;
 }
-.cardsl1 , .cardsl2 , .cardslp1 , .cardslp2{
+
+.cardsl1, .cardsl2, .cardslp1, .cardslp2 {
     position: absolute;
     z-index: 0;
     object-fit: contain;
 }
-.cardsl1{
-    left:0;
-    height: 17.5%;
-}
-.cardsl2{
-    right:0;
+
+.cardsl1 {
+    left: 0;
     height: 17.5%;
 }
 
-.cardslp1{
-    left:0;
+.cardsl2 {
+    right: 0;
+    height: 17.5%;
+}
+
+.cardslp1 {
+    left: 0;
     height: 13.7%;
 }
-.cardslp2{
-    right:0;
+
+.cardslp2 {
+    right: 0;
     height: 13.7%;
 }
-.main_section , .main_section_cards , .how_it_works ,
-.recommended_game , .vip_system , .live_payouts {
+
+.main_section, .main_section_cards, .how_it_works,
+.recommended_game, .vip_system, .live_payouts {
     padding: 90px 0 90px 0;
     display: flex;
     flex-direction: column;
@@ -57,8 +65,9 @@
     /*margin-top: 90px;*/
     z-index: 999;
 }
-.secondtitlet{
-    color:#797E95;
+
+.secondtitlet {
+    color: #797E95;
     text-align: center;
     font-size: 30px;
     font-style: normal;
@@ -66,7 +75,7 @@
     line-height: 38px;
 }
 
-.secondtitleb{
+.secondtitleb {
     color: #FFF;
     font-size: 30px;
     font-style: normal;
@@ -78,7 +87,7 @@
 .how_it_works h2,
 .recommended_game h2,
 .vip_system h2,
-.live_payouts h2{
+.live_payouts h2 {
     color: #FFF;
     text-align: center;
     font-size: 48px;
@@ -87,6 +96,7 @@
     line-height: 60px;
     letter-spacing: -0.96px;
 }
+
 .h1onpage {
     color: #FFF;
     text-align: center;
@@ -96,41 +106,49 @@
     line-height: 98px;
     letter-spacing: -1.6px;
 }
-.how_it_works , .vip_system {
+
+.how_it_works, .vip_system {
     position: relative;
 }
+
 .greengrad {
     position: absolute;
     top: 0;
     width: 990px; /* Установите ширину границы */
     border-top: 4px solid #17A07F; /* Установите стиль границы */
 }
-.hiwlsec{
+
+.hiwlsec {
     position: relative;
     justify-content: center;
 }
-.hiwl1{
+
+.hiwl1 {
     z-index: 1;
     top: 0;
     position: relative;
 }
-.recgl1{
+
+.recgl1 {
     position: absolute;
     z-index: 0;
     object-fit: contain;
     top: 0;
 }
-.recgl1sec{
-        position: relative;
-        justify-content: center;
+
+.recgl1sec {
+    position: relative;
+    justify-content: center;
 }
-.hiwl2{
+
+.hiwl2 {
     z-index: 2;
     top: 0;
     position: relative;
     margin-top: -298px;
 }
-.abouttext{
+
+.abouttext {
     color: #555A71;
     font-size: 18px;
     font-style: normal;
@@ -140,7 +158,7 @@
     padding-bottom: 40px;
 }
 
-.subtextmain{
+.subtextmain {
     color: #555A71;
     font-size: 18px;
     font-style: normal;
@@ -169,6 +187,7 @@
     line-height: 28px;
     z-index: 1000;
 }
+
 .card_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -191,7 +210,7 @@
     user-select: none;
 }
 
-.cardtt{
+.cardtt {
     color: #FFF;
     text-align: center;
     font-size: 24px;
@@ -201,7 +220,7 @@
     margin-top: -4px;
 }
 
-.cardut{
+.cardut {
     color: #555A71;
     text-align: center;
     font-size: 16px;
@@ -223,7 +242,7 @@
     gap: 20px;
 }
 
-.cardhiw{
+.cardhiw {
     display: flex;
     width: 314px;
     padding: 16px;
@@ -237,7 +256,7 @@
     backdrop-filter: blur(10px);
 }
 
-.hiwtt{
+.hiwtt {
     color: #FFF;
     font-size: 24px;
     font-style: normal;
@@ -245,7 +264,7 @@
     line-height: 32px; /* 133.333% */
 }
 
-.hiwut{
+.hiwut {
     color: #555A71;
     font-size: 16px;
     font-style: normal;
@@ -254,7 +273,7 @@
     margin-top: -8px;
 }
 
-.join_button_hiw{
+.join_button_hiw {
     display: flex;
     padding: 10px 18px;
     justify-content: center;
@@ -279,7 +298,7 @@
     gap: 20px;
 }
 
-.cardrec{
+.cardrec {
     display: flex;
     padding: 12px;
     flex-direction: column;
@@ -290,7 +309,7 @@
     background: #191C26;
 }
 
-.playnow{
+.playnow {
     display: flex;
     padding: 8px 14px;
     justify-content: center;
@@ -308,7 +327,7 @@
     z-index: 1000;
 }
 
-.rec_pay{
+.rec_pay {
     display: flex;
     width: 990px;
     padding: 16px;
@@ -318,14 +337,15 @@
     background: linear-gradient(90deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 20%), linear-gradient(90deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
     margin-top: 60px;
 }
-.imgrow{
+
+.imgrow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 32px;
 }
 
-.recbut{
+.recbut {
     border-radius: 8px;
     padding: 0 12px;
     margin-left: 8px;
@@ -337,14 +357,16 @@
     background: #5271ff;
     z-index: 1000;
 }
-.vip_system_container{
+
+.vip_system_container {
     display: block;
     width: 990px;
     padding: 16px;
     border-radius: 12px;
     background: #191C26;
 }
-.vip_row_images{
+
+.vip_row_images {
     display: flex;
     height: 132px;
     padding: 16px;
@@ -354,19 +376,22 @@
     grid-column: span 4 / span 4;
     justify-content: center;
 }
-.cardimg{
+
+.cardimg {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .vip_row_images img:nth-child(1) {
-    margin-left:240px
+    margin-left: 240px
 }
-.vip_row{
+
+.vip_row {
     padding: 15px 16px;
     align-items: center;
     gap: 10px;
     margin-top: 8px;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
     background: #262A37;
 
     grid-column: span 4 / span 4;
@@ -374,30 +399,65 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 }
+
 .vip_row:nth-child(odd) {
     color: #666B84;
     background: #202430;
 }
+
 .vip_column:nth-child(1) {
-    color: #797E95;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 18px;
-    margin-left:0;
+    margin-left: 0;
 }
+
 .vip_column:nth-child(2) {
-    margin-left:65px;
+    margin-left: 65px;
 }
+
 .vip_column:nth-child(3) {
-    margin-left:30px;
+    margin-left: 30px;
 }
-.vip_column{
-    margin-left:0;
+
+.vip_column {
+    margin-left: 0;
     grid-column: span 1 / span 1;
 }
 
+.vip_column p {
+    color: #797E95;
+}
+
+.vip_system_container_adaptive {
+    display: none;
+}
+
 @media (max-width: 360px) {
+
+    .vip_row {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 8px;
+    }
+
+    .vip_column {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .vip_system_container_adaptive {
+        display: flex;
+    }
+
+    .vip_system_container {
+        display: none;
+    }
+
     .h1onpage {
         color: #FFF;
         text-align: center;
@@ -406,7 +466,8 @@
         font-weight: 700;
         line-height: 38px; /* 126.667% */
     }
-    .subtextmain{
+
+    .subtextmain {
         color: #555A71;
         text-align: center;
         font-size: 14px;
@@ -414,7 +475,8 @@
         font-weight: 500;
         line-height: 20px; /* 142.857% */
     }
-    .join_button{
+
+    .join_button {
         color: #ffffff;
         text-align: center;
         font-size: 14px;
@@ -432,7 +494,7 @@
         background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
     }
 
-    .secondtitlet{
+    .secondtitlet {
         color: #797E95;
         text-align: center;
         font-size: 18px;
@@ -440,7 +502,8 @@
         font-weight: 500;
         line-height: 28px; /* 155.556% */
     }
-    .secondtitleb{
+
+    .secondtitleb {
         color: #FFF;
         text-align: center;
         font-size: 18px;
@@ -448,26 +511,31 @@
         font-weight: 600;
         line-height: 28px;
     }
+
     .card_grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .cardsl2 , .cardsl1 , .hiwl2{
+
+    .cardsl2, .cardsl1, .hiwl2 {
         display: none;
     }
-    .greengrad , .rec_pay{
+
+    .greengrad, .rec_pay {
         width: 320px;
     }
-    .rec_pay{
+
+    .rec_pay {
         display: flex;
         flex-direction: column;
     }
+
     /*.recimgs{*/
     /*    !*display: flex;*!*/
     /*    !*flex-direction: row;*!*/
     /*    display: grid;*/
     /*    grid-template-rows: 1fr 1fr;*/
     /*}*/
-    .abouttext{
+    .abouttext {
         color: #555A71;
         text-align: center;
         font-size: 18px;
@@ -475,13 +543,15 @@
         font-weight: 400;
         line-height: 28px; /* 155.556% */
     }
+
     .hiw_grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .how_it_works h2,
     .recommended_game h2,
     .vip_system h2,
-    .live_payouts h2{
+    .live_payouts h2 {
         color: #FFF;
         text-align: center;
         font-size: 30px;
@@ -489,15 +559,15 @@
         font-weight: 600;
         line-height: 38px; /* 126.667% */
     }
+
     .rec_grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .vip_system{
-        display: none;
-    }
-    .rec_pay{
+
+    .rec_pay {
         background: linear-gradient(180deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 35.27%), linear-gradient(180deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
     }
+
     .imgrow {
         margin: 24px 0 24px 0;
         display: flex;
@@ -505,10 +575,41 @@
         max-width: 288px;
         justify-content: space-between;
     }
+
     .imgrow img {
         flex: 0 0 auto;
         width: 32px;
         height: 32px;
         margin-bottom: 10px; /* Если вы хотите добавить пространство между рядами */
+    }
+
+    .vip_row_images_adaptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        width: 320px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #191C26;
+    }
+
+    .img_container {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        background: #13161E;
     }
 }

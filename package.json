@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@heroicons/react": "^2.0.18",
+    "@headlessui/react": "latest",
+    "@heroicons/react": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.6",
+    "@types/js-yaml": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -24,7 +24,7 @@
     "postcss": "latest",
     "eslint-config-next": "latest",
     "autoprefixer": "latest",
-    "tailwindcss": "3.3.3",
+    "tailwindcss": "latest",
     "typescript": "latest"
   }
 }
