@@ -11,6 +11,11 @@ export const Header = () => {
     const [isAuth, setIsAuth] = useState(true);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
     const [isLogin, setIsLogin] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
 
     const toggleSignUpForm = () => {
         setShowSignUpForm(!showSignUpForm);
@@ -57,7 +62,7 @@ export const Header = () => {
             {isAuth ? (
                 <div className="flex">
                     <Link href="#" className="btn sum">
-                        10 004 250.<span>19</span>
+                        <p style={{color: "white"}}>10 004 250.<span>19</span></p>
                     </Link>
                     <Link href="/transactions" className="btn blue">
                         Deposit
@@ -102,6 +107,9 @@ export const Header = () => {
                             showLogin={isLogin}
                         />
                     )}
+                    <button className={styles.burger} onClick={toggleDropdown}>
+                        <img src={isDropdownOpen ? "/burger_closer.svg" : "/burger_on_header.svg"} alt="burger"/>
+                    </button>
                 </div>
             )}
         </header>

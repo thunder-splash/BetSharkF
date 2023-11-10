@@ -22,10 +22,10 @@ export default function UserMenu({onLogout}: UserMenuProps) {
             <div className="flex flex-row">
                 <Menu.Button className="btn dropdown">
                     <img className="avatar" src="/Avatar.png" alt="ava"/>
-                    janstay
+                    <p style={{color: "white"}}>janstay</p>
                 </Menu.Button>
-                <button className="btn chat" onClick={toggleChat}>
-                    <img src="/chaticon.svg" alt="chat" />
+                <button onClick={toggleChat}>
+                    <img src={isChatOpen ? "/chatcloser.svg" : "/chaticon.svg"} alt="chat" />
                 </button>
             </div>
             <Transition
@@ -44,7 +44,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                             <div className={`${styles.userName} py-1`}>
                                 <img className={`${styles.avatar}`} src="/Avatar.png" alt=""/>
                                 <div className={`${styles.userId}`}>
-                                    janstay
+                                    <p style={{color: "white"}}>janstay</p>
                                     <span>ID: 420848</span>
                                 </div>
                             </div>

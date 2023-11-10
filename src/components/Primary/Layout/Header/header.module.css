@@ -23,7 +23,7 @@
     gap: 12px;
 }
 
-.hide_on_mobile{
+.hide_on_mobile {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
@@ -78,7 +78,7 @@
 .signUp {
     display: flex;
     gap: 8px;
-    padding: 10px 18px;
+    padding: 8px 14px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -120,8 +120,45 @@
     font-weight: 500;
 }
 
+.burger {
+    display: none;
+}
+
 @media (max-width: 360px) {
-    .headerAuth{
+
+    .header {
+        padding: 14px 20px;
+    }
+
+    .hide_on_mobile {
         display: none;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    .login {
+        padding: 0 14px;
+        color: #4A4E62;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .signUp {
+        padding: 0 14px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+
 }

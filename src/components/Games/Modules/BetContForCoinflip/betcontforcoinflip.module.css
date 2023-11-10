@@ -27,6 +27,10 @@
     color: #555A71;
 }
 
+.sum p {
+    color: #FFF;
+}
+
 .input__container {
     display: flex;
     color: #555A71;
@@ -80,18 +84,19 @@
     color: #4A4E62;
 }
 
-.maininput{
+.maininput {
     display: flex;
 }
 
-.bitbuttons{
+.bitbuttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 12px;
     gap: 8px;
 }
-.bitbuttons button{
+
+.bitbuttons button {
     border-radius: 8px;
     border: 1px solid #262A37;
     background: #202430;
@@ -105,7 +110,7 @@
     width: 54px;
 }
 
-.btcbdef{
+.btcbdef {
     display: flex;
     padding: 6px;
     flex-direction: column;
@@ -118,7 +123,7 @@
     background: #202430;
 }
 
-.btcbtrue{
+.btcbtrue {
     display: flex;
     padding: 6px;
     flex-direction: column;
