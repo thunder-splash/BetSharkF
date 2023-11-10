@@ -155,15 +155,6 @@ header .btn {
     font-weight: 500;
 }
 
-.chat{
-        display: flex;
-        padding: 12px;
-        align-items: center;
-        border-radius: 8px;
-        background: #202430;
-        margin-left: 0;
-}
-
 header .btn.blue {
     background: #5271ff;
     margin-right: 35px;

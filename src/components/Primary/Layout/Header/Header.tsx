@@ -57,7 +57,7 @@ export const Header = () => {
             {isAuth ? (
                 <div className="flex">
                     <Link href="#" className="btn sum">
-                        10 004 250.<span>19</span>
+                        <p style={{color: "white"}}>10 004 250.<span>19</span></p>
                     </Link>
                     <Link href="/transactions" className="btn blue">
                         Deposit
