@@ -436,6 +436,12 @@
 
 @media (max-width: 360px) {
 
+    .main_section {
+        background-size: contain; /* Или 'cover', в зависимости от ваших потребностей */
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
     .vip_row {
         margin: 0;
         display: flex;

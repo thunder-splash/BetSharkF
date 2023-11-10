@@ -36,7 +36,7 @@
 }
 .id_block{
     display: flex;
-    padding: 0px 6px;
+    padding: 0 6px;
     justify-content: center;
     align-items: center;
     gap: 3px;
@@ -47,5 +47,8 @@
     color: #666B84;
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
+    .block {
+        width: 320px;
+    }
 }

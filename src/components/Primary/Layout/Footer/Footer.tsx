@@ -5,7 +5,7 @@ import styles from "./footer.module.css";
 export const Footer = () => {
     return (
         <>
-            <footer className={`${styles.footer}  container grid md:grid-cols-12 w-full grid-cols-1`}>
+            <footer className={`${styles.footer}  container grid md:grid-cols-12 w-full grid-cols-2`}>
                 <div className="col-span-6 pb-10">
                     <Link href="/" className={`${styles.logo}`}>
                         <Image src="/logo.svg" alt="logo" width={32} height={32}/>
@@ -51,7 +51,7 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="md:col-span-1 w-full col-span-1">
+                <div className="md:col-span-1 w-full col-span-6 col-start-1">
                     <Link href="/">
                         <img src="/Telegram.svg" alt="tg"/>
                     </Link>
