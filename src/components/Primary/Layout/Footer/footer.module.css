@@ -54,7 +54,9 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
 }
-
+.footer p{
+    width: 70%;
+}
 @media (max-width: 360px) {
     .rights {
         display: flex;
@@ -64,6 +66,9 @@
         gap: 10px;
         align-self: stretch;
         background-color: #13161E;
+        width: 100%;
+    }
+    .footer p{
         width: 100%;
     }
 }

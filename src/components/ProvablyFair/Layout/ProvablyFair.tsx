@@ -4,7 +4,7 @@ import styles from './ProvablyFair.module.css';
 
 export default function ProvablyFair() {
     return (
-        <div>
+        <div className={styles.mainwr}>
             <img src="/greenbgflow.svg" alt="light" className={styles.greenbg}/>
             <div className={styles.container}>
                 <div className={styles.headerContainer}>
@@ -33,6 +33,5 @@ export default function ProvablyFair() {
                 </div>
             </div>
         </div>
-
     );
 }

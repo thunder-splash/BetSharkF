@@ -1,9 +1,9 @@
 .container {
     width: 900px;
     margin: 24px auto;
-  position: relative;
-  z-index: 2;
-  }
+    position: relative;
+    z-index: 2;
+}
 .greenbg{
   top: 0;
   z-index: 1;
@@ -50,5 +50,13 @@
     font-weight: 600;
     line-height: 28px;
   }
-  
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 320px;
+  }
+  /*.section{*/
+  /*  width: 200%;*/
+  /*}*/
+}
   

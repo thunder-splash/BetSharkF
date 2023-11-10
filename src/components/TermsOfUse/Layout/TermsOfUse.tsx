@@ -4,7 +4,7 @@ import styles from './termsofuse.module.css';
 
 export default function TermsOfUse() {
     return (
-        <div>
+        <div className={styles.mainwr}>
             <img src="/greenbgflow.svg" alt="light" className={styles.greenbg}/>
             <div className={styles.container}>
                 <div className={styles.headerContainer}>

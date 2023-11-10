@@ -52,13 +52,15 @@ export default function FAQ() {
         <div className={styles.container}>
           <div className={styles.FAQ_container}>
             <div className={styles.headerContainer}>
-              <Image
-                  src="/help-circle-white.svg"
-                  alt="Help Circle Icon"
-                  width={20} height={20}
-                  className={styles.icon}
-              />
-              <h1>Frequently Asked Questions</h1>
+              <div className={styles.hedfaq}>
+                <Image
+                    src="/help-circle-white.svg"
+                    alt="Help Circle Icon"
+                    width={20} height={20}
+                    className={styles.icon}
+                />
+                <h1>Frequently Asked Questions</h1>
+              </div>
               <div className={styles.headerContent}>
                 <button className={styles.supportButton}>Write to support</button>
               </div>
@@ -66,6 +68,25 @@ export default function FAQ() {
             <p className={styles.subtext}>
               In this block, we have collected and answered the most frequently asked questions.
             </p>
+          </div>
+          <div className={styles.FAQ_adapt}>
+            <div className={styles.headerContaineradpt}>
+              <div className={styles.hedfaq}>
+                <Image
+                    src="/help-circle-white.svg"
+                    alt="Help Circle Icon"
+                    width={20} height={20}
+                    className={styles.icon}
+                />
+                <h1>Frequently Asked Questions</h1>
+              </div>
+              <p className={styles.subtext}>
+                In this block, we have collected and answered the most frequently asked questions.
+              </p>
+              <div className={styles.headerContent}>
+                <button className={styles.supportButton}>Write to support</button>
+              </div>
+            </div>
           </div>
           <section className={styles.section}>
             <div className={styles.faqSection}>

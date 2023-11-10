@@ -46,3 +46,6 @@
 .id_txt {
     color: #666B84;
 }
+
+@media (max-width: 360px) {
+}

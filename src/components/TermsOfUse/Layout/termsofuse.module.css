@@ -1,5 +1,5 @@
 .container {
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
     background: #191C26;
     display: flex;
     padding: 16px;
@@ -26,7 +26,7 @@
     background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
     backdrop-filter: blur(10px);
     display: flex;
-    padding: 16px;
+    padding: 16px 0 16px 0;
     flex-direction: row; 
     align-items: center; 
     gap: 8px;
@@ -61,4 +61,17 @@
 .icon {
     width: 20px;
     height: 20px;
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 320px;
+        margin: 24px auto 60px auto;
+    }
+    .mainwr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
