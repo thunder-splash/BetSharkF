@@ -317,6 +317,9 @@ header .btn.sum::before {
 }
 
 @media (max-width: 810px) {
+    header {
+        height: 54px;
+    }
 
     header .btn.dropdown::after {
         display: none;
@@ -365,5 +368,21 @@ header .btn.sum::before {
 
     .avabut {
         display: flex;
+    }
+
+    header .btn {
+        height: 36px;
+        width: 36px;
+    }
+
+    header .btn.sum {
+        width: 129px;
+    }
+}
+
+@media (max-width: 550px) {
+    header .btn.blue {
+        height: 36px;
+        width: 36px;
     }
 }

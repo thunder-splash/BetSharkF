@@ -74,7 +74,7 @@ export const Header = () => {
                         <p style={{color: "white"}}>10 004 250.<span>19</span></p>
                     </Link>
                     <Link href="/transactions/deposit" className="btn blue" style={{display: "flex"}}>
-                        {isSmallScreen ? <img src="/whiteplus.svg" alt="plus" /> : 'Deposit'}
+                        {isSmallScreen ? <img src="/whiteplus.svg" alt="plus"/> : 'Deposit'}
                     </Link>
                     <Link href="#" className="btn">
                         <Image src="/present.svg" alt="present" width={20} height={20} />
