@@ -50,7 +50,22 @@
     font-weight: 600;
     line-height: 28px;
   }
-
+@media screen and (max-width: 560px) {
+  .container {
+    width: 320px;
+  }
+  /*.section{*/
+  /*  width: 200%;*/
+  /*}*/
+}
+@media screen and (max-width: 420px) {
+  .container {
+    width: 320px;
+  }
+  /*.section{*/
+  /*  width: 200%;*/
+  /*}*/
+}
 @media screen and (max-width: 360px) {
   .container {
     width: 320px;

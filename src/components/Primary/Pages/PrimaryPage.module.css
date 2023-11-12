@@ -437,6 +437,552 @@
 .midblue{
     display: none;
 }
+@media (max-width: 768px) {
+
+    .main_section {
+        background-size: contain; /* Или 'cover', в зависимости от ваших потребностей */
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .vip_row {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 8px;
+    }
+
+    .vip_column {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .vip_system_container_adaptive {
+        display: flex;
+    }
+
+    .vip_system_container {
+        display: none;
+    }
+
+    .h1onpage {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .subtextmain {
+        color: #555A71;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .join_button {
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        text-transform: uppercase;
+        display: flex;
+        padding: 10px 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    }
+
+    .secondtitlet {
+        color: #797E95;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .secondtitleb {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .card_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardsl2, .cardsl1, .hiwl2 {
+        display: none;
+    }
+
+    .greengrad, .rec_pay {
+        width: 320px;
+    }
+
+    .rec_pay {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttext {
+        color: #555A71;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .hiw_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .how_it_works h2,
+    .recommended_game h2,
+    .vip_system h2,
+    .live_payouts h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .rec_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rec_pay {
+        background: linear-gradient(180deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 35.27%), linear-gradient(180deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    }
+
+    .imgrow {
+        margin: 24px 0 24px 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 288px;
+        justify-content: space-between;
+    }
+
+    .imgrow img {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px; /* Если вы хотите добавить пространство между рядами */
+    }
+
+    .vip_row_images_adaptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        width: 320px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #191C26;
+    }
+
+    .img_container {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        background: #13161E;
+    }
+    .midblue{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 520px) {
+
+    .main_section {
+        background-size: contain; /* Или 'cover', в зависимости от ваших потребностей */
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .vip_row {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 8px;
+    }
+
+    .vip_column {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .vip_system_container_adaptive {
+        display: flex;
+    }
+
+    .vip_system_container {
+        display: none;
+    }
+
+    .h1onpage {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .subtextmain {
+        color: #555A71;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .join_button {
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        text-transform: uppercase;
+        display: flex;
+        padding: 10px 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    }
+
+    .secondtitlet {
+        color: #797E95;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .secondtitleb {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .card_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardsl2, .cardsl1, .hiwl2 {
+        display: none;
+    }
+
+    .greengrad, .rec_pay {
+        width: 320px;
+    }
+
+    .rec_pay {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttext {
+        color: #555A71;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .hiw_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .how_it_works h2,
+    .recommended_game h2,
+    .vip_system h2,
+    .live_payouts h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .rec_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rec_pay {
+        background: linear-gradient(180deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 35.27%), linear-gradient(180deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    }
+
+    .imgrow {
+        margin: 24px 0 24px 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 288px;
+        justify-content: space-between;
+    }
+
+    .imgrow img {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px; /* Если вы хотите добавить пространство между рядами */
+    }
+
+    .vip_row_images_adaptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        width: 320px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #191C26;
+    }
+
+    .img_container {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        background: #13161E;
+    }
+    .midblue{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 420px) {
+
+    .main_section {
+        background-size: contain; /* Или 'cover', в зависимости от ваших потребностей */
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .vip_row {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 8px;
+    }
+
+    .vip_column {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .vip_system_container_adaptive {
+        display: flex;
+    }
+
+    .vip_system_container {
+        display: none;
+    }
+
+    .h1onpage {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .subtextmain {
+        color: #555A71;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+    }
+
+    .join_button {
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        text-transform: uppercase;
+        display: flex;
+        padding: 10px 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        border: none;
+        background: linear-gradient(180deg, #617DFF 0%, #5271FF 100%);
+    }
+
+    .secondtitlet {
+        color: #797E95;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .secondtitleb {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .card_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardsl2, .cardsl1, .hiwl2 {
+        display: none;
+    }
+
+    .greengrad, .rec_pay {
+        width: 320px;
+    }
+
+    .rec_pay {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttext {
+        color: #555A71;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+    }
+
+    .hiw_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .how_it_works h2,
+    .recommended_game h2,
+    .vip_system h2,
+    .live_payouts h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px; /* 126.667% */
+    }
+
+    .rec_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rec_pay {
+        background: linear-gradient(180deg, rgba(82, 113, 255, 0.48) 0%, rgba(82, 113, 255, 0.00) 35.27%), linear-gradient(180deg, rgba(82, 113, 255, 0.25) 0%, rgba(82, 113, 255, 0.03) 100%);
+    }
+
+    .imgrow {
+        margin: 24px 0 24px 0;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 288px;
+        justify-content: space-between;
+    }
+
+    .imgrow img {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px; /* Если вы хотите добавить пространство между рядами */
+    }
+
+    .vip_row_images_adaptive {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        width: 320px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #191C26;
+    }
+
+    .img_container {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        background: #13161E;
+    }
+    .midblue{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 360px) {
 

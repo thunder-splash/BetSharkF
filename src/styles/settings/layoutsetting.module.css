@@ -9,6 +9,36 @@
     gap: 24px;
 }
 
+@media (max-width: 7680px) {
+    .container{
+        margin: 24px auto 50px auto;
+    }
+
+    .content{
+        width: 360px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 520px) {
+    .container{
+        margin: 24px auto 50px auto;
+    }
+
+    .content{
+        width: 360px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 420px) {
+    .container{
+        margin: 24px auto 50px auto;
+    }
+
+    .content{
+        width: 360px;
+        flex-direction: column;
+    }
+}
 @media (max-width: 360px) {
     .container{
         margin: 24px auto 50px auto;

@@ -146,6 +146,125 @@
   .FAQ_adapt{
     display: none;
   }
+@media screen and (max-width: 768px) {
+  .FAQ_container{
+    display: none;
+  }
+  .faqSection{
+    grid-template-columns: repeat(1, 1fr);
+    width: 320px;
+  }
+  .container{
+    width: 320px;
+  }
+  .faqColumn{
+    padding: 0;
+  }
+  .FAQ_adapt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .FAQ_adapt h1{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+  }
+  .headerContaineradpt{
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .FAQ_container{
+    display: none;
+  }
+  .faqSection{
+    grid-template-columns: repeat(1, 1fr);
+    width: 320px;
+  }
+  .container{
+    width: 320px;
+  }
+  .faqColumn{
+    padding: 0;
+  }
+  .FAQ_adapt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .FAQ_adapt h1{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+  }
+  .headerContaineradpt{
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .FAQ_container{
+    display: none;
+  }
+  .faqSection{
+    grid-template-columns: repeat(1, 1fr);
+    width: 320px;
+  }
+  .container{
+    width: 320px;
+  }
+  .faqColumn{
+    padding: 0;
+  }
+  .FAQ_adapt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .FAQ_adapt h1{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+  }
+  .headerContaineradpt{
+    background: linear-gradient(90deg, rgba(25, 28, 38, 0.80) 0.02%, rgba(25, 28, 38, 0.75) 99.98%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+}
 
 @media screen and (max-width: 360px) {
   .FAQ_container{

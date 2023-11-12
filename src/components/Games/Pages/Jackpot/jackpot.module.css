@@ -137,6 +137,103 @@
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 7680px) {
+    .upper {
+        flex-direction: column;
+    }
+    .main {
+        width: 320px;
+        margin: 16px auto 0 auto;
+    }
+    .game {
+        width: 320px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .wheel {
+        display: flex;
+        width: 320px;
+        padding: 32px 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainCircle{
+        top: auto;
+        left: auto;
+    }
+
+    .timer {
+        top: auto;
+        left: auto;
+    }
+}
+@media (max-width: 520px) {
+    .upper {
+        flex-direction: column;
+    }
+    .main {
+        width: 320px;
+        margin: 16px auto 0 auto;
+    }
+    .game {
+        width: 320px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .wheel {
+        display: flex;
+        width: 320px;
+        padding: 32px 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainCircle{
+        top: auto;
+        left: auto;
+    }
+
+    .timer {
+        top: auto;
+        left: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .upper {
+        flex-direction: column;
+    }
+    .main {
+        width: 320px;
+        margin: 16px auto 0 auto;
+    }
+    .game {
+        width: 320px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .wheel {
+        display: flex;
+        width: 320px;
+        padding: 32px 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainCircle{
+        top: auto;
+        left: auto;
+    }
+
+    .timer {
+        top: auto;
+        left: auto;
+    }
+}
 
 @media (max-width: 360px) {
     .upper {

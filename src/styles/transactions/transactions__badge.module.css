@@ -49,7 +49,30 @@
 .adtpimg{
     display: none;
 }
-
+@media screen and (max-width: 768px) {
+    .badge{
+        display: none;
+    }
+    .adtpimg{
+        display: block;
+    }
+}
+@media screen and (max-width: 520px) {
+    .badge{
+        display: none;
+    }
+    .adtpimg{
+        display: block;
+    }
+}
+@media screen and (max-width: 420px) {
+    .badge{
+        display: none;
+    }
+    .adtpimg{
+        display: block;
+    }
+}
 @media screen and (max-width: 360px) {
     .badge{
         display: none;

@@ -34,7 +34,24 @@
 .divider {
     border-bottom: 1px solid #202430;
 }
-
+@media screen and (max-width: 768px) {
+    .block {
+        max-width: 320px;
+        margin: 24px auto 24px auto;
+    }
+}
+@media screen and (max-width: 520px) {
+    .block {
+        max-width: 320px;
+        margin: 24px auto 24px auto;
+    }
+}
+@media screen and (max-width: 420px) {
+    .block {
+        max-width: 320px;
+        margin: 24px auto 24px auto;
+    }
+}
 @media screen and (max-width: 360px) {
     .block {
         max-width: 320px;
