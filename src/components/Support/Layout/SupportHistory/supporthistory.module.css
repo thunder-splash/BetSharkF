@@ -134,7 +134,21 @@
   font-weight: 500;
   line-height: 18px; /* 150% */
 }
-
+@media (max-width: 768px) {
+  .tableHeader p:nth-child(0), .tableHeader p:nth-child(1), .tableHeader p:nth-child(2), .tableHeader p:nth-child(3), .tableItem p:nth-child(0), .tableItem p:nth-child(1) , .tableItem p:nth-child(2), .tableItem p:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .tableHeader p:nth-child(0), .tableHeader p:nth-child(1), .tableHeader p:nth-child(2), .tableHeader p:nth-child(3), .tableItem p:nth-child(0), .tableItem p:nth-child(1) , .tableItem p:nth-child(2), .tableItem p:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .tableHeader p:nth-child(0), .tableHeader p:nth-child(1), .tableHeader p:nth-child(2), .tableHeader p:nth-child(3), .tableItem p:nth-child(0), .tableItem p:nth-child(1) , .tableItem p:nth-child(2), .tableItem p:nth-child(3) {
+    display: none;
+  }
+}
 @media (max-width: 360px) {
   .tableHeader p:nth-child(0), .tableHeader p:nth-child(1), .tableHeader p:nth-child(2), .tableHeader p:nth-child(3), .tableItem p:nth-child(0), .tableItem p:nth-child(1) , .tableItem p:nth-child(2), .tableItem p:nth-child(3) {
     display: none;
