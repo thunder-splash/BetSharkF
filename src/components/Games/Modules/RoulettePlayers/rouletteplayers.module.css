@@ -234,7 +234,258 @@
 .adaptheaderGray{
     background: rgba(79, 75, 75, 0.35);
 }
+@media screen and (max-width: 768px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        align-items: center;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .imgin{
+        display: block;
+    }
+    .header , .headerRed , .headerGreen , .headerGray{
+        display: none;
+    }
 
+    .gameinfosec{
+        display: flex;
+        flex-direction: row;
+    }
+    .gameinfo-0 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(254, 79, 79, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-0 {
+        color: #FE4F4F;
+    }
+    .usersnum-0 {
+        color: #FFF;
+        background: #FE4F4F;
+    }
+
+    .gameinfo-1 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(23, 160, 127, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-1 {
+        color: #17A07F;
+    }
+    .usersnum-1 {
+        color: #FFF;
+        background: #17A07F;
+    }
+
+    .gameinfo-2 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(79, 75, 75, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-2 {
+        color: #4F4B4B;
+    }
+    .usersnum-2 {
+        color: #FFF;
+        background: #4F4B4B;
+    }
+    .adaptivebar{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        margin: 24px 0 40px 0;
+        gap: 7px;
+    }
+    .block{
+        padding: 12px;
+        align-items: center;
+        gap: 12px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        display: flex;
+        width: 102px;
+    }
+    .blockheader{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 520px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        align-items: center;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .imgin{
+        display: block;
+    }
+    .header , .headerRed , .headerGreen , .headerGray{
+        display: none;
+    }
+
+    .gameinfosec{
+        display: flex;
+        flex-direction: row;
+    }
+    .gameinfo-0 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(254, 79, 79, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-0 {
+        color: #FE4F4F;
+    }
+    .usersnum-0 {
+        color: #FFF;
+        background: #FE4F4F;
+    }
+
+    .gameinfo-1 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(23, 160, 127, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-1 {
+        color: #17A07F;
+    }
+    .usersnum-1 {
+        color: #FFF;
+        background: #17A07F;
+    }
+
+    .gameinfo-2 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(79, 75, 75, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-2 {
+        color: #4F4B4B;
+    }
+    .usersnum-2 {
+        color: #FFF;
+        background: #4F4B4B;
+    }
+    .adaptivebar{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        margin: 24px 0 40px 0;
+        gap: 7px;
+    }
+    .block{
+        padding: 12px;
+        align-items: center;
+        gap: 12px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        display: flex;
+        width: 102px;
+    }
+    .blockheader{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 420px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        align-items: center;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .imgin{
+        display: block;
+    }
+    .header , .headerRed , .headerGreen , .headerGray{
+        display: none;
+    }
+
+    .gameinfosec{
+        display: flex;
+        flex-direction: row;
+    }
+    .gameinfo-0 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(254, 79, 79, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-0 {
+        color: #FE4F4F;
+    }
+    .usersnum-0 {
+        color: #FFF;
+        background: #FE4F4F;
+    }
+
+    .gameinfo-1 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(23, 160, 127, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-1 {
+        color: #17A07F;
+    }
+    .usersnum-1 {
+        color: #FFF;
+        background: #17A07F;
+    }
+
+    .gameinfo-2 {
+        border-radius: 12px 12px 0 0;
+        background: rgba(79, 75, 75, 0.35);
+        backdrop-filter: blur(10px);
+    }
+    .gamebet-2 {
+        color: #4F4B4B;
+    }
+    .usersnum-2 {
+        color: #FFF;
+        background: #4F4B4B;
+    }
+    .adaptivebar{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        margin: 24px 0 40px 0;
+        gap: 7px;
+    }
+    .block{
+        padding: 12px;
+        align-items: center;
+        gap: 12px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        display: flex;
+        width: 102px;
+    }
+    .blockheader{
+        display: flex;
+        flex-direction: row;
+    }
+}
 @media screen and (max-width: 360px) {
     .wrapper{
         display: flex;

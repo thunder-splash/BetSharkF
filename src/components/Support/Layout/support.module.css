@@ -74,5 +74,18 @@
   line-height: 28px;
 }
 
+@media screen and (max-width: 360px) {
+  .mainwr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 320px;
+    margin: 24px auto;
+  }
+}
 
   

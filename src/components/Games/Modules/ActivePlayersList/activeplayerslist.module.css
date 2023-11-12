@@ -165,6 +165,33 @@
     height: 500px; /* Установите нужную высоту */
     overflow-y: auto;
 }
+@media (max-width: 7680px) {
+    .players {
+        width: 320px;
+    }
+    .dot__inbody , .prof p , .list__header img{
+        display: none;
+    }
+
+}
+@media (max-width: 520px) {
+    .players {
+        width: 320px;
+    }
+    .dot__inbody , .prof p , .list__header img{
+        display: none;
+    }
+
+}
+@media (max-width: 420px) {
+    .players {
+        width: 320px;
+    }
+    .dot__inbody , .prof p , .list__header img{
+        display: none;
+    }
+
+}
 
 @media (max-width: 360px) {
     .players {
