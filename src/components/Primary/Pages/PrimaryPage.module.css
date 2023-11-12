@@ -434,6 +434,10 @@
     display: none;
 }
 
+.midblue{
+    display: none;
+}
+
 @media (max-width: 360px) {
 
     .main_section {
@@ -534,13 +538,6 @@
         display: flex;
         flex-direction: column;
     }
-
-    /*.recimgs{*/
-    /*    !*display: flex;*!*/
-    /*    !*flex-direction: row;*!*/
-    /*    display: grid;*/
-    /*    grid-template-rows: 1fr 1fr;*/
-    /*}*/
     .abouttext {
         color: #555A71;
         text-align: center;
@@ -617,5 +614,9 @@
         align-self: stretch;
         border-radius: 8px;
         background: #13161E;
+    }
+    .midblue{
+        display: flex;
+        justify-content: center;
     }
 }

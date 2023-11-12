@@ -11,19 +11,21 @@
   "dependencies": {
     "@headlessui/react": "latest",
     "@heroicons/react": "latest",
+    "aos": "^2.3.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/js-yaml": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "eslint": "latest",
-    "postcss": "latest",
-    "eslint-config-next": "latest",
     "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
   }

@@ -53,12 +53,13 @@ export default function PrimaryPage() {
                 <button className={styles.join_button}>Join Now & Play</button>
             </section>
             <section className={styles.main_section_cards}>
+                <img src="/bluelight.svg" alt="light" className={styles.midblue}></img>
                 <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
                 <p className={styles.secondtitlet}>There`s a reason 200 000 worldwide players rate us so good</p>
                 <p className={styles.secondtitleb}>ACTUALLY THERE ARE A LOT OF REASONS.</p>
                 <div className={styles.card_grid}>
                     {cardsMain.map((card) => (
-                        <div key={card.id} className={styles.cardmain}>
+                        <div data-aos="fade-up" key={card.id} className={styles.cardmain}>
                             <Image alt="cardimg" width={56} height={56} src={card.image}/>
                             <p className={styles.cardtt}>{card.title}</p>
                             <p className={styles.cardut}>{card.subtitle}</p>
@@ -78,7 +79,7 @@ export default function PrimaryPage() {
                 <p className={styles.abouttext}>Step-by-step instructions on how it all works.</p>
                 <div className={styles.hiw_grid}>
                     {cardsHiw.map((card) => (
-                        <div key={card.id} className={styles.cardhiw}>
+                        <div data-aos="fade-left" key={card.id} className={styles.cardhiw}>
                             <Image alt="cardimg" width={48} height={48} src={card.image}/>
                             <p className={styles.hiwtt}>{card.title}</p>
                             <p className={styles.hiwut}>{card.subtitle}</p>
@@ -88,12 +89,13 @@ export default function PrimaryPage() {
                 <button className={styles.join_button_hiw}>JOIN NOW & PLAY</button>
             </section>
             <section className={styles.recommended_game}>
+                <img src="/bluelight.svg" alt="light" className={styles.midblue}></img>
                 <img src="/lefttoplight.svg" alt="light" className={styles.cardsl1}></img>
-                <h2>Recommended game</h2>
-                <p className={styles.abouttext}>This is a selection of our games, you can play any of them.</p>
+                <h2 data-aos="zoom-in">Recommended game</h2>
+                <p data-aos="zoom-in" className={styles.abouttext}>This is a selection of our games, you can play any of them.</p>
                 <div className={styles.rec_grid}>
                     {cardsRec.map((card) => (
-                        <div key={card.id} className={styles.cardrec}>
+                        <div data-aos="zoom-in" key={card.id} className={styles.cardrec}>
                             <Image alt="cardimg" width={207} height={207} src={card.image}/>
                             <Link href={`/games/${card.link}`} style={{width: "100%"}}>
                                 <p className={styles.playnow}>Play now</p>
