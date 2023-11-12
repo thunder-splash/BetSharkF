@@ -46,7 +46,21 @@
     font-weight: 500;
     line-height: 20px; /* 142.857% */
 }
-
+@media (max-width: 768px) {
+    .roll{
+        width: 100%;
+    }
+}
+@media (max-width: 520px) {
+    .roll{
+        width: 100%;
+    }
+}
+@media (max-width: 420px) {
+    .roll{
+        width: 100%;
+    }
+}
 @media (max-width: 360px) {
     .roll{
         width: 100%;

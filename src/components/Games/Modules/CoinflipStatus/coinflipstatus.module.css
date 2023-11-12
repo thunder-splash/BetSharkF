@@ -49,7 +49,21 @@
     font-weight: 400;
     line-height: 24px; /* 150% */
 }
-
+@media (max-width: 7680px) {
+    .summery{
+        width: 100%;
+    }
+}
+@media (max-width: 520px) {
+    .summery{
+        width: 100%;
+    }
+}
+@media (max-width: 420px) {
+    .summery{
+        width: 100%;
+    }
+}
 @media (max-width: 360px) {
     .summery{
         width: 100%;

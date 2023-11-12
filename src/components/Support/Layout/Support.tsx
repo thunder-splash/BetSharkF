@@ -11,7 +11,7 @@ export default function Support() {
   const [showCreateTicket, setShowCreateTicket] = useState(false);
 
   return (
-    <div>
+    <div className={styles.mainwr}>
       <img src="/greenbgflow.svg" alt="light" className={styles.greenbg} />
       <div className={styles.container}>
         <div className={styles.Payouts_container}>

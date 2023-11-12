@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 14px;
   background: #191C26;
-  border-radius: 0px 0px 12px 12px;
+  border-radius: 0 0 12px 12px;
   width: 100%; 
   overflow: auto; 
   padding: 16px;
@@ -50,7 +50,6 @@
   background: #262A37;
   color: white;
   margin-top: 8px;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -72,16 +71,14 @@
   border-bottom: 1px solid #202430;
   background: #191C26;
   color:  #FFF;
-  font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px; 
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0 0;
 }
 .time{
   color: #797E95;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -102,7 +99,7 @@
 
 .status {
   display: inline-block;
-  padding: 0px 6px;
+  padding: 0 6px;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
@@ -110,9 +107,8 @@
 
 .statusProcess {
   background:  #442B15;
-  color: var(--warning-400, #F2994A);
+  color: #F2994A;
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -123,7 +119,6 @@
   background:  #062D24;
   color:  #17A07F;
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -134,9 +129,14 @@
   background: #3A2329;
   color: #FE4F4F;
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px; /* 150% */
+}
+
+@media (max-width: 360px) {
+  .tableHeader p:nth-child(0), .tableHeader p:nth-child(1), .tableHeader p:nth-child(2), .tableHeader p:nth-child(3), .tableItem p:nth-child(0), .tableItem p:nth-child(1) , .tableItem p:nth-child(2), .tableItem p:nth-child(3) {
+    display: none;
+  }
 }
