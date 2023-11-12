@@ -375,6 +375,10 @@ header .btn.sum::before {
         width: 36px;
     }
 
+    header .btn.blue {
+        width: 83px;
+    }
+
     header .btn.sum {
         width: 129px;
     }

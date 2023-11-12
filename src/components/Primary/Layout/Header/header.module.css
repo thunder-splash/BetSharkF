@@ -125,6 +125,10 @@
     display: none;
 }
 
+.chatbut_adaptive {
+    display: none;
+}
+
 @media (max-width: 1300px) {
     .navigation {
         display: none;
@@ -134,6 +138,14 @@
 @media (max-width: 810px) {
     .chatbut {
         display: none;
+    }
+
+    .chatbut_adaptive {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        position: absolute;
+        margin-top: 8px;
     }
 }
 
