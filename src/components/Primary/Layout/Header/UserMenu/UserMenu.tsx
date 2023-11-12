@@ -1,35 +1,35 @@
+import React, { useState, useEffect } from "react";
+import { Menu, Transition } from "@headlessui/react";
 import Link from "next/link";
-import {Fragment} from "react";
-import {Menu, Transition} from "@headlessui/react";
-import {useState, useEffect} from "react";
-import styles from "../header.module.css"
+import { Fragment } from "react";
+import styles from "../header.module.css";
 import Chat from "@/components/Primary/Layout/Header/Chat/Chat";
 
 type UserMenuProps = {
     onLogout: () => void;
 };
 
-export default function UserMenu({onLogout}: UserMenuProps) {
-
+export default function UserMenu({ onLogout }: UserMenuProps) {
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(0);
 
     const toggleChat = () => {
         setIsChatOpen(!isChatOpen);
     };
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
     useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
+        if (typeof window !== "undefined") {
+            const handleResize = () => {
+                setWindowWidth(window.innerWidth);
+            };
 
-        window.addEventListener('resize', handleResize);
-        handleResize(); // вызываем функцию при первой загрузке страницы
+            window.addEventListener("resize", handleResize);
+            handleResize(); // вызываем функцию при первой загрузке
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+            return () => {
+                window.removeEventListener("resize", handleResize);
+            };
+        }
     }, []);
 
     return (
