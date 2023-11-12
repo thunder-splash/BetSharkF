@@ -139,6 +139,9 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     </div>
                 </Menu.Items>
             </Transition>
+            <button onClick={toggleChat} className={styles.chatbut_adaptive}>
+                <img src={isChatOpen ? "/chatcloser.svg" : "/chaticon_adaptive.svg"} alt="chat"/>
+            </button>
             {isChatOpen && <Chat/>}
         </Menu>
     );
