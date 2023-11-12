@@ -7,7 +7,7 @@ export default function Notification() {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button className="btn">
+                <Menu.Button className="btn" style={{display: "flex"}}>
                     <Image src="/bell.svg" alt="bell" width={20} height={20} />
                 </Menu.Button>
             </div>

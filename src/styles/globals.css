@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html, section{
+html, section {
     scrollbar-width: none; /* Для Firefox */
-    -ms-overflow-style: none;  /* Для Internet Explorer и Edge */
+    -ms-overflow-style: none; /* Для Internet Explorer и Edge */
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -13,10 +13,12 @@ html, section{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
+
 img {
     pointer-events: none;
     user-select: none;
 }
+
 html::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -287,4 +289,81 @@ header .btn.sum::before {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.avabut {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    header .btn {
+        display: none;
+        margin-right: 8px;
+        margin-left: 0;
+    }
+
+    header .btn.blue {
+        margin-right: 16px;
+    }
+
+    header .btn.dropdown {
+        display: flex;
+    }
+
+    header .btn.sum {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 810px) {
+
+    header .btn.dropdown::after {
+        display: none;
+    }
+
+    header .btn.dropdown {
+        padding: 0;
+        margin: 0;
+    }
+
+    header .btn.dropdown p {
+        display: none;
+    }
+
+    header .btn img.avatar {
+        margin-right: 0px;
+    }
+
+    header .btn.sum span {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    header .btn.sum p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    header .btn.sum::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url("/cashadaptive.svg");
+        margin-right: 6px;
+    }
+
+    header {
+        padding: 14px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .avabut {
+        display: flex;
+    }
 }

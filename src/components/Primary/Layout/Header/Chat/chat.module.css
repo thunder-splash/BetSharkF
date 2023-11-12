@@ -3,7 +3,7 @@
     bottom: 0;
     z-index: 1;
     right: 0;
-    width: 23%;
+    width: 500px;
     height: 89%;
     background-color: #191C26;
     border-top-left-radius: 16px;
@@ -86,4 +86,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 510px) {
+    .main {
+        width: 100%;
+    }
 }

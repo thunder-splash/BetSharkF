@@ -2,7 +2,7 @@ import Link from "next/link";
 import Notification from "./Notifications/Notifications";
 import UserMenu from "./UserMenu/UserMenu";
 import styles from "./header.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from 'next/image';
 import SignUpPopup from "./SignUpPopup/SignUpPopup";
 
@@ -11,11 +11,20 @@ export const Header = () => {
     const [isAuth, setIsAuth] = useState(true);
     const [showSignUpForm, setShowSignUpForm] = useState(false);
     const [isLogin, setIsLogin] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
-    };
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 550);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // вызываем функцию при первой загрузке страницы
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const toggleSignUpForm = () => {
         setShowSignUpForm(!showSignUpForm);
@@ -64,8 +73,8 @@ export const Header = () => {
                     <Link href="#" className="btn sum">
                         <p style={{color: "white"}}>10 004 250.<span>19</span></p>
                     </Link>
-                    <Link href="/transactions" className="btn blue">
-                        Deposit
+                    <Link href="/transactions/deposit" className="btn blue" style={{display: "flex"}}>
+                        {isSmallScreen ? <img src="/whiteplus.svg" alt="plus" /> : 'Deposit'}
                     </Link>
                     <Link href="#" className="btn">
                         <Image src="/present.svg" alt="present" width={20} height={20} />
@@ -76,6 +85,7 @@ export const Header = () => {
 
                     <Notification />
                     <UserMenu onLogout={handleLogout} />
+
                 </div>
             ) : (
                 <div className={`${styles.loginPanel}`}>
@@ -107,9 +117,6 @@ export const Header = () => {
                             showLogin={isLogin}
                         />
                     )}
-                    <button className={styles.burger} onClick={toggleDropdown}>
-                        <img src={isDropdownOpen ? "/burger_closer.svg" : "/burger_on_header.svg"} alt="burger"/>
-                    </button>
                 </div>
             )}
         </header>

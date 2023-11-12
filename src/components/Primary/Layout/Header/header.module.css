@@ -120,18 +120,33 @@
     font-weight: 500;
 }
 
-.burger {
+.username {
+    color: #FFFFFF;
     display: none;
+}
+
+@media (max-width: 1300px) {
+    .navigation {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    .chatbut {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .hide_on_mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 360px) {
 
     .header {
         padding: 14px 20px;
-    }
-
-    .hide_on_mobile {
-        display: none;
     }
 
     .navigation {
@@ -156,9 +171,7 @@
         line-height: 20px;
     }
 
-    .burger {
-        display: flex;
+    .username {
+        display: none;
     }
-
-
 }

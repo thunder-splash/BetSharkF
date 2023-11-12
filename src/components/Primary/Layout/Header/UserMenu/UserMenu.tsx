@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {Fragment} from "react";
 import {Menu, Transition} from "@headlessui/react";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import styles from "../header.module.css"
 import Chat from "@/components/Primary/Layout/Header/Chat/Chat";
 
@@ -17,6 +17,21 @@ export default function UserMenu({onLogout}: UserMenuProps) {
         setIsChatOpen(!isChatOpen);
     };
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // вызываем функцию при первой загрузке страницы
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div className="flex flex-row">
@@ -24,8 +39,8 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     <img className="avatar" src="/Avatar.png" alt="ava"/>
                     <p style={{color: "white"}}>janstay</p>
                 </Menu.Button>
-                <button onClick={toggleChat}>
-                    <img src={isChatOpen ? "/chatcloser.svg" : "/chaticon.svg"} alt="chat" />
+                <button onClick={toggleChat} className={styles.chatbut}>
+                    <img src={isChatOpen ? "/chatcloser.svg" : "/chaticon.svg"} alt="chat"/>
                 </button>
             </div>
             <Transition
@@ -70,7 +85,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                             </Link>
                         </Menu.Item>
                         <Menu.Item>
-                            <Link href="#" className="dropdown-item">
+                            <Link href="/provablyfair" className="dropdown-item">
                                 <img src="/shield.svg" alt=""/>
                                 Provably Fair
                             </Link>
@@ -81,6 +96,38 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                                 Support
                             </Link>
                         </Menu.Item>
+                        {windowWidth <= 920 && (
+                            <>
+                                <Menu.Item>
+                                    <Link href="#" className="dropdown-item">
+                                        <img src="/promocode.svg" alt=""/>
+                                        Promocode
+                                    </Link>
+                                </Menu.Item>
+                            </>
+                        )}
+                        {windowWidth <= 1300 && (
+                            <>
+                                <Menu.Item>
+                                    <Link href="/termsofuse" className="dropdown-item">
+                                        <img src="/terms.svg" alt=""/>
+                                        Terms of use
+                                    </Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link href="/faq" className="dropdown-item">
+                                        <img src="/faq.svg" alt=""/>
+                                        FAQ
+                                    </Link>
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Link href="/livepayouts" className="dropdown-item">
+                                        <img src="/payouts.svg" alt=""/>
+                                        Live Payouts
+                                    </Link>
+                                </Menu.Item>
+                            </>
+                        )}
                     </div>
                     <div className="divider py-1">
                         <Menu.Item>
@@ -92,7 +139,7 @@ export default function UserMenu({onLogout}: UserMenuProps) {
                     </div>
                 </Menu.Items>
             </Transition>
-            {isChatOpen && <Chat />}
+            {isChatOpen && <Chat/>}
         </Menu>
     );
 }
