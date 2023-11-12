@@ -240,6 +240,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    overflow: hidden;
 }
 
 .cardhiw {
@@ -548,6 +549,7 @@
 
     .hiw_grid {
         grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
     }
 
     .how_it_works h2,
@@ -730,6 +732,7 @@
 
     .hiw_grid {
         grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
     }
 
     .how_it_works h2,
@@ -912,6 +915,7 @@
 
     .hiw_grid {
         grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
     }
 
     .how_it_works h2,
@@ -1095,6 +1099,7 @@
 
     .hiw_grid {
         grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
     }
 
     .how_it_works h2,
