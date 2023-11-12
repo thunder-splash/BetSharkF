@@ -9,7 +9,8 @@ export default function TransactionHistoryList() {
             image: '/coins/USDT.svg',
             amount: 50,
             status: 'Cancel',
-            badgeColor: stylesBadge.red
+            badgeColor: stylesBadge.red,
+            imageadpt: '/stcancel.svg'
         },
         {
             id: '2',
@@ -17,7 +18,8 @@ export default function TransactionHistoryList() {
             image: '/coins/USDT.svg',
             amount: 50,
             status: 'Process',
-            badgeColor: stylesBadge.orange
+            badgeColor: stylesBadge.orange,
+            imageadpt: '/stwait.svg'
         },
         {
             id: '3',
@@ -25,7 +27,8 @@ export default function TransactionHistoryList() {
             image: '/coins/USDT.svg',
             amount: 50,
             status: 'Successful',
-            badgeColor: stylesBadge.green
+            badgeColor: stylesBadge.green,
+            imageadpt: '/stdone.svg'
         },
     ];
 
@@ -50,6 +53,9 @@ export default function TransactionHistoryList() {
                             <div className={`${stylesTable.col} col-span-3 text-right`}>
                         <span
                             className={`${stylesBadge.badge} ${item.badgeColor} ${stylesBadge.small} ${stylesBadge.round}`}>{item.status}
+                        </span>
+                                <span
+                                    className={`${stylesBadge.adtpimg}`}><Image width={52} height={52} src={item.imageadpt} alt="coin"/>
                         </span>
                             </div>
                         </div>

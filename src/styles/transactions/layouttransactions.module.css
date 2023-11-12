@@ -1,0 +1,22 @@
+.container{
+    margin: 24px auto 100px auto;
+}
+
+.content{
+    width: 900px;
+    flex-direction: row;
+    display: flex;
+    gap: 24px;
+}
+
+@media (max-width: 360px) {
+    .container{
+        margin: 24px auto 50px auto;
+    }
+
+    .content {
+        width: 360px;
+        flex-direction: column;
+        gap: 0;
+    }
+}

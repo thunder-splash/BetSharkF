@@ -8,7 +8,7 @@
     width: 100%;
 }
 .block {
-    min-width: 372px; 
+    min-width: 320px;
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 24px;
@@ -49,6 +49,7 @@
 
 @media screen and (max-width: 360px) {
     .block {
-        width: 320px;
+        max-width: 320px;
+        margin: auto;
     }
 }

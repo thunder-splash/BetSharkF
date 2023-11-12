@@ -1,11 +1,12 @@
 import NavigationList from "../../components/Settings/Layout/NavigationList";
+import styles from "../../styles/settings/layoutsetting.module.css"
 
 export default function RootLayout({children}: {
     children: React.ReactNode
 }) {
     return (
-        <div className="container">
-            <div className="flex space-x-4">
+        <div className={styles.container}>
+            <div className={styles.content}>
                 <NavigationList/>
                 <div className="flex-grow">
                     {children}

@@ -45,3 +45,16 @@
     background: rgba(255, 195, 14, 0.15);
     color: #FFC30E;
 }
+
+.adtpimg{
+    display: none;
+}
+
+@media screen and (max-width: 360px) {
+    .badge{
+        display: none;
+    }
+    .adtpimg{
+        display: block;
+    }
+}
