@@ -9,7 +9,7 @@
     gap: 24px;
 }
 
-@media (max-width: 7680px) {
+@media (max-width: 768px) {
     .container{
         margin: 24px auto 50px auto;
     }

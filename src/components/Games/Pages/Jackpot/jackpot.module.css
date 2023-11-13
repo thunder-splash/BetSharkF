@@ -138,7 +138,7 @@
     flex-direction: column;
 }
 
-@media (max-width: 7680px) {
+@media (max-width: 768px) {
     .upper {
         flex-direction: column;
     }
