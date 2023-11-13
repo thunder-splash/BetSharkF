@@ -133,24 +133,29 @@
     flex-direction: row;
 }
 
-.jackcollumn{
+.jackcollumn {
     display: flex;
     flex-direction: column;
 }
+
 @media (max-width: 7680px) {
     .upper {
         flex-direction: column;
     }
+
     .main {
         width: 320px;
         margin: 16px auto 0 auto;
     }
+
     .game {
         width: 320px;
     }
+
     .footer {
         width: 100%;
     }
+
     .wheel {
         display: flex;
         width: 320px;
@@ -159,7 +164,7 @@
         align-items: center;
     }
 
-    .mainCircle{
+    .mainCircle {
         top: auto;
         left: auto;
     }
@@ -169,20 +174,25 @@
         left: auto;
     }
 }
+
 @media (max-width: 520px) {
     .upper {
         flex-direction: column;
     }
+
     .main {
         width: 320px;
         margin: 16px auto 0 auto;
     }
+
     .game {
         width: 320px;
     }
+
     .footer {
         width: 100%;
     }
+
     .wheel {
         display: flex;
         width: 320px;
@@ -191,7 +201,7 @@
         align-items: center;
     }
 
-    .mainCircle{
+    .mainCircle {
         top: auto;
         left: auto;
     }
@@ -206,16 +216,20 @@
     .upper {
         flex-direction: column;
     }
+
     .main {
         width: 320px;
         margin: 16px auto 0 auto;
     }
+
     .game {
         width: 320px;
     }
+
     .footer {
         width: 100%;
     }
+
     .wheel {
         display: flex;
         width: 320px;
@@ -224,7 +238,7 @@
         align-items: center;
     }
 
-    .mainCircle{
+    .mainCircle {
         top: auto;
         left: auto;
     }
@@ -239,16 +253,20 @@
     .upper {
         flex-direction: column;
     }
+
     .main {
         width: 320px;
         margin: 16px auto 0 auto;
     }
+
     .game {
         width: 320px;
     }
+
     .footer {
         width: 100%;
     }
+
     .wheel {
         display: flex;
         width: 320px;
@@ -257,7 +275,7 @@
         align-items: center;
     }
 
-    .mainCircle{
+    .mainCircle {
         top: auto;
         left: auto;
     }

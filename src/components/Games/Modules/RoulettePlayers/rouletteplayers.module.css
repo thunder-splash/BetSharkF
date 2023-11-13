@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,14 +6,14 @@
     margin: 24px auto 140px auto;
 }
 
-.column{
+.column {
     display: flex;
     border-radius: 12px;
     flex-direction: column;
     width: 260px;
 }
 
-.header , .headerRed , .headerGreen , .headerGray{
+.header, .headerRed, .headerGreen, .headerGray {
     display: flex;
     padding: 12px;
     flex-direction: row;
@@ -22,36 +22,45 @@
     align-items: center;
     backdrop-filter: blur(10px);
 }
-.headerRed{
+
+.headerRed {
     background: rgba(254, 79, 79, 0.35);
 }
-.headerGreen{
+
+.headerGreen {
     background: rgba(23, 160, 127, 0.35);
 }
-.headerGray{
+
+.headerGray {
     background: rgba(79, 75, 75, 0.35);
 }
-.xsection{
+
+.xsection {
     display: flex;
     flex-direction: row;
 }
-.header p , .pRed , .pGreen , .pGray{
+
+.header p, .pRed, .pGreen, .pGray {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px; /* 133.333% */
     padding-left: 8px;
 }
-.pRed{
+
+.pRed {
     color: #FE4F4F;
 }
-.pGreen{
+
+.pGreen {
     color: #17A07F;
 }
-.pGray{
+
+.pGray {
     color: #4F4B4B;
 }
-.header button , .buttonRed , .buttonGreen , .buttonGray{
+
+.header button, .buttonRed, .buttonGreen, .buttonGray {
     display: flex;
     padding: 8px 14px;
     justify-content: center;
@@ -64,17 +73,20 @@
     font-weight: 600;
     line-height: 20px; /* 142.857% */
 }
-.buttonRed{
+
+.buttonRed {
     background: #FE4F4F;
 }
-.buttonGreen{
+
+.buttonGreen {
     background: #17A07F;
 }
-.buttonGray{
+
+.buttonGray {
     background: #4F4B4B;
 }
 
-.gameinfo{
+.gameinfo {
     display: flex;
     padding: 12px;
     justify-content: space-between;
@@ -83,7 +95,7 @@
     background: #202430;
 }
 
-.gamebet{
+.gamebet {
     color: #555A71;
     font-size: 14px;
     font-style: normal;
@@ -91,7 +103,7 @@
     line-height: 20px; /* 142.857% */
 }
 
-.usersnum{
+.usersnum {
     display: flex;
     padding: 2px 10px;
     justify-content: center;
@@ -204,66 +216,75 @@
     line-height: 18px; /* 150% */
 }
 
-.playeroverflow{
+.playeroverflow {
     width: 100%;
     height: 300px; /* Установите нужную высоту */
     overflow-y: auto;
 }
 
-.gameinfosec{
+.gameinfosec {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.imgin{
+.imgin {
     margin-right: 8px;
     display: none;
 }
 
-.adaptivebar{
+.adaptivebar {
     display: none;
 }
 
-.adaptheaderRed{
+.adaptheaderRed {
     background: rgba(254, 79, 79, 0.35);
 }
-.adaptheaderGreen{
+
+.adaptheaderGreen {
     background: rgba(23, 160, 127, 0.35)
 }
-.adaptheaderGray{
+
+.adaptheaderGray {
     background: rgba(79, 75, 75, 0.35);
 }
-@media screen and (max-width: 768px) {
-    .wrapper{
+
+@media screen and (max-width: 920px) {
+    .wrapper {
         display: flex;
         flex-direction: column;
-        width: 320px;
+        width: 100%;
         align-items: center;
     }
-    .column{
+
+    .column {
         width: 100%;
         margin-bottom: 24px;
     }
-    .imgin{
+
+    .imgin {
         display: block;
     }
-    .header , .headerRed , .headerGreen , .headerGray{
+
+    .header, .headerRed, .headerGreen, .headerGray {
         display: none;
     }
 
-    .gameinfosec{
+    .gameinfosec {
         display: flex;
         flex-direction: row;
     }
+
     .gameinfo-0 {
         border-radius: 12px 12px 0 0;
         background: rgba(254, 79, 79, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-0 {
         color: #FE4F4F;
     }
+
     .usersnum-0 {
         color: #FFF;
         background: #FE4F4F;
@@ -274,9 +295,11 @@
         background: rgba(23, 160, 127, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-1 {
         color: #17A07F;
     }
+
     .usersnum-1 {
         color: #FFF;
         background: #17A07F;
@@ -287,14 +310,17 @@
         background: rgba(79, 75, 75, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-2 {
         color: #4F4B4B;
     }
+
     .usersnum-2 {
         color: #FFF;
         background: #4F4B4B;
     }
-    .adaptivebar{
+
+    .adaptivebar {
         display: block;
         display: flex;
         justify-content: space-between;
@@ -303,7 +329,8 @@
         margin: 24px 0 40px 0;
         gap: 7px;
     }
-    .block{
+
+    .block {
         padding: 12px;
         align-items: center;
         gap: 12px;
@@ -313,41 +340,49 @@
         display: flex;
         width: 102px;
     }
-    .blockheader{
+
+    .blockheader {
         display: flex;
         flex-direction: row;
     }
 }
+
 @media screen and (max-width: 520px) {
-    .wrapper{
+    .wrapper {
         display: flex;
         flex-direction: column;
         width: 320px;
         align-items: center;
     }
-    .column{
+
+    .column {
         width: 100%;
         margin-bottom: 24px;
     }
-    .imgin{
+
+    .imgin {
         display: block;
     }
-    .header , .headerRed , .headerGreen , .headerGray{
+
+    .header, .headerRed, .headerGreen, .headerGray {
         display: none;
     }
 
-    .gameinfosec{
+    .gameinfosec {
         display: flex;
         flex-direction: row;
     }
+
     .gameinfo-0 {
         border-radius: 12px 12px 0 0;
         background: rgba(254, 79, 79, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-0 {
         color: #FE4F4F;
     }
+
     .usersnum-0 {
         color: #FFF;
         background: #FE4F4F;
@@ -358,9 +393,11 @@
         background: rgba(23, 160, 127, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-1 {
         color: #17A07F;
     }
+
     .usersnum-1 {
         color: #FFF;
         background: #17A07F;
@@ -371,14 +408,17 @@
         background: rgba(79, 75, 75, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-2 {
         color: #4F4B4B;
     }
+
     .usersnum-2 {
         color: #FFF;
         background: #4F4B4B;
     }
-    .adaptivebar{
+
+    .adaptivebar {
         display: block;
         display: flex;
         justify-content: space-between;
@@ -387,7 +427,8 @@
         margin: 24px 0 40px 0;
         gap: 7px;
     }
-    .block{
+
+    .block {
         padding: 12px;
         align-items: center;
         gap: 12px;
@@ -397,41 +438,49 @@
         display: flex;
         width: 102px;
     }
-    .blockheader{
+
+    .blockheader {
         display: flex;
         flex-direction: row;
     }
 }
+
 @media screen and (max-width: 420px) {
-    .wrapper{
+    .wrapper {
         display: flex;
         flex-direction: column;
         width: 320px;
         align-items: center;
     }
-    .column{
+
+    .column {
         width: 100%;
         margin-bottom: 24px;
     }
-    .imgin{
+
+    .imgin {
         display: block;
     }
-    .header , .headerRed , .headerGreen , .headerGray{
+
+    .header, .headerRed, .headerGreen, .headerGray {
         display: none;
     }
 
-    .gameinfosec{
+    .gameinfosec {
         display: flex;
         flex-direction: row;
     }
+
     .gameinfo-0 {
         border-radius: 12px 12px 0 0;
         background: rgba(254, 79, 79, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-0 {
         color: #FE4F4F;
     }
+
     .usersnum-0 {
         color: #FFF;
         background: #FE4F4F;
@@ -442,9 +491,11 @@
         background: rgba(23, 160, 127, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-1 {
         color: #17A07F;
     }
+
     .usersnum-1 {
         color: #FFF;
         background: #17A07F;
@@ -455,14 +506,17 @@
         background: rgba(79, 75, 75, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-2 {
         color: #4F4B4B;
     }
+
     .usersnum-2 {
         color: #FFF;
         background: #4F4B4B;
     }
-    .adaptivebar{
+
+    .adaptivebar {
         display: block;
         display: flex;
         justify-content: space-between;
@@ -471,7 +525,8 @@
         margin: 24px 0 40px 0;
         gap: 7px;
     }
-    .block{
+
+    .block {
         padding: 12px;
         align-items: center;
         gap: 12px;
@@ -481,41 +536,49 @@
         display: flex;
         width: 102px;
     }
-    .blockheader{
+
+    .blockheader {
         display: flex;
         flex-direction: row;
     }
 }
+
 @media screen and (max-width: 360px) {
-    .wrapper{
+    .wrapper {
         display: flex;
         flex-direction: column;
         width: 320px;
         align-items: center;
     }
-    .column{
+
+    .column {
         width: 100%;
         margin-bottom: 24px;
     }
-    .imgin{
+
+    .imgin {
         display: block;
     }
-    .header , .headerRed , .headerGreen , .headerGray{
+
+    .header, .headerRed, .headerGreen, .headerGray {
         display: none;
     }
 
-    .gameinfosec{
+    .gameinfosec {
         display: flex;
         flex-direction: row;
     }
+
     .gameinfo-0 {
         border-radius: 12px 12px 0 0;
         background: rgba(254, 79, 79, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-0 {
         color: #FE4F4F;
     }
+
     .usersnum-0 {
         color: #FFF;
         background: #FE4F4F;
@@ -526,9 +589,11 @@
         background: rgba(23, 160, 127, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-1 {
         color: #17A07F;
     }
+
     .usersnum-1 {
         color: #FFF;
         background: #17A07F;
@@ -539,14 +604,17 @@
         background: rgba(79, 75, 75, 0.35);
         backdrop-filter: blur(10px);
     }
+
     .gamebet-2 {
         color: #4F4B4B;
     }
+
     .usersnum-2 {
         color: #FFF;
         background: #4F4B4B;
     }
-    .adaptivebar{
+
+    .adaptivebar {
         display: block;
         display: flex;
         justify-content: space-between;
@@ -555,7 +623,8 @@
         margin: 24px 0 40px 0;
         gap: 7px;
     }
-    .block{
+
+    .block {
         padding: 12px;
         align-items: center;
         gap: 12px;
@@ -565,7 +634,8 @@
         display: flex;
         width: 102px;
     }
-    .blockheader{
+
+    .blockheader {
         display: flex;
         flex-direction: row;
     }
