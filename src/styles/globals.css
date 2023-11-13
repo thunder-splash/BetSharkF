@@ -300,6 +300,7 @@ header .btn.sum::before {
         display: none;
         margin-right: 8px;
         margin-left: 0;
+        padding: 0 8px;
     }
 
     header .btn.blue {
@@ -312,6 +313,7 @@ header .btn.sum::before {
 
     header .btn.sum {
         display: flex;
+        padding: 0 12px;
     }
 
 }
@@ -382,7 +384,14 @@ header .btn.sum::before {
     header .btn.sum {
         width: 129px;
     }
+
+    .dropdown-list {
+        width: 680%;
+        max-width: none;
+        left: -480%;
+    }
 }
+
 
 @media (max-width: 550px) {
     header .btn.blue {
