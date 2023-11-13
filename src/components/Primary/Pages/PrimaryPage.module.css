@@ -620,6 +620,10 @@
         display: flex;
         justify-content: center;
     }
+    .cardrec img{
+        width: 186px;
+        height: 186px;
+    }
 }
 @media (max-width: 520px) {
 
@@ -802,6 +806,10 @@
     .midblue{
         display: flex;
         justify-content: center;
+    }
+    .cardrec img{
+        width: 186px;
+        height: 186px;
     }
 }
 @media (max-width: 420px) {
@@ -986,9 +994,18 @@
         display: flex;
         justify-content: center;
     }
+    .cardrec img{
+        width: 186px;
+        height: 186px;
+    }
 }
 
 @media (max-width: 360px) {
+
+    .cardrec img{
+        width: 186px;
+        height: 186px;
+    }
 
     .main_section {
         background-size: contain; /* Или 'cover', в зависимости от ваших потребностей */
