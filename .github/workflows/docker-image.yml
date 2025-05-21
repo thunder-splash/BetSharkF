@@ -1,0 +1,42 @@
+name: CI/CD
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # check-backend:
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       go-version: ['1.23']
+  #       os: [ubuntu-latest, windows-latest, macos-latest,freebsd-latest]
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Set up Go
+  #       uses: actions/setup-go@v4
+  #       with:
+  #         go-version: ${{ matrix.go-version }}
+
+  #     - name: Install dependencies
+  #       working-directory: ./backend
+  #       run: go mod download
+
+  #     - name: Run tests
+  #       working-directory: ./backend
+  #       run: go test -v ./...
+
+  deploy:
+    runs-on: self-hosted
+      # Зависимость от работы check-backend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy with docker-compose
+        run:  docker compose up -d
