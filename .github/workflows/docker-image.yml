@@ -30,7 +30,7 @@ jobs:
   #       run: go test -v ./...
 
   deploy:
-    runs-on: self-hosted
+    runs-on: debian12
       # Зависимость от работы check-backend
 
     steps:
